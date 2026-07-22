@@ -554,3 +554,239 @@ footer { padding: 44px 0; border-top: 1px solid var(--line); }
     height: 62px;
   }
 }
+
+/* =========================================================
+   CONTENIDO DIGITAL Y REDES SOCIALES
+   ========================================================= */
+
+.content-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.content-topic {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 13px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, .82);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.social-handle-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 34px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, .18);
+}
+
+.social-handle-note::before {
+  content: "@";
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--lime);
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 950;
+}
+
+.social-handle-note strong {
+  display: block;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -.02em;
+}
+
+.social-handle-note span {
+  display: block;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, .58);
+  font-size: 12px;
+}
+
+.channel-platform {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channel-icon {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, .24);
+  border-radius: 8px;
+}
+
+.channel-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.social-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.social-feature-card {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  isolation: isolate;
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    box-shadow .25s ease;
+}
+
+.social-feature-card::before,
+.social-feature-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.social-feature-card::before {
+  width: 180px;
+  height: 180px;
+  right: -70px;
+  top: -65px;
+  border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.social-feature-card::after {
+  width: 115px;
+  height: 115px;
+  right: -32px;
+  top: -27px;
+  background: rgba(255, 255, 255, .08);
+}
+
+.social-feature-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, .38);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, .22);
+}
+
+.social-feature-card.instagram {
+  background:
+    radial-gradient(circle at 85% 10%, rgba(255, 255, 255, .15), transparent 30%),
+    linear-gradient(145deg, #7428bc, #cf2e82 52%, #f59b36);
+}
+
+.social-feature-card.tiktok {
+  background:
+    radial-gradient(circle at 83% 14%, rgba(37, 244, 238, .2), transparent 30%),
+    linear-gradient(145deg, #10151a, #071a23 65%, #153a40);
+}
+
+.social-feature-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.social-feature-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(10px);
+}
+
+.social-feature-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: currentColor;
+}
+
+.social-feature-arrow {
+  font-size: 22px;
+  font-weight: 900;
+  transition: transform .2s ease;
+}
+
+.social-feature-card:hover .social-feature-arrow {
+  transform: translate(4px, -4px);
+}
+
+.social-feature-card h3 {
+  margin: 42px 0 8px;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.social-feature-card strong {
+  display: block;
+  font-size: 14px;
+}
+
+.social-feature-card p {
+  max-width: 270px;
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, .72);
+  font-size: 13px;
+}
+
+.social-feature-card:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .social-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-feature-card {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 680px) {
+  .content-topics {
+    gap: 7px;
+  }
+
+  .content-topic {
+    padding-inline: 11px;
+    font-size: 10px;
+  }
+
+  .social-feature-card {
+    min-height: 210px;
+    padding: 22px;
+  }
+
+  .social-feature-card h3 {
+    margin-top: 34px;
+  }
+}
