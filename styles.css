@@ -40,7 +40,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
   border-color: var(--line);
 }
 .nav-shell { width: min(1180px, calc(100% - 40px)); margin: auto; min-height: 78px; display: flex; align-items: center; justify-content: space-between; }
-
 .brand {
   display: inline-flex;
   align-items: center;
@@ -49,33 +48,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .brand-logo {
-  height: 58px;
-  width: auto;
   display: block;
+  width: auto;
+  height: 58px;
+  object-fit: contain;
 }
-
-
-
 nav { display: flex; gap: 30px; align-items: center; }
 nav a { text-decoration: none; font-size: 14px; font-weight: 650; }
 nav a:hover { color: var(--aqua-dark); }
 .menu-button { display: none; border: 0; background: var(--ink); color: white; padding: 9px 14px; border-radius: 999px; }
 
-.hero-logo {
-  position: relative;
-  z-index: 1;
-  width: 82%;
-  max-width: 300px;
-  height: auto;
-  object-fit: contain;
-  background: white;
-  padding: 10px;
-  border-radius: 16px;
-}
-
-.portrait-initials {
-  display: none;
-}
 .hero { min-height: calc(100vh - 78px); display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; gap: 70px; padding: 68px 0 100px; }
 .eyebrow { margin: 0 0 15px; text-transform: uppercase; letter-spacing: .16em; font-weight: 800; font-size: 12px; color: var(--aqua-dark); }
 h1, h2, h3, p { text-wrap: balance; }
@@ -95,11 +77,79 @@ h1 span { color: var(--aqua-dark); }
 
 .hero-visual { position: relative; min-height: 610px; display: grid; place-items: center; }
 .hero-visual::before { content: ""; position: absolute; inset: 10% 0; border-radius: 50%; background: radial-gradient(circle at 50% 50%, rgba(60,214,195,.5), rgba(60,214,195,.05) 55%, transparent 70%); filter: blur(3px); }
-.portrait-card { position: relative; z-index: 2; width: min(380px, 82vw); aspect-ratio: .78; border-radius: 190px 190px 32px 32px; background: linear-gradient(145deg, #123744 0%, #071a23 62%, #164f52 100%); display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 48px 25px; color: white; box-shadow: var(--shadow); overflow: hidden; }
-.portrait-card::before { content: ""; position: absolute; width: 270px; height: 270px; border: 1px solid rgba(217,243,106,.55); border-radius: 50%; top: 58px; }
-.portrait-card::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(125deg, transparent 0 18px, rgba(255,255,255,.025) 18px 19px); }
-.portrait-initials { position: absolute; top: 120px; z-index: 1; font-size: 80px; font-weight: 900; letter-spacing: -.09em; color: var(--lime); }
-.portrait-caption { z-index: 1; text-transform: uppercase; letter-spacing: .18em; font-size: 10px; font-weight: 800; }
+.portrait-card {
+  position: relative;
+  z-index: 2;
+  width: min(380px, 82vw);
+  aspect-ratio: .78;
+  border-radius: 190px 190px 32px 32px;
+  background: linear-gradient(
+    145deg,
+    #123744 0%,
+    #071a23 62%,
+    #164f52 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 25px;
+  color: white;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.portrait-card::before {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  border: 1px solid rgba(217, 243, 106, .55);
+  border-radius: 50%;
+  top: 58px;
+}
+
+.portrait-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    125deg,
+    transparent 0 18px,
+    rgba(255, 255, 255, .025) 18px 19px
+  );
+}
+
+.portrait-initials {
+  display: none;
+}
+
+.hero-logo {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 82%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.portrait-caption {
+  position: absolute;
+  z-index: 3;
+  left: 20px;
+  right: 20px;
+  bottom: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 9px;
+  font-weight: 800;
+}
 .orbit { position: absolute; z-index: 1; border-radius: 50%; border: 1px solid rgba(7,26,35,.18); }
 .orbit-one { width: 530px; height: 530px; }
 .orbit-two { width: 440px; height: 440px; border-style: dashed; animation: spin 28s linear infinite; }
@@ -190,7 +240,20 @@ footer { padding: 44px 0; border-top: 1px solid var(--line); }
   .expertise-card { min-height: 250px; }
   .timeline-item { grid-template-columns: 74px 1fr; gap: 16px; }
   .hero-visual { min-height: 470px; overflow: hidden; }
+  .brand-logo { height: 48px; }
   .portrait-card { width: 290px; }
+  .hero-logo {
+    width: 84%;
+    max-width: 245px;
+    padding: 8px;
+  }
+  .portrait-caption {
+    left: 15px;
+    right: 15px;
+    bottom: 18px;
+    font-size: 8px;
+    letter-spacing: .11em;
+  }
   .orbit-one { width: 420px; height: 420px; }
   .orbit-two { width: 350px; height: 350px; }
   .label-data { right: 2%; }
