@@ -188,6 +188,121 @@
       </div>
     </section>
 
+<!--
+  CÓMO USAR ESTE ARCHIVO
+  ----------------------
+  1. Abre tu repositorio juankloz.github.io y el archivo index.html
+  2. Busca la sección "Trabajo destacado" / "Educación · Biblioteca audiovisual"
+  3. Justo después de esa sección (o reemplazándola), pega el bloque <section> de abajo
+  4. Copia también el <style> a tu hoja de estilos (o al <head> si usas un solo archivo)
+  5. Sube los cambios (commit + push) a GitHub — se publica solo en 1-2 minutos
+-->
+
+<style>
+  .galeria-videos { padding: 64px 24px; max-width: 1000px; margin: 0 auto; }
+  .galeria-videos .section-label {
+    font-family: 'Courier New', monospace; font-size: 12px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #14647d; margin-bottom: 10px;
+  }
+  .galeria-videos h2 { font-family: 'Georgia', serif; font-size: 26px; color: #0b3d4c; margin-bottom: 8px; }
+  .galeria-videos > p.intro { font-size: 15px; color: #444; max-width: 60ch; margin-bottom: 30px; }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+  }
+  .video-card {
+    background: white; border-radius: 4px; overflow: hidden;
+    box-shadow: 0 8px 24px rgba(11,61,76,0.08);
+  }
+  .video-frame { position: relative; width: 100%; padding-top: 56.25%; background: #0b3d4c; }
+  .video-frame iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+  }
+  .video-card .caption { padding: 14px 16px; }
+  .video-card .caption h3 { font-size: 14.5px; color: #12242b; margin-bottom: 4px; font-weight: 600; }
+  .video-card .caption p { font-size: 12.5px; color: #666; }
+  .ver-mas { text-align: center; margin-top: 30px; }
+  .ver-mas a {
+    display: inline-block; padding: 12px 24px; border-radius: 3px;
+    background: #2ea8a0; color: #0b3d4c; text-decoration: none;
+    font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600;
+  }
+</style>
+
+<section class="galeria-videos" id="galeria">
+  <p class="section-label">Trabajo destacado en video</p>
+  <h2>Procesos de tratamiento explicados en campo</h2>
+  <p class="intro">Una muestra de los procesos y sistemas de tratamiento de agua que he documentado y explicado, elaborados junto a estudiantes del programa de Ingeniería Ambiental.</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/KEu1x3zJShY" title="Digestor anaerobio" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>Digestor anaerobio</h3>
+        <p>Tratamiento de aguas · Ingeniería ambiental</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/Ba-lSsABjLw" title="Lagunas de oxidación" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>Lagunas de oxidación</h3>
+        <p>Sistemas de estabilización de aguas residuales</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/34HpYkIN2Yo" title="Filtro percolador" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>Filtro percolador</h3>
+        <p>Sistema de tratamiento de aguas residuales</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/_ylJiMxMskQ" title="Reactor anaerobio de flujo pistón" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>Reactor anaerobio de flujo pistón</h3>
+        <p>Tratamiento de aguas residuales</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/WRsJRw-ZFWA" title="Ósmosis inversa" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>Ósmosis inversa</h3>
+        <p>Procesos avanzados de tratamiento de agua</p>
+      </div>
+    </div>
+
+    <div class="video-card">
+      <div class="video-frame">
+        <iframe src="https://www.youtube.com/embed/BFnb3cJslVk" title="SUDS - Sistemas Urbanos de Drenaje Sostenible" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="caption">
+        <h3>SUDS</h3>
+        <p>Sistemas Urbanos de Drenaje Sostenible</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="ver-mas">
+    <a href="https://youtube.com/@juankloz75" target="_blank" rel="noopener">Ver todo el canal en YouTube →</a>
+  </div>
+</section>
+
+    
     <section class="content-section" id="contenido-digital">
       <div class="section-shell content-grid">
         <div class="content-intro reveal">
