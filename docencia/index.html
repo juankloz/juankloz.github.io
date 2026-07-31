@@ -3,47 +3,245 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Espacio público para recursos educativos, contenidos académicos, avisos y acceso a las aulas institucionales.">
+  <meta name="description" content="Docencia universitaria de Juan Carlos Lozano: cursos, recursos públicos, avisos académicos, resultados de clase, rúbricas y acceso a Moodle.">
   <meta name="theme-color" content="#071a23">
   <title>Docencia universitaria | JuanKLoz</title>
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css?v=areas-v1">
+  <link rel="stylesheet" href="../styles.css?v=docencia-v1">
+  <link rel="stylesheet" href="docencia.css?v=docencia-v1">
+  <script src="docencia.js" defer></script>
 </head>
-<body class="area-page">
+<body class="academic-page">
+
+  <header class="academic-header">
+    <div class="academic-nav">
+      <a class="academic-brand" href="../" aria-label="Volver a JuanKLoz">
+        <img src="../assets/logo-juankloz.png" alt="JuanKLoz">
+      </a>
+      <nav class="academic-links" aria-label="Navegación de docencia">
+        <a href="#universidades">Universidades</a>
+        <a href="#recursos-publicos">Recursos públicos</a>
+        <a href="#avisos">Avisos</a>
+        <a class="academic-home" href="../">← Portal principal</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="area-page-hero">
-      <div class="section-shell">
-        <a class="area-page-back" href="../">← Volver al portal principal</a>
-        <p class="area-page-kicker">Área 01 · Docencia universitaria</p>
-        <h1>Conocimiento que se <span>comparte y aplica.</span></h1>
-        <p class="area-page-lead">Espacio público para recursos educativos, contenidos académicos, avisos y acceso a las aulas institucionales.</p>
+    <section class="academic-hero">
+      <div class="academic-shell academic-hero-grid">
+        <div class="academic-hero-copy">
+          <p class="academic-eyebrow">Área 01 · Docencia universitaria</p>
+          <h1>Conocimiento que se <span>comparte y aplica.</span></h1>
+          <p>
+            Espacio público para cursos, recursos académicos, resultados de clase
+            anonimizados, rúbricas y acceso a las aulas institucionales.
+          </p>
+        </div>
+
+        <aside class="academic-access-card">
+          <strong>Acceso restringido</strong>
+          <h2>Aulas institucionales en Moodle</h2>
+          <p>
+            Las actividades evaluativas, calificaciones, entregas y comunicaciones
+            privadas permanecerán dentro de Moodle.
+          </p>
+          <div class="academic-access-status">
+            <i aria-hidden="true"></i>
+            Los enlaces específicos se agregarán por curso
+          </div>
+        </aside>
       </div>
     </section>
-    <section class="area-page-body">
-      <div class="section-shell">
-        <div class="area-page-grid">
-        <article class="area-page-block">
-          <span>01</span>
-          <h2>Recursos públicos</h2>
-          <p>Guías, videos, explicaciones, aplicaciones y materiales abiertos para estudiantes y visitantes.</p>
-        </article>
-        <article class="area-page-block">
-          <span>02</span>
-          <h2>Avisos académicos</h2>
-          <p>Información pública sobre cursos, actividades, publicaciones y encuentros académicos.</p>
-        </article>
-        <article class="area-page-block">
-          <span>03</span>
-          <h2>Acceso institucional</h2>
-          <p>Enlaces directos a Moodle para estudiantes matriculados y contenidos restringidos.</p>
-        </article>
+
+    <section class="academic-section" id="universidades">
+      <div class="academic-shell">
+        <div class="academic-heading">
+          <div>
+            <p class="academic-eyebrow">Oferta académica</p>
+            <h2>Universidades y cursos</h2>
+          </div>
+          <p>
+            Selecciona una institución o consulta todos los cursos disponibles.
+            Cada curso cuenta con su propio espacio público.
+          </p>
         </div>
-        <div class="area-page-actions">
-          <a class="button primary" href="../#contacto">Contacto</a>
-          <a class="button secondary" href="../">Volver al inicio</a>
+
+        <div class="academic-controls" aria-label="Filtrar cursos">
+          <button class="academic-filter is-active" type="button" data-course-filter="all">Todos</button>
+          <button class="academic-filter" type="button" data-course-filter="unisangil">UNISANGIL</button>
+          <button class="academic-filter" type="button" data-course-filter="unitropico">UNITRÓPICO</button>
+        </div>
+
+        
+      <section class="university-block" data-university="unisangil">
+        <div class="university-banner">
+          <span class="university-monogram">UNISANGIL</span>
+          <div>
+            <h3>Fundación Universitaria de San Gil – UNISANGIL, Sede Yopal</h3>
+            <p>Cursos relacionados con diseño, potabilización, tratamiento de aguas residuales y sistemas de acueducto y alcantarillado.</p>
+          </div>
+        </div>
+        <div class="course-grid">
+          
+          <a class="course-card" href="cursos/diseno-plantas-tratamiento/">
+            <div class="course-card-meta">
+              <span>UNISANGIL</span>
+              <span>Curso 01 ↗</span>
+            </div>
+            <h4>Diseño de Plantas de Tratamiento</h4>
+            <p>Criterios de selección de procesos, configuración de sistemas y bases para el dimensionamiento de plantas de tratamiento.</p>
+            <div class="course-topics"><span>Selección de procesos</span><span>Criterios de diseño</span><span>Dimensionamiento</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/tratamiento-potabilizacion-agua/">
+            <div class="course-card-meta">
+              <span>UNISANGIL</span>
+              <span>Curso 02 ↗</span>
+            </div>
+            <h4>Tratamiento y Potabilización de Agua</h4>
+            <p>Calidad del agua, operaciones unitarias y procesos empleados para producir agua apta para consumo humano.</p>
+            <div class="course-topics"><span>Calidad del agua</span><span>Operaciones unitarias</span><span>Potabilización</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/tratamiento-aguas-residuales/">
+            <div class="course-card-meta">
+              <span>UNISANGIL</span>
+              <span>Curso 03 ↗</span>
+            </div>
+            <h4>Tratamiento de Aguas Residuales</h4>
+            <p>Caracterización, selección de alternativas y fundamentos para el diseño preliminar de sistemas de tratamiento.</p>
+            <div class="course-topics"><span>Caracterización</span><span>Procesos de tratamiento</span><span>Prediseño</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/acueducto-alcantarillado-unisangil/">
+            <div class="course-card-meta">
+              <span>UNISANGIL</span>
+              <span>Curso 04 ↗</span>
+            </div>
+            <h4>Acueducto y Alcantarillado</h4>
+            <p>Planeación y análisis de sistemas de abastecimiento, conducción, distribución, recolección y evacuación.</p>
+            <div class="course-topics"><span>Demanda y caudales</span><span>Redes de acueducto</span><span>Redes de alcantarillado</span></div>
+          </a>
+        
+        </div>
+      </section>
+    
+      <section class="university-block" data-university="unitropico">
+        <div class="university-banner">
+          <span class="university-monogram">UNITRÓPICO</span>
+          <div>
+            <h3>Universidad del Trópico Americano – UNITRÓPICO</h3>
+            <p>Cursos orientados a la mecánica de fluidos, la hidráulica aplicada y los sistemas de agua y saneamiento.</p>
+          </div>
+        </div>
+        <div class="course-grid">
+          
+          <a class="course-card" href="cursos/mecanica-fluidos/">
+            <div class="course-card-meta">
+              <span>UNITRÓPICO</span>
+              <span>Curso 01 ↗</span>
+            </div>
+            <h4>Mecánica de Fluidos</h4>
+            <p>Propiedades de los fluidos, hidrostática y aplicación de los principios de conservación en sistemas de ingeniería.</p>
+            <div class="course-topics"><span>Propiedades</span><span>Hidrostática</span><span>Conservación</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/hidraulica-aplicada/">
+            <div class="course-card-meta">
+              <span>UNITRÓPICO</span>
+              <span>Curso 02 ↗</span>
+            </div>
+            <h4>Hidráulica Aplicada</h4>
+            <p>Análisis de flujo en tuberías y canales, pérdidas de energía, sistemas de bombeo y aplicaciones hidráulicas.</p>
+            <div class="course-topics"><span>Tuberías</span><span>Canales</span><span>Bombas</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/acueducto-alcantarillado-unitropico/">
+            <div class="course-card-meta">
+              <span>UNITRÓPICO</span>
+              <span>Curso 03 ↗</span>
+            </div>
+            <h4>Acueducto y Alcantarillado</h4>
+            <p>Diseño y evaluación de sistemas de abastecimiento y redes de recolección de aguas residuales y lluvias.</p>
+            <div class="course-topics"><span>Abastecimiento</span><span>Distribución</span><span>Recolección</span></div>
+          </a>
+        
+          <a class="course-card" href="cursos/tratamiento-agua/">
+            <div class="course-card-meta">
+              <span>UNITRÓPICO</span>
+              <span>Curso 04 ↗</span>
+            </div>
+            <h4>Tratamiento de Agua</h4>
+            <p>Fundamentos y procesos físicos, químicos y biológicos aplicados al tratamiento del agua.</p>
+            <div class="course-topics"><span>Procesos físicos</span><span>Procesos químicos</span><span>Control de calidad</span></div>
+          </a>
+        
+        </div>
+      </section>
+    
+      </div>
+    </section>
+
+    <section class="academic-section academic-section-muted" id="recursos-publicos">
+      <div class="academic-shell">
+        <div class="academic-heading">
+          <div>
+            <p class="academic-eyebrow">Información abierta</p>
+            <h2>Qué encontrarás en cada curso</h2>
+          </div>
+          <p>
+            El contenido público ayuda a estudiantes y visitantes sin exponer
+            información académica personal o reservada.
+          </p>
+        </div>
+
+        <div class="public-grid">
+          <article class="public-card" id="avisos">
+            <span>01</span>
+            <h3>Avisos públicos</h3>
+            <p>Novedades generales, fechas abiertas, eventos y publicaciones académicas.</p>
+          </article>
+
+          <article class="public-card">
+            <span>02</span>
+            <h3>Resultados de clase</h3>
+            <p>Productos colectivos, ejercicios y conclusiones, siempre anonimizados.</p>
+          </article>
+
+          <article class="public-card">
+            <span>03</span>
+            <h3>Rúbricas</h3>
+            <p>Criterios generales de evaluación y versiones públicas de las actividades.</p>
+          </article>
+
+          <article class="public-card">
+            <span>04</span>
+            <h3>Recursos abiertos</h3>
+            <p>Guías, videos, aplicaciones, bibliografía y materiales complementarios.</p>
+          </article>
+        </div>
+
+        <div class="privacy-note">
+          <b aria-hidden="true">✓</b>
+          <div>
+            <strong>Protección de la información académica</strong>
+            <p>
+              No se publicarán nombres, calificaciones individuales, entregas privadas
+              ni datos personales. Esa información permanecerá en Moodle.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="academic-footer">
+    <div class="academic-shell academic-footer-grid">
+      <p>Docencia universitaria · Juan Carlos Lozano Sierra</p>
+      <a href="../">Volver a juankloz.github.io</a>
+    </div>
+  </footer>
+
 </body>
 </html>
