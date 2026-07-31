@@ -2669,3 +2669,79 @@ footer { padding: 44px 0; border-top: 1px solid var(--line); }
     animation: none;
   }
 }
+
+
+
+
+/* PORTAL DE ENTRADA — TRES ÁREAS JUANKLOZ */
+.area-hub{position:relative;min-height:calc(100vh - 78px);overflow:hidden;padding:clamp(70px,9vw,125px) 0 72px;background:radial-gradient(circle at 12% 20%,rgba(60,214,195,.16),transparent 27%),radial-gradient(circle at 88% 82%,rgba(217,243,106,.12),transparent 24%),var(--ink);color:white}
+.area-hub::before,.area-hub::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+.area-hub::before{width:620px;height:620px;left:-390px;top:-380px;border:1px solid rgba(255,255,255,.08)}
+.area-hub::after{width:510px;height:510px;right:-300px;bottom:-310px;border:1px dashed rgba(60,214,195,.17)}
+.area-hub-shell{position:relative;z-index:2}
+.area-hub-heading{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:end;margin-bottom:54px}
+.area-hub-heading .eyebrow{grid-column:1/-1;margin-bottom:-25px;color:var(--aqua)}
+.area-hub-heading h1{max-width:760px;color:white;font-size:clamp(52px,7.2vw,96px)}
+.area-hub-heading h1 span{color:var(--lime)}
+.area-hub-heading>p:last-child{max-width:520px;margin:0 0 7px;color:rgba(255,255,255,.62);font-size:clamp(17px,1.8vw,21px)}
+.area-hub-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.area-hub-card{position:relative;display:flex;flex-direction:column;min-height:455px;overflow:hidden;padding:28px;border:1px solid rgba(255,255,255,.14);border-radius:30px;color:white;text-decoration:none;isolation:isolate;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.area-hub-card::before,.area-hub-card::after{content:"";position:absolute;z-index:-1;border-radius:50%;pointer-events:none}
+.area-hub-card::before{width:250px;height:250px;right:-120px;top:-125px;border:1px solid rgba(255,255,255,.17)}
+.area-hub-card::after{width:155px;height:155px;right:-62px;top:-60px;background:rgba(255,255,255,.08)}
+.area-hub-card:hover{transform:translateY(-8px);border-color:rgba(255,255,255,.34);box-shadow:0 28px 70px rgba(0,0,0,.31)}
+.area-hub-card:focus-visible{outline:3px solid var(--lime);outline-offset:5px}
+.area-hub-docencia{background:radial-gradient(circle at 87% 12%,rgba(255,255,255,.14),transparent 31%),linear-gradient(145deg,#0b8f85,#075e5a 58%,#083b40)}
+.area-hub-running{background:radial-gradient(circle at 87% 12%,rgba(217,243,106,.19),transparent 31%),linear-gradient(145deg,#263d20,#162b22 58%,#0b211c)}
+.area-hub-saneamiento{background:radial-gradient(circle at 87% 12%,rgba(60,214,195,.17),transparent 31%),linear-gradient(145deg,#123744,#071a23 60%,#06131a)}
+.area-hub-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.area-hub-number{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgba(255,255,255,.24);border-radius:50%;color:rgba(255,255,255,.72);font-size:10px;font-weight:950}
+.area-hub-icon{display:grid;place-items:center;width:62px;height:62px;border:1px solid rgba(255,255,255,.22);border-radius:20px;background:rgba(255,255,255,.09);backdrop-filter:blur(12px)}
+.area-hub-icon svg{width:35px;height:35px;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.area-hub-card-copy{margin-top:auto;padding-top:55px}
+.area-hub-card-copy>p{margin:0 0 13px;color:var(--lime);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.area-hub-card-copy h2{margin:0;font-size:clamp(30px,3vw,43px);line-height:.96;letter-spacing:-.047em}
+.area-hub-card-copy>span{display:block;margin-top:18px;color:rgba(255,255,255,.65);font-size:14px}
+.area-hub-card-footer{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15)}
+.area-hub-tags{display:flex;flex-wrap:wrap;gap:6px}
+.area-hub-tags span{padding:6px 9px;border:1px solid rgba(255,255,255,.17);border-radius:999px;color:rgba(255,255,255,.7);font-size:8px;font-weight:800}
+.area-hub-card-footer strong{flex:0 0 auto;font-size:24px;transition:transform .22s ease}
+.area-hub-card:hover .area-hub-card-footer strong{transform:translate(4px,-4px)}
+.area-hub-scroll{display:flex;align-items:center;justify-content:center;gap:13px;width:fit-content;margin:38px auto 0;color:rgba(255,255,255,.58);font-size:11px;font-weight:800;text-decoration:none}
+.area-hub-scroll b{display:grid;place-items:center;width:31px;height:31px;border:1px solid rgba(255,255,255,.18);border-radius:50%;color:var(--aqua)}
+.area-hub-scroll:hover{color:white}
+
+/* PÁGINAS INTERNAS */
+.area-page{min-height:100vh;background:var(--paper)}
+.area-page-hero{position:relative;overflow:hidden;padding:95px 0 85px;background:var(--ink);color:white}
+.area-page-hero::after{content:"";position:absolute;width:470px;height:470px;right:-240px;bottom:-280px;border:1px dashed rgba(60,214,195,.2);border-radius:50%}
+.area-page-back{display:inline-flex;align-items:center;gap:9px;margin-bottom:55px;color:rgba(255,255,255,.65);font-size:12px;font-weight:800;text-decoration:none}
+.area-page-back:hover{color:var(--lime)}
+.area-page-kicker{margin:0 0 17px;color:var(--aqua);font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.area-page-hero h1{max-width:930px;color:white}
+.area-page-hero h1 span{display:block;color:var(--lime)}
+.area-page-lead{max-width:720px;margin:30px 0 0;color:rgba(255,255,255,.65);font-size:clamp(18px,2vw,22px)}
+.area-page-body{padding:90px 0 120px}
+.area-page-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.area-page-block{min-height:270px;padding:29px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(255,255,255,.46)}
+.area-page-block span{color:var(--aqua-dark);font-size:11px;font-weight:900}
+.area-page-block h2{margin:75px 0 13px;font-size:29px;line-height:1;letter-spacing:-.035em}
+.area-page-block p{margin:0;color:var(--ink-soft)}
+.area-page-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:40px}
+
+@media(max-width:950px){
+  .area-hub-heading{grid-template-columns:1fr;gap:20px}
+  .area-hub-heading .eyebrow{margin-bottom:0}
+  .area-hub-grid,.area-page-grid{grid-template-columns:1fr}
+  .area-hub-card{min-height:360px}
+}
+@media(max-width:680px){
+  .area-hub{min-height:auto;padding:70px 0 55px}
+  .area-hub-heading{margin-bottom:38px}
+  .area-hub-heading h1{font-size:clamp(47px,14vw,68px)}
+  .area-hub-card{min-height:380px;padding:24px}
+  .area-hub-card-copy{padding-top:45px}
+  .area-page-hero{padding:70px 0 65px}
+  .area-page-back{margin-bottom:40px}
+  .area-page-body{padding:70px 0 90px}
+}
