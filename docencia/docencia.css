@@ -805,3 +805,706 @@
     padding: 35px 0;
   }
 }
+
+/* =========================================================
+   RÚBRICA — PROYECTO INTEGRADOR DE MECÁNICA DE FLUIDOS
+   ========================================================= */
+
+.rubric-feature-card {
+  position: relative;
+  min-height: 285px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(60, 214, 195, .24),
+      transparent 31%
+    ),
+    linear-gradient(145deg, #0b8f85, #075e5a 58%, #083b40);
+  color: white;
+  box-shadow: 0 20px 55px rgba(7, 26, 35, .15);
+}
+
+.rubric-feature-card::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  right: -90px;
+  top: -100px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 50%;
+}
+
+.rubric-feature-card .resource-type {
+  color: var(--academic-lime);
+}
+
+.rubric-feature-card strong {
+  max-width: 520px;
+  margin-top: 52px;
+  font-size: clamp(25px, 3vw, 34px);
+}
+
+.rubric-feature-card p {
+  max-width: 600px;
+  color: rgba(255, 255, 255, .68);
+}
+
+.rubric-feature-link {
+  display: block;
+  margin-top: 23px;
+  color: white;
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.rubric-page {
+  background: #f4f1e9;
+}
+
+.rubric-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 82px 0 88px;
+  background:
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(60, 214, 195, .19),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 85%,
+      rgba(217, 243, 106, .08),
+      transparent 25%
+    ),
+    var(--academic-ink);
+  color: white;
+}
+
+.rubric-hero::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  right: -300px;
+  bottom: -330px;
+  border: 1px dashed rgba(60, 214, 195, .20);
+  border-radius: 50%;
+}
+
+.rubric-breadcrumbs {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 55px;
+}
+
+.rubric-hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr .55fr;
+  gap: 70px;
+  align-items: end;
+}
+
+.rubric-hero h1 {
+  max-width: 850px;
+  margin: 0;
+  color: white;
+  font-size: clamp(48px, 6.7vw, 88px);
+  line-height: .94;
+  letter-spacing: -.062em;
+}
+
+.rubric-hero h1 span {
+  display: block;
+  color: var(--academic-lime);
+}
+
+.rubric-subtitle {
+  max-width: 720px;
+  margin: 27px 0 0;
+  color: rgba(255, 255, 255, .65);
+  font-size: clamp(18px, 2vw, 22px);
+}
+
+.rubric-summary-card {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .07);
+  box-shadow: 0 28px 75px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(16px);
+}
+
+.rubric-summary-label {
+  color: var(--academic-aqua);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+
+.rubric-summary-score {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 18px;
+}
+
+.rubric-summary-score strong {
+  color: white;
+  font-size: 72px;
+  line-height: .85;
+  letter-spacing: -.07em;
+}
+
+.rubric-summary-score span {
+  color: var(--academic-lime);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.rubric-summary-card ul {
+  display: grid;
+  gap: 8px;
+  padding: 20px 0 0;
+  margin: 22px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  list-style: none;
+}
+
+.rubric-summary-card li {
+  color: rgba(255, 255, 255, .65);
+  font-size: 12px;
+}
+
+.rubric-print-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  width: 100%;
+  min-height: 52px;
+  margin-top: 23px;
+  padding: 0 10px 0 17px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--academic-lime);
+  color: var(--academic-ink);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.rubric-print-button b {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--academic-ink);
+  color: white;
+  font-size: 17px;
+}
+
+.rubric-print-button:hover {
+  transform: translateY(-2px);
+}
+
+.rubric-intro {
+  padding: 88px 0;
+}
+
+.rubric-intro-grid {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: 80px;
+}
+
+.rubric-intro h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 65px);
+  line-height: .98;
+  letter-spacing: -.052em;
+}
+
+.rubric-project-brief > p {
+  margin: 0;
+  color: #18313b;
+  font-size: 18px;
+}
+
+.rubric-project-brief ol {
+  display: grid;
+  gap: 10px;
+  padding-left: 24px;
+  margin: 28px 0 0;
+  color: #18313b;
+}
+
+.rubric-project-brief li::marker {
+  color: var(--academic-blue);
+  font-weight: 900;
+}
+
+.rubric-section {
+  padding: 92px 0;
+}
+
+.rubric-section-muted {
+  background: #e8e4da;
+}
+
+.rubric-section-heading {
+  display: grid;
+  grid-template-columns: 1fr .65fr;
+  gap: 55px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+.rubric-section-heading h2 {
+  margin: 0;
+  font-size: clamp(40px, 5.5vw, 68px);
+  line-height: .98;
+  letter-spacing: -.052em;
+}
+
+.rubric-section-heading > p {
+  margin: 0 0 5px;
+  color: #18313b;
+  font-size: 15px;
+}
+
+.rubric-level-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.rubric-level {
+  min-height: 240px;
+  padding: 25px;
+  border: 1px solid var(--academic-line);
+  border-radius: 25px;
+  background: var(--academic-white);
+}
+
+.rubric-level > span {
+  color: var(--academic-blue);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.rubric-level h3 {
+  margin: 80px 0 10px;
+  font-size: 27px;
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.rubric-level p {
+  margin: 0;
+  color: #18313b;
+  font-size: 13px;
+}
+
+.rubric-level-excellent {
+  border-top: 5px solid #0b8f85;
+}
+
+.rubric-level-competent {
+  border-top: 5px solid #3cd6c3;
+}
+
+.rubric-level-developing {
+  border-top: 5px solid #d3a825;
+}
+
+.rubric-level-insufficient {
+  border-top: 5px solid #9b4b46;
+}
+
+.rubric-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--academic-line);
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 22px 60px rgba(7, 26, 35, .08);
+  scrollbar-width: thin;
+}
+
+.rubric-table-scroll:focus-visible {
+  outline: 3px solid var(--academic-blue);
+  outline-offset: 4px;
+}
+
+.rubric-table {
+  width: 100%;
+  min-width: 1420px;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.rubric-table caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.rubric-table th,
+.rubric-table td {
+  padding: 18px;
+  border-right: 1px solid var(--academic-line);
+  border-bottom: 1px solid var(--academic-line);
+  vertical-align: top;
+  text-align: left;
+}
+
+.rubric-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--academic-ink);
+  color: white;
+  font-size: 11px;
+  letter-spacing: .03em;
+}
+
+.rubric-table thead small {
+  color: var(--academic-aqua);
+  font-size: 9px;
+}
+
+.rubric-table .rubric-col-criterion {
+  width: 230px;
+}
+
+.rubric-table .rubric-col-weight {
+  width: 75px;
+  text-align: center;
+}
+
+.rubric-table tbody th {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #f6f4ed;
+  font-size: 13px;
+}
+
+.rubric-table tbody tr:nth-child(even) td {
+  background: #f8faf8;
+}
+
+.rubric-table tbody tr:hover td,
+.rubric-table tbody tr:hover th {
+  background: #edf7f4;
+}
+
+.rubric-criterion-number {
+  display: block;
+  margin-bottom: 13px;
+  color: var(--academic-blue);
+  font-size: 10px;
+  font-weight: 950;
+}
+
+.rubric-weight {
+  text-align: center !important;
+  color: var(--academic-blue);
+  font-size: 15px;
+  font-weight: 950;
+}
+
+.rubric-table tfoot th,
+.rubric-table tfoot td {
+  background: var(--academic-ink);
+  color: white;
+  font-weight: 850;
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.evidence-grid article {
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid var(--academic-line);
+  border-radius: 23px;
+  background: var(--academic-white);
+}
+
+.evidence-grid span {
+  color: var(--academic-blue);
+  font-size: 10px;
+  font-weight: 950;
+}
+
+.evidence-grid h3 {
+  margin: 65px 0 9px;
+  font-size: 23px;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+
+.evidence-grid p {
+  margin: 0;
+  color: #18313b;
+  font-size: 13px;
+}
+
+.critical-section {
+  background: var(--academic-ink);
+  color: white;
+}
+
+.critical-card {
+  padding: clamp(30px, 5vw, 58px);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 34px;
+  background:
+    radial-gradient(
+      circle at 92% 10%,
+      rgba(217, 243, 106, .12),
+      transparent 25%
+    ),
+    rgba(255, 255, 255, .055);
+}
+
+.critical-heading {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.critical-heading > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--academic-lime);
+  color: var(--academic-ink);
+  font-size: 28px;
+  font-weight: 950;
+}
+
+.critical-heading .academic-eyebrow {
+  margin-bottom: 8px;
+  color: var(--academic-aqua);
+}
+
+.critical-heading h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.critical-lead {
+  max-width: 780px;
+  margin: 30px 0 0;
+  color: rgba(255, 255, 255, .67);
+  font-size: 17px;
+}
+
+.critical-lead strong {
+  color: var(--academic-lime);
+}
+
+.critical-list {
+  columns: 2;
+  column-gap: 55px;
+  padding-left: 21px;
+  margin: 34px 0 0;
+}
+
+.critical-list li {
+  break-inside: avoid;
+  margin-bottom: 13px;
+  color: rgba(255, 255, 255, .72);
+  font-size: 13px;
+}
+
+.critical-list li::marker {
+  color: var(--academic-lime);
+}
+
+.rubric-formula-section {
+  padding: 80px 0;
+}
+
+.rubric-formula-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.rubric-formula-grid h2 {
+  margin: 0;
+  font-size: clamp(36px, 4.5vw, 58px);
+  line-height: .98;
+  letter-spacing: -.048em;
+}
+
+.rubric-formula-card {
+  padding: 30px;
+  border: 1px solid var(--academic-line);
+  border-radius: 25px;
+  background: var(--academic-white);
+}
+
+.rubric-formula-card p {
+  margin: 0;
+  color: var(--academic-blue);
+  font-size: clamp(19px, 2.5vw, 28px);
+  font-weight: 900;
+}
+
+.rubric-formula-card small {
+  display: block;
+  margin-top: 12px;
+  color: #18313b;
+}
+
+@media (max-width: 940px) {
+  .rubric-hero-grid,
+  .rubric-intro-grid,
+  .rubric-section-heading,
+  .rubric-formula-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rubric-level-grid,
+  .evidence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .rubric-hero {
+    padding: 65px 0 68px;
+  }
+
+  .rubric-breadcrumbs {
+    margin-bottom: 38px;
+  }
+
+  .rubric-intro,
+  .rubric-section {
+    padding: 68px 0;
+  }
+
+  .rubric-level-grid,
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rubric-level {
+    min-height: 205px;
+  }
+
+  .rubric-level h3 {
+    margin-top: 55px;
+  }
+
+  .critical-list {
+    columns: 1;
+  }
+
+  .rubric-table {
+    min-width: 1250px;
+  }
+}
+
+@media print {
+  .academic-header,
+  .rubric-print-button,
+  .academic-footer {
+    display: none !important;
+  }
+
+  .rubric-hero,
+  .critical-section {
+    background: white !important;
+    color: black !important;
+  }
+
+  .rubric-hero h1,
+  .rubric-hero h1 span,
+  .course-institution,
+  .rubric-subtitle,
+  .critical-heading h2,
+  .critical-lead,
+  .critical-list li {
+    color: black !important;
+  }
+
+  .rubric-summary-card,
+  .critical-card {
+    border: 1px solid #999;
+    background: white !important;
+    box-shadow: none;
+  }
+
+  .rubric-summary-score strong,
+  .rubric-summary-card li {
+    color: black !important;
+  }
+
+  .rubric-table-scroll {
+    overflow: visible;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .rubric-table {
+    min-width: 0;
+    font-size: 7.5px;
+  }
+
+  .rubric-table th,
+  .rubric-table td {
+    padding: 7px;
+  }
+
+  .rubric-table thead th,
+  .rubric-table tfoot th,
+  .rubric-table tfoot td {
+    position: static;
+    background: #ddd !important;
+    color: black !important;
+  }
+
+  .rubric-table tbody th {
+    position: static;
+  }
+
+  .rubric-section,
+  .rubric-intro,
+  .rubric-formula-section {
+    padding: 25px 0;
+  }
+
+  .rubric-level,
+  .evidence-grid article {
+    break-inside: avoid;
+  }
+
+  @page {
+    size: landscape;
+    margin: 10mm;
+  }
+}
