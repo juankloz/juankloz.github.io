@@ -3,33 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Propiedades de los fluidos, hidrostática y aplicación de los principios de conservación en sistemas de ingeniería.">
+
+  <meta name="description" content="Centro público de estudio sobre propiedades de los fluidos, hidrostática, conservación de masa y energía, flujo en tuberías, canales y sistemas de bombeo.">
   <meta name="theme-color" content="#071a23">
-  <title>Mecánica de Fluidos | JuanKLoz</title>
+
+  <title>Mecánica de Fluidos | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=docencia-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=rubrica-mf-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=centro-estudio-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=centro-estudio-v1">
+  <script src="../../estudio.js?v=centro-estudio-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body
+  class="academic-page study-page"
+  data-course-id="mecanica-fluidos"
+>
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#rubricas">Rúbrica</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
@@ -39,45 +53,1017 @@
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Universidad del Trópico Americano – UNITRÓPICO</p>
+            <p class="course-institution">
+              Universidad del Trópico Americano – UNITRÓPICO
+            </p>
+
             <h1>Mecánica de Fluidos</h1>
-            <p class="course-page-description">Propiedades de los fluidos, hidrostática y aplicación de los principios de conservación en sistemas de ingeniería.</p>
+
+            <p class="course-page-description">
+              Comprender el comportamiento de los fluidos para analizar y diseñar sistemas de ingeniería.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="rubricas/proyecto-integrador/">
+                Consultar proyecto ABP
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación individual y
+              comunicaciones internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este sitio público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los temas que dominas. El avance se guarda únicamente en
+              este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#avisos">Avisos</a>
+          <a href="#rubricas">Rúbrica</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Propiedades</span><span>Hidrostática</span><span>Conservación</span></div>
+
+          <p class="study-section-lead">
+            Estos resultados están redactados como una guía práctica para el
+            estudiante y no sustituyen los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Propiedades</h3>
+            <p>Reconocer densidad, peso específico, viscosidad, presión, compresibilidad y tensión superficial.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Hidrostática</h3>
+            <p>Calcular distribuciones de presión, empuje y fuerzas sobre superficies planas y curvas.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Conservación</h3>
+            <p>Aplicar continuidad, energía y cantidad de movimiento en el análisis de fluidos en movimiento.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Pérdidas y equipos</h3>
+            <p>Estimar pérdidas de energía y analizar tuberías, canales, bombas y turbinas.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca tu lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Propiedades y nociones fundamentales</strong>
+                <small>Construye el lenguaje físico y las unidades que se utilizarán durante todo el curso.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Fluido</span><span>Densidad</span><span>Viscosidad</span><span>Compresibilidad</span><span>Tensión superficial</span><span>Unidades SI</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-01-1"
+                  >
+                  <span>Diferencio densidad, peso específico y gravedad específica.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-01-2"
+                  >
+                  <span>Aplico la ley de viscosidad de Newton.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-01-3"
+                  >
+                  <span>Expreso presión, fuerza y energía con unidades consistentes.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-01-4"
+                  >
+                  <span>Compruebo conversiones antes de iniciar un cálculo.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Estática de fluidos</strong>
+                <small>Analiza fluidos en reposo y las fuerzas generadas por la presión.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Presión</span><span>Pascal</span><span>Arquímedes</span><span>Manometría</span><span>Superficies planas</span><span>Superficies curvas</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-02-1"
+                  >
+                  <span>Calculo la variación de presión con la profundidad.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-02-2"
+                  >
+                  <span>Distingo presión absoluta, atmosférica y manométrica.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-02-3"
+                  >
+                  <span>Determino fuerza hidrostática y centro de presión.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-02-4"
+                  >
+                  <span>Resuelvo problemas de flotación y empuje.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Cinemática y conservación</strong>
+                <small>Describe el movimiento sin perder de vista la conservación de masa y cantidad de movimiento.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Euleriano</span><span>Lagrangiano</span><span>Tipos de flujo</span><span>Continuidad</span><span>Reynolds</span><span>Cantidad de movimiento</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-03-1"
+                  >
+                  <span>Clasifico un flujo según su comportamiento.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-03-2"
+                  >
+                  <span>Aplico continuidad en conductos de sección variable.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-03-3"
+                  >
+                  <span>Planteo correctamente un volumen de control.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-03-4"
+                  >
+                  <span>Interpreto fuerzas asociadas al cambio de cantidad de movimiento.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Dinámica y aplicaciones hidráulicas</strong>
+                <small>Conecta la teoría con tuberías, canales y máquinas hidráulicas.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Bernoulli</span><span>Pérdidas</span><span>Hazen–Williams</span><span>Manning</span><span>Bombas</span><span>Turbinas</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-04-1"
+                  >
+                  <span>Construyo una línea de energía y una línea piezométrica.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-04-2"
+                  >
+                  <span>Calculo pérdidas mayores y menores.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-04-3"
+                  >
+                  <span>Estimo caudal, velocidad y diámetro en una tubería.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-04-4"
+                  >
+                  <span>Identifico el punto de operación de un sistema de bombeo.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Proyecto ABP</strong>
+                <small>Integra topografía, redes, bombeo, presupuesto y comunicación técnica.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Google Earth</span><span>Ruta de impulsión</span><span>Red tipo malla</span><span>Cotizaciones</span><span>Informe</span><span>Sustentación</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-05-1"
+                  >
+                  <span>Defino rutas, cotas y perfiles verificables.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-05-2"
+                  >
+                  <span>Diseño la impulsión para el caudal asignado.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-05-3"
+                  >
+                  <span>Balanceo las rutas de la red propuesta.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="mecanica-fluidos-05-4"
+                  >
+                  <span>Presento memorias, presupuesto, informe y sustentación.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Selección de recursos públicos y fuentes oficiales. Los enlaces se
+            abren en una pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="curso abierto">Curso abierto</button>
+<button class="study-filter" type="button" data-resource-filter="fundamentos">Fundamentos</button>
+<button class="study-filter" type="button" data-resource-filter="fórmulas">Fórmulas</button>
+<button class="study-filter" type="button" data-resource-filter="proyecto abp">Proyecto ABP</button>
+<button class="study-filter" type="button" data-resource-filter="refuerzo">Refuerzo</button>
+<button class="study-filter" type="button" data-resource-filter="simulación">Simulación</button>
+<button class="study-filter" type="button" data-resource-filter="unidades">Unidades</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://openstax.org/books/f%C3%ADsica-universitaria-volumen-1/pages/14-introduccion"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="fundamentos"
+            data-resource-text="fundamentos física universitaria: fluidos openstax · español capítulo abierto con presión, hidrostática, empuje, continuidad, bernoulli, viscosidad y turbulencia."
+          >
+            <div class="study-resource-meta">
+              <span>Fundamentos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Física universitaria: fluidos</h3>
+            <p>Capítulo abierto con presión, hidrostática, empuje, continuidad, Bernoulli, viscosidad y turbulencia.</p>
+            <small>OpenStax · Español</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://openstax.org/books/f%C3%ADsica-universitaria-volumen-1/pages/14-ecuaciones-clave"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="fórmulas"
+            data-resource-text="fórmulas ecuaciones clave de fluidos openstax · español resumen de ecuaciones para densidad, presión, continuidad, bernoulli y viscosidad."
+          >
+            <div class="study-resource-meta">
+              <span>Fórmulas</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Ecuaciones clave de fluidos</h3>
+            <p>Resumen de ecuaciones para densidad, presión, continuidad, Bernoulli y viscosidad.</p>
+            <small>OpenStax · Español</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://phet.colorado.edu/es/simulations/fluid-pressure-and-flow"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="simulación"
+            data-resource-text="simulación presión del fluido y flujo phet · university of colorado simulación interactiva para observar presión, velocidad, caudal y comportamiento de un fluido."
+          >
+            <div class="study-resource-meta">
+              <span>Simulación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Presión del fluido y flujo</h3>
+            <p>Simulación interactiva para observar presión, velocidad, caudal y comportamiento de un fluido.</p>
+            <small>PhET · University of Colorado</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/bernoullis-equation/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="refuerzo"
+            data-resource-text="refuerzo ecuación de bernoulli nasa glenn research center explicación visual del principio de conservación de energía aplicado a un flujo."
+          >
+            <div class="study-resource-meta">
+              <span>Refuerzo</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Ecuación de Bernoulli</h3>
+            <p>Explicación visual del principio de conservación de energía aplicado a un flujo.</p>
+            <small>NASA Glenn Research Center</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://ocw.mit.edu/courses/2-06-fluid-dynamics-spring-2013/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="curso abierto"
+            data-resource-text="curso abierto fluid dynamics mit opencourseware clases, problemas y materiales para profundizar en hidrostática, conservación y flujo viscoso."
+          >
+            <div class="study-resource-meta">
+              <span>Curso abierto</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Fluid Dynamics</h3>
+            <p>Clases, problemas y materiales para profundizar en hidrostática, conservación y flujo viscoso.</p>
+            <small>MIT OpenCourseWare</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.nist.gov/pml/owm/metric-si/si-units"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="unidades"
+            data-resource-text="unidades sistema internacional de unidades nist referencia para unidades, símbolos y consistencia dimensional en cálculos de ingeniería."
+          >
+            <div class="study-resource-meta">
+              <span>Unidades</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Sistema Internacional de Unidades</h3>
+            <p>Referencia para unidades, símbolos y consistencia dimensional en cálculos de ingeniería.</p>
+            <small>NIST</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://support.google.com/earth/answer/148134?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="proyecto abp"
+            data-resource-text="proyecto abp distancias y perfiles de elevación google earth · ayuda oficial guía para dibujar rutas, medir longitudes y consultar el perfil de elevación en google earth pro."
+          >
+            <div class="study-resource-meta">
+              <span>Proyecto ABP</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Distancias y perfiles de elevación</h3>
+            <p>Guía para dibujar rutas, medir longitudes y consultar el perfil de elevación en Google Earth Pro.</p>
+            <small>Google Earth · Ayuda oficial</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Herramientas de apoyo para comprobar procedimientos. Los resultados
+            deben verificarse y documentarse dentro de las memorias de cálculo.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="hydrostatic">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Presión hidrostática</h3>
+              <p>Calcula Δp = ρ · g · h.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Densidad ρ (kg/m³)<input name="rho" type="number" min="0" step="any" value="1000" required></label>
+              <label>Profundidad h (m)<input name="height" type="number" min="0" step="any" value="5" required></label>
+            </div>
+            <button type="submit">Calcular presión</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="continuity">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Caudal en tubería circular</h3>
+              <p>Calcula Q = A · v.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Diámetro interno (mm)<input name="diameter" type="number" min="0" step="any" value="100" required></label>
+              <label>Velocidad (m/s)<input name="velocity" type="number" min="0" step="any" value="1.2" required></label>
+            </div>
+            <button type="submit">Calcular caudal</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Presión hidrostática</h3>
+            <p class="study-formula">Δp = ρ · g · h</p>
+            <small>Relaciona densidad, gravedad y profundidad.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Caudal</h3>
+            <p class="study-formula">Q = A · v</p>
+            <small>Conecta área transversal y velocidad media.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Continuidad</h3>
+            <p class="study-formula">A₁v₁ = A₂v₂</p>
+            <small>Conservación de masa para un fluido incompresible.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Bernoulli</h3>
+            <p class="study-formula">p/γ + v²/(2g) + z = constante</p>
+            <small>Balance ideal de energía por unidad de peso.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Pérdida por fricción</h3>
+            <p class="study-formula">h_f = f · (L/D) · v²/(2g)</p>
+            <small>Ecuación de Darcy–Weisbach.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Potencia hidráulica</h3>
+            <p class="study-formula">P_h = ρ · g · Q · H</p>
+            <small>Potencia transferida al fluido.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Responde cinco preguntas. El resultado es orientativo, se guarda
+            solo en tu navegador y no se envía a la universidad.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset class="study-quiz-question" data-correct-answer="1">
+            <legend>
+              <span>01</span>
+              Para un fluido incompresible en reposo, ¿qué ocurre con la presión cuando aumenta la profundidad?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="mecanica-fluidos-q1-o0">
+                  <input
+                    id="mecanica-fluidos-q1-o0"
+                    type="radio"
+                    name="mecanica-fluidos-q1"
+                    value="0"
+                  >
+                  <span>Disminuye linealmente</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q1-o1">
+                  <input
+                    id="mecanica-fluidos-q1-o1"
+                    type="radio"
+                    name="mecanica-fluidos-q1"
+                    value="1"
+                  >
+                  <span>Aumenta linealmente</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q1-o2">
+                  <input
+                    id="mecanica-fluidos-q1-o2"
+                    type="radio"
+                    name="mecanica-fluidos-q1"
+                    value="2"
+                  >
+                  <span>Permanece constante</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q1-o3">
+                  <input
+                    id="mecanica-fluidos-q1-o3"
+                    type="radio"
+                    name="mecanica-fluidos-q1"
+                    value="3"
+                  >
+                  <span>Se vuelve cero</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>02</span>
+              ¿Qué principio expresa A₁v₁ = A₂v₂ para un flujo incompresible?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="mecanica-fluidos-q2-o0">
+                  <input
+                    id="mecanica-fluidos-q2-o0"
+                    type="radio"
+                    name="mecanica-fluidos-q2"
+                    value="0"
+                  >
+                  <span>Conservación de masa</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q2-o1">
+                  <input
+                    id="mecanica-fluidos-q2-o1"
+                    type="radio"
+                    name="mecanica-fluidos-q2"
+                    value="1"
+                  >
+                  <span>Conservación de temperatura</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q2-o2">
+                  <input
+                    id="mecanica-fluidos-q2-o2"
+                    type="radio"
+                    name="mecanica-fluidos-q2"
+                    value="2"
+                  >
+                  <span>Ley de Pascal</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q2-o3">
+                  <input
+                    id="mecanica-fluidos-q2-o3"
+                    type="radio"
+                    name="mecanica-fluidos-q2"
+                    value="3"
+                  >
+                  <span>Viscosidad de Newton</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>03</span>
+              En una aplicación ideal, la ecuación de Bernoulli representa principalmente:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="mecanica-fluidos-q3-o0">
+                  <input
+                    id="mecanica-fluidos-q3-o0"
+                    type="radio"
+                    name="mecanica-fluidos-q3"
+                    value="0"
+                  >
+                  <span>Balance de energía</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q3-o1">
+                  <input
+                    id="mecanica-fluidos-q3-o1"
+                    type="radio"
+                    name="mecanica-fluidos-q3"
+                    value="1"
+                  >
+                  <span>Balance químico</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q3-o2">
+                  <input
+                    id="mecanica-fluidos-q3-o2"
+                    type="radio"
+                    name="mecanica-fluidos-q3"
+                    value="2"
+                  >
+                  <span>Transferencia de calor</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q3-o3">
+                  <input
+                    id="mecanica-fluidos-q3-o3"
+                    type="radio"
+                    name="mecanica-fluidos-q3"
+                    value="3"
+                  >
+                  <span>Compresibilidad del suelo</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="1">
+            <legend>
+              <span>04</span>
+              ¿Cuál dato es indispensable para convertir velocidad en caudal dentro de una tubería circular?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="mecanica-fluidos-q4-o0">
+                  <input
+                    id="mecanica-fluidos-q4-o0"
+                    type="radio"
+                    name="mecanica-fluidos-q4"
+                    value="0"
+                  >
+                  <span>Color de la tubería</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q4-o1">
+                  <input
+                    id="mecanica-fluidos-q4-o1"
+                    type="radio"
+                    name="mecanica-fluidos-q4"
+                    value="1"
+                  >
+                  <span>Área o diámetro interno</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q4-o2">
+                  <input
+                    id="mecanica-fluidos-q4-o2"
+                    type="radio"
+                    name="mecanica-fluidos-q4"
+                    value="2"
+                  >
+                  <span>Temperatura ambiente únicamente</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q4-o3">
+                  <input
+                    id="mecanica-fluidos-q4-o3"
+                    type="radio"
+                    name="mecanica-fluidos-q4"
+                    value="3"
+                  >
+                  <span>Marca de la válvula</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>05</span>
+              Una selección de bomba debe contrastarse con:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="mecanica-fluidos-q5-o0">
+                  <input
+                    id="mecanica-fluidos-q5-o0"
+                    type="radio"
+                    name="mecanica-fluidos-q5"
+                    value="0"
+                  >
+                  <span>La curva de operación del fabricante</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q5-o1">
+                  <input
+                    id="mecanica-fluidos-q5-o1"
+                    type="radio"
+                    name="mecanica-fluidos-q5"
+                    value="1"
+                  >
+                  <span>Solo el precio</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q5-o2">
+                  <input
+                    id="mecanica-fluidos-q5-o2"
+                    type="radio"
+                    name="mecanica-fluidos-q5"
+                    value="2"
+                  >
+                  <span>Solo el diámetro comercial</span>
+                </label>
+            
+                <label for="mecanica-fluidos-q5-o3">
+                  <input
+                    id="mecanica-fluidos-q5-o3"
+                    type="radio"
+                    name="mecanica-fluidos-q5"
+                    value="3"
+                  >
+                  <span>El color del equipo</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">
+                Intentar de nuevo
+              </button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -85,11 +1071,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, materiales nuevos y
+                novedades que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -99,31 +1089,23 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir gráficos, soluciones, conclusiones y
+                proyectos sin nombres, notas ni datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/mecanica-fluidos/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
+
         <section class="course-content-section" id="rubricas">
           <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
+            <span>Evaluación transparente</span>
+            <h2>Rúbrica del proyecto ABP</h2>
           </div>
 
           <div class="resource-list">
@@ -135,15 +1117,9 @@
                 Rúbrica analítica · Proyecto ABP
               </span>
 
-              <strong>
-                Proyecto Integrador de Mecánica de Fluidos
-              </strong>
+              <strong>Proyecto Integrador de Mecánica de Fluidos</strong>
 
-              <p>
-                Diseño de redes e impulsión de fluidos. Incluye criterios,
-                ponderaciones, niveles de desempeño, evidencias y errores
-                críticos.
-              </p>
+              <p>Diseño de redes e impulsión de fluidos. Incluye criterios, ponderaciones, evidencias y errores críticos.</p>
 
               <span class="rubric-feature-link">
                 Consultar rúbrica completa ↗
@@ -154,35 +1130,74 @@
 
         <section class="course-content-section" id="recursos">
           <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
+            <span>Material del docente</span>
+            <h2>Archivos públicos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
               <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
+              <strong>Guías, ejercicios y resultados</strong>
+              <p>
+                En este bloque se añadirán documentos propios y materiales
+                elaborados para el curso.
+              </p>
             </article>
           </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/mecanica-fluidos/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
+        </section>
+
+        <section class="course-content-section" id="bibliografia">
+          <div class="course-section-heading">
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
+          </div>
+
+          <ol class="study-bibliography">
+            
+          <li>
+            <span>01</span>
+            <p>Çengel, Y. A. y Cimbala, J. M. Mecánica de fluidos: fundamentos y aplicaciones.</p>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <p>White, F. M. Mecánica de fluidos.</p>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <p>Bedford, K. W. y Gerhart, J. L. Hidráulica y mecánica de fluidos.</p>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <p>Giles, R. V. Mecánica de fluidos y hidráulica.</p>
+          </li>
+        
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
+            <p>
+              Esta página es un recurso público de orientación. No publica
+              horarios internos, listados, calificaciones, entregas,
+              comunicaciones privadas ni documentos administrativos de la
+              institución.
+            </p>
+          </div>
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Mecánica de Fluidos · UNITRÓPICO</p>
+      <p>Mecánica de Fluidos · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>

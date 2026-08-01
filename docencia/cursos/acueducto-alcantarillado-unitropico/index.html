@@ -3,33 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Diseño y evaluación de sistemas de abastecimiento y redes de recolección de aguas residuales y lluvias.">
+
+  <meta name="description" content="Centro público de estudio para la planeación y el diseño de sistemas de abastecimiento, distribución, alcantarillado sanitario y drenaje pluvial.">
   <meta name="theme-color" content="#071a23">
-  <title>Acueducto y Alcantarillado | JuanKLoz</title>
+
+  <title>Acueducto y Alcantarillado | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=rubrica-aa-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=rubrica-aa-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=centro-estudio-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=centro-estudio-v1">
+  <script src="../../estudio.js?v=centro-estudio-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body
+  class="academic-page study-page"
+  data-course-id="acueducto-alcantarillado-unitropico"
+>
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#rubricas">Rúbrica</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
@@ -39,45 +53,1067 @@
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Universidad del Trópico Americano – UNITRÓPICO</p>
+            <p class="course-institution">
+              Universidad del Trópico Americano – UNITRÓPICO
+            </p>
+
             <h1>Acueducto y Alcantarillado</h1>
-            <p class="course-page-description">Diseño y evaluación de sistemas de abastecimiento y redes de recolección de aguas residuales y lluvias.</p>
+
+            <p class="course-page-description">
+              Diseñar sistemas de agua y saneamiento a partir de información territorial, criterios hidráulicos y responsabilidad socioambiental.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="rubricas/diseno-sistema-abastecimiento/">
+                Consultar proyecto ABP
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación individual y
+              comunicaciones internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este sitio público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los temas que dominas. El avance se guarda únicamente en
+              este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#avisos">Avisos</a>
+          <a href="#rubricas">Rúbrica</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Abastecimiento</span><span>Distribución</span><span>Recolección</span></div>
+
+          <p class="study-section-lead">
+            Estos resultados están redactados como una guía práctica para el
+            estudiante y no sustituyen los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Normativa</h3>
+            <p>Interpretar criterios técnicos aplicables a los sistemas de agua potable y saneamiento.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Componentes</h3>
+            <p>Diferenciar las funciones de captación, aducción, conducción, almacenamiento, distribución y recolección.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Contexto</h3>
+            <p>Relacionar el diseño con población, territorio, condiciones socioeconómicas y sostenibilidad.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Diseño</h3>
+            <p>Dimensionar componentes y presentar memorias, planos y resultados técnicamente verificables.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca tu lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Planeación, población y demanda</strong>
+                <small>Establece la información de entrada y los caudales que gobiernan el diseño.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Municipio</span><span>Periodo de diseño</span><span>Proyección</span><span>Dotación</span><span>Pérdidas</span><span>Caudales</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-01-1"
+                  >
+                  <span>Documento las fuentes de población y cartografía.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-01-2"
+                  >
+                  <span>Proyecto la población con más de un método cuando sea necesario.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-01-3"
+                  >
+                  <span>Justifico dotación, pérdidas y coeficientes.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-01-4"
+                  >
+                  <span>Asigno a cada componente el caudal de diseño correspondiente.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Fuentes, captación y desarenación</strong>
+                <small>Analiza la disponibilidad de agua y la infraestructura inicial del sistema.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Agua superficial</span><span>Agua subterránea</span><span>Bocatoma</span><span>Captación</span><span>Desarenador</span><span>Calidad</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-02-1"
+                  >
+                  <span>Caracterizo la fuente y sus restricciones básicas.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-02-2"
+                  >
+                  <span>Defino el esquema conceptual de captación.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-02-3"
+                  >
+                  <span>Identifico la función del desarenador.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-02-4"
+                  >
+                  <span>Relaciono caudal, topografía y operación.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Aducción, conducción y almacenamiento</strong>
+                <small>Transporta el agua entre los componentes garantizando capacidad y energía.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Trazado</span><span>Perfil</span><span>Diámetro</span><span>Pérdidas</span><span>Presión</span><span>Tanque</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-03-1"
+                  >
+                  <span>Diferencio la función de aducción y conducción en mi esquema.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-03-2"
+                  >
+                  <span>Construyo perfiles con cotas y longitudes.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-03-3"
+                  >
+                  <span>Verifico velocidad, pérdidas y presiones.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-03-4"
+                  >
+                  <span>Dimensiono o justifico el almacenamiento requerido.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Red de distribución</strong>
+                <small>Distribuye la demanda y equilibra los circuitos de una red cerrada.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Nodos</span><span>Demandas</span><span>Circuitos</span><span>Hardy Cross</span><span>Presiones</span><span>Velocidades</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-04-1"
+                  >
+                  <span>Asigno demandas coherentes a los nodos.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-04-2"
+                  >
+                  <span>Cumplo continuidad antes de iterar.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-04-3"
+                  >
+                  <span>Aplico signos y correcciones de Hardy Cross.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-04-4"
+                  >
+                  <span>Verifico convergencia, presión y velocidad.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Alcantarillado sanitario y pluvial</strong>
+                <small>Organiza la recolección por gravedad mediante áreas, tramos, cotas y pendientes.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Sanitario</span><span>Pluvial</span><span>Áreas de drenaje</span><span>Pozos</span><span>Manning</span><span>Sifón invertido</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-05-1"
+                  >
+                  <span>Delimito áreas tributarias y asigno caudales.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-05-2"
+                  >
+                  <span>Construyo cuadro de tramos y perfiles.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-05-3"
+                  >
+                  <span>Verifico diámetro, pendiente, velocidad y llenado.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-05-4"
+                  >
+                  <span>Identifico estructuras y puntos críticos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Integración del proyecto ABP</strong>
+                <small>Convierte los cálculos en un proyecto coherente, reproducible y comunicable.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Planos</span><span>Memorias</span><span>Presupuesto</span><span>Sostenibilidad</span><span>Informe</span><span>Sustentación</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-06-1"
+                  >
+                  <span>Mantengo consistencia entre planos, tablas y memorias.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-06-2"
+                  >
+                  <span>Presento fórmulas visibles y datos trazables.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-06-3"
+                  >
+                  <span>Incluyo presupuesto y consideraciones de operación.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input
+                    type="checkbox"
+                    data-study-task="acueducto-alcantarillado-unitropico-06-4"
+                  >
+                  <span>Sustento las decisiones principales del diseño.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Selección de recursos públicos y fuentes oficiales. Los enlaces se
+            abren en una pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="hidrología">Hidrología</button>
+<button class="study-filter" type="button" data-resource-filter="modelación">Modelación</button>
+<button class="study-filter" type="button" data-resource-filter="normativa">Normativa</button>
+<button class="study-filter" type="button" data-resource-filter="población">Población</button>
+<button class="study-filter" type="button" data-resource-filter="topografía">Topografía</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://minvivienda.gov.co/viceministerio-de-agua-y-saneamiento-basico-reglamento-tecnico-sector-reglamento-tecnico-del-sector-de-agua-potable-y-saneamiento-basico-ras"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="normativa"
+            data-resource-text="normativa reglamento técnico del sector — ras ministerio de vivienda de colombia portal oficial con resoluciones, documentos compilatorios y reglamentación técnica de agua y saneamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Normativa</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Reglamento técnico del sector — RAS</h3>
+            <p>Portal oficial con resoluciones, documentos compilatorios y reglamentación técnica de agua y saneamiento.</p>
+            <small>Ministerio de Vivienda de Colombia</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="población"
+            data-resource-text="población proyecciones de población dane datos y visualizaciones oficiales a escala nacional, departamental y municipal."
+          >
+            <div class="study-resource-meta">
+              <span>Población</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Proyecciones de población</h3>
+            <p>Datos y visualizaciones oficiales a escala nacional, departamental y municipal.</p>
+            <small>DANE</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://ideam.gov.co/dhime"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="hidrología"
+            data-resource-text="hidrología datos hidrológicos y meteorológicos ideam · dhime consulta pública de series, mapas y datos hidrometeorológicos oficiales."
+          >
+            <div class="study-resource-meta">
+              <span>Hidrología</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Datos hidrológicos y meteorológicos</h3>
+            <p>Consulta pública de series, mapas y datos hidrometeorológicos oficiales.</p>
+            <small>IDEAM · DHIME</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://support.google.com/earth/answer/148134?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="topografía"
+            data-resource-text="topografía medición y perfiles de elevación google earth · ayuda oficial instrucciones para medir rutas, guardar trazados y consultar perfiles de elevación."
+          >
+            <div class="study-resource-meta">
+              <span>Topografía</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Medición y perfiles de elevación</h3>
+            <p>Instrucciones para medir rutas, guardar trazados y consultar perfiles de elevación.</p>
+            <small>Google Earth · Ayuda oficial</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/epanet"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="modelación"
+            data-resource-text="modelación epanet us epa software público para modelar redes de distribución de agua, tanques, bombas, presiones y calidad."
+          >
+            <div class="study-resource-meta">
+              <span>Modelación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>EPANET</h3>
+            <p>Software público para modelar redes de distribución de agua, tanques, bombas, presiones y calidad.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/storm-water-management-model-swmm"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="modelación"
+            data-resource-text="modelación swmm us epa herramienta pública para análisis y diseño de drenaje pluvial, alcantarillados combinados y sanitarios."
+          >
+            <div class="study-resource-meta">
+              <span>Modelación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>SWMM</h3>
+            <p>Herramienta pública para análisis y diseño de drenaje pluvial, alcantarillados combinados y sanitarios.</p>
+            <small>US EPA</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Herramientas de apoyo para comprobar procedimientos. Los resultados
+            deben verificarse y documentarse dentro de las memorias de cálculo.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="population">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Proyección geométrica</h3>
+              <p>Calcula P_f = P_0 · (1 + r)ⁿ.</p>
+            </div>
+            <div class="study-field-grid study-field-grid-three">
+              <label>Población inicial<input name="population" type="number" min="1" step="1" value="10000" required></label>
+              <label>Tasa anual (%)<input name="rate" type="number" step="any" value="1.5" required></label>
+              <label>Años<input name="years" type="number" min="0" step="1" value="25" required></label>
+            </div>
+            <button type="submit">Proyectar población</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="velocity">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Velocidad en tubería</h3>
+              <p>Calcula v = Q / A.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+              <label>Diámetro interno (mm)<input name="diameter" type="number" min="0" step="any" value="150" required></label>
+            </div>
+            <button type="submit">Calcular velocidad</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="hazen">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Pérdida por Hazen–Williams</h3>
+              <p>Estimación con Q en m³/s, D en m y L en m.</p>
+            </div>
+            <div class="study-field-grid study-field-grid-four">
+              <label>Longitud L (m)<input name="length" type="number" min="0" step="any" value="1000" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+              <label>Coeficiente C<input name="coefficient" type="number" min="1" step="any" value="140" required></label>
+              <label>Diámetro D (mm)<input name="diameter" type="number" min="0" step="any" value="150" required></label>
+            </div>
+            <button type="submit">Calcular pérdida</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Proyección geométrica</h3>
+            <p class="study-formula">P_f = P_0 · (1 + r)ⁿ</p>
+            <small>Estimación básica de población futura.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Continuidad</h3>
+            <p class="study-formula">Q = A · v</p>
+            <small>Relación fundamental para tuberías y conductos.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Hazen–Williams</h3>
+            <p class="study-formula">h_f = 10,67 · L · Q¹·⁸⁵² / (C¹·⁸⁵² · D⁴·⁸⁷)</p>
+            <small>Pérdida de carga en tuberías a presión con unidades SI.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Manning</h3>
+            <p class="study-formula">Q = (1/n) · A · R^(2/3) · S^(1/2)</p>
+            <small>Caudal en conductos a flujo libre.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Continuidad nodal</h3>
+            <p class="study-formula">ΣQ_entrada − ΣQ_salida = demanda</p>
+            <small>Balance de caudales en una red.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Condición de malla</h3>
+            <p class="study-formula">Σh_f = 0</p>
+            <small>Base energética de la corrección de Hardy Cross.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Responde cinco preguntas. El resultado es orientativo, se guarda
+            solo en tu navegador y no se envía a la universidad.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>01</span>
+              ¿Cuál es el propósito de proyectar la población antes de dimensionar el sistema?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unitropico-q1-o0">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q1-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q1"
+                    value="0"
+                  >
+                  <span>Definir la demanda futura</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q1-o1">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q1-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q1"
+                    value="1"
+                  >
+                  <span>Elegir el color de la tubería</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q1-o2">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q1-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q1"
+                    value="2"
+                  >
+                  <span>Evitar calcular caudales</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q1-o3">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q1-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q1"
+                    value="3"
+                  >
+                  <span>Sustituir la topografía</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>02</span>
+              Antes de iniciar las iteraciones de Hardy Cross, la red debe cumplir principalmente:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unitropico-q2-o0">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q2-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q2"
+                    value="0"
+                  >
+                  <span>Continuidad en los nodos</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q2-o1">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q2-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q2"
+                    value="1"
+                  >
+                  <span>Temperatura constante del aire</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q2-o2">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q2-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q2"
+                    value="2"
+                  >
+                  <span>Un único diámetro</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q2-o3">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q2-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q2"
+                    value="3"
+                  >
+                  <span>Ausencia de tanques</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>03</span>
+              ¿Qué herramienta oficial permite consultar proyecciones municipales de población en Colombia?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unitropico-q3-o0">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q3-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q3"
+                    value="0"
+                  >
+                  <span>DANE</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q3-o1">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q3-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q3"
+                    value="1"
+                  >
+                  <span>NASA</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q3-o2">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q3-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q3"
+                    value="2"
+                  >
+                  <span>NIST</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q3-o3">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q3-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q3"
+                    value="3"
+                  >
+                  <span>MIT</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>04</span>
+              EPANET se utiliza principalmente para:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unitropico-q4-o0">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q4-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q4"
+                    value="0"
+                  >
+                  <span>Modelar redes de distribución de agua</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q4-o1">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q4-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q4"
+                    value="1"
+                  >
+                  <span>Editar fotografías</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q4-o2">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q4-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q4"
+                    value="2"
+                  >
+                  <span>Diseñar estructuras metálicas</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q4-o3">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q4-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q4"
+                    value="3"
+                  >
+                  <span>Proyectar carreteras</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset class="study-quiz-question" data-correct-answer="0">
+            <legend>
+              <span>05</span>
+              En una red de alcantarillado por gravedad, las cotas y pendientes deben:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unitropico-q5-o0">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q5-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q5"
+                    value="0"
+                  >
+                  <span>Permitir el flujo y cumplir verificaciones hidráulicas</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q5-o1">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q5-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q5"
+                    value="1"
+                  >
+                  <span>Ser iguales en todos los pozos</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q5-o2">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q5-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q5"
+                    value="2"
+                  >
+                  <span>Ignorarse si hay un plano</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unitropico-q5-o3">
+                  <input
+                    id="acueducto-alcantarillado-unitropico-q5-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unitropico-q5"
+                    value="3"
+                  >
+                  <span>Definirse después del presupuesto</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">
+                Intentar de nuevo
+              </button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -85,11 +1121,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, materiales nuevos y
+                novedades que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -99,31 +1139,23 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir gráficos, soluciones, conclusiones y
+                proyectos sin nombres, notas ni datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/acueducto-alcantarillado-unitropico/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
+
         <section class="course-content-section" id="rubricas">
           <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
+            <span>Evaluación transparente</span>
+            <h2>Rúbrica del proyecto ABP</h2>
           </div>
 
           <div class="resource-list">
@@ -135,15 +1167,9 @@
                 Rúbrica analítica · Proyecto ABP
               </span>
 
-              <strong>
-                Diseño del sistema de abastecimiento y alcantarillado
-              </strong>
+              <strong>Diseño del sistema de abastecimiento y alcantarillado</strong>
 
-              <p>
-                Incluye caracterización del municipio, caudales de diseño,
-                aducción, conducción, distribución por Hardy Cross,
-                alcantarillado, planos, memorias y sustentación.
-              </p>
+              <p>Proyecto ABP con caracterización municipal, caudales, aducción, conducción, Hardy Cross, alcantarillado, planos y memorias de cálculo.</p>
 
               <span class="rubric-feature-link">
                 Consultar rúbrica completa ↗
@@ -154,35 +1180,80 @@
 
         <section class="course-content-section" id="recursos">
           <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
+            <span>Material del docente</span>
+            <h2>Archivos públicos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
               <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
+              <strong>Guías, ejercicios y resultados</strong>
+              <p>
+                En este bloque se añadirán documentos propios y materiales
+                elaborados para el curso.
+              </p>
             </article>
           </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/acueducto-alcantarillado-unitropico/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
+        </section>
+
+        <section class="course-content-section" id="bibliografia">
+          <div class="course-section-heading">
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
+          </div>
+
+          <ol class="study-bibliography">
+            
+          <li>
+            <span>01</span>
+            <p>López Cualla, R. A. Elementos de diseño para acueductos y alcantarillados.</p>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <p>Pérez Carmona, R. Diseño y construcción de alcantarillados sanitario, pluvial y drenaje en carreteras.</p>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <p>Corcho Romero, F. H. Acueductos: teoría y diseño.</p>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <p>Marcil, C. Drinking Water: Quality Control, Distribution Systems and Treatment.</p>
+          </li>
+        
+
+          <li>
+            <span>05</span>
+            <p>Mendoza, R. M. Water and Sanitation Sustainability.</p>
+          </li>
+        
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
+            <p>
+              Esta página es un recurso público de orientación. No publica
+              horarios internos, listados, calificaciones, entregas,
+              comunicaciones privadas ni documentos administrativos de la
+              institución.
+            </p>
+          </div>
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Acueducto y Alcantarillado · UNITRÓPICO</p>
+      <p>Acueducto y Alcantarillado · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>
