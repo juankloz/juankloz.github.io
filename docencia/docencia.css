@@ -2758,3 +2758,78 @@
   .task-rubric-table th,.task-rubric-table td{padding:6px}
   @page{size:landscape;margin:10mm}
 }
+
+/* =========================================================
+   HIDRÁULICA APLICADA — CENTRO PÚBLICO DE ESTUDIO
+   ========================================================= */
+
+.study-center-course-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.hydraulic-mistake-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.hydraulic-mistake-card {
+  min-height: 225px;
+  padding: 23px;
+  border: 1px solid var(--academic-line);
+  border-radius: 23px;
+  background: rgba(255, 255, 255, .53);
+}
+
+.hydraulic-mistake-card > span {
+  color: var(--academic-blue);
+  font-size: 9px;
+  font-weight: 950;
+}
+
+.hydraulic-mistake-card h3 {
+  margin: 62px 0 10px;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -.032em;
+}
+
+.hydraulic-mistake-card p {
+  margin: 0;
+  color: #28404a;
+  font-size: 12px;
+}
+
+.hydraulic-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.hydraulic-activity-grid .course-article-activity-card,
+.hydraulic-activity-grid .course-task-activity-card {
+  height: 100%;
+}
+
+@media (max-width: 1120px) {
+  .study-center-course-grid,
+  .hydraulic-mistake-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .study-center-course-grid,
+  .hydraulic-mistake-grid,
+  .hydraulic-activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hydraulic-mistake-card {
+    min-height: 195px;
+  }
+
+  .hydraulic-mistake-card h3 {
+    margin-top: 45px;
+  }
+}

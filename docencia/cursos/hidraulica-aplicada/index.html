@@ -3,35 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Análisis de flujo en tuberías y canales, pérdidas de energía, sistemas de bombeo y aplicaciones hidráulicas.">
+
+  <meta
+    name="description"
+    content="Centro público de estudio de Hidráulica Aplicada: tuberías, pérdidas, redes, bombas, canales, energía específica, Froude y flujo variado."
+  >
+
   <meta name="theme-color" content="#071a23">
-  <title>Hidráulica Aplicada | JuanKLoz</title>
+
+  <title>Hidráulica Aplicada | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=tarea-aplicacion-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=tarea-aplicacion-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=hidraulica-aplicada-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=hidraulica-aplicada-v1">
+  <script src="../../estudio.js?v=hidraulica-aplicada-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body
+  class="academic-page study-page"
+  data-course-id="hidraulica-aplicada"
+>
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#actividades">Actividades</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
@@ -41,47 +57,1374 @@
         </div>
 
         <div class="course-page-grid">
+
           <div>
             <p class="course-institution">Universidad del Trópico Americano – UNITRÓPICO</p>
+
             <h1>Hidráulica Aplicada</h1>
-            <p class="course-page-description">Análisis de flujo en tuberías y canales, pérdidas de energía, sistemas de bombeo y aplicaciones hidráulicas.</p>
+
+            <p class="course-page-description">
+              Analiza y diseña sistemas de tuberías, redes, bombas y canales
+              mediante balances de continuidad, energía y cantidad de movimiento.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="#herramientas">
+                Practicar con calculadoras
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación individual y
+              comunicaciones internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este sitio público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los desempeños que dominas. El avance queda guardado
+              únicamente en este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button
+              type="button"
+              class="study-reset-button"
+              data-reset-progress
+            >
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav
+          class="course-quick-nav study-sticky-nav"
+          aria-label="Contenido del curso"
+        >
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#errores-frecuentes">Errores</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#actividades">Actividades</a>
+          <a href="#avisos">Avisos</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Tuberías</span><span>Canales</span><span>Bombas</span></div>
+
+          <p class="study-section-lead">
+            Los resultados se presentan como una guía práctica para organizar
+            el estudio. No sustituyen los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Transporte hidráulico</h3>
+            <p>Estimar las características del transporte de agua en conductos a presión y en sistemas de flujo libre.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Líneas de energía</h3>
+            <p>Construir e interpretar la línea de energía y la línea piezométrica en tuberías y canales.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Conductos a presión</h3>
+            <p>Proponer dimensiones de tuberías de acuerdo con el caudal, las pérdidas y las condiciones de operación.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Canales</h3>
+            <p>Proponer dimensiones de conductos de flujo libre considerando topografía, demanda y régimen hidráulico.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca la lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Fundamentos, continuidad y energía</strong>
+                <small>Organiza los conceptos y balances que se emplearán en todos los sistemas hidráulicos.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Tipos de flujo</span><span>Líneas de corriente</span><span>Continuidad</span><span>Ecuación de energía</span><span>Potencia</span><span>Línea piezométrica</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-01-1">
+                  <span>Clasifico correctamente el flujo según el tiempo, el espacio y el régimen.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-01-2">
+                  <span>Aplico continuidad utilizando unidades consistentes.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-01-3">
+                  <span>Construyo la línea de energía y la línea piezométrica.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-01-4">
+                  <span>Relaciono caudal, carga hidráulica y potencia.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Régimen de flujo y pérdidas por fricción</strong>
+                <small>Relaciona Reynolds, rugosidad y factor de fricción con la pérdida de energía.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Reynolds</span><span>Esfuerzo cortante</span><span>Darcy–Weisbach</span><span>Colebrook–White</span><span>Rugosidad</span><span>Pérdidas menores</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-02-1">
+                  <span>Calculo el número de Reynolds y clasifico el régimen.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-02-2">
+                  <span>Identifico rugosidad absoluta y relativa.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-02-3">
+                  <span>Determino o justifico el factor de fricción.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-02-4">
+                  <span>Calculo pérdidas mayores y menores sin mezclar unidades.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Tuberías simples, en serie y en paralelo</strong>
+                <small>Analiza cómo se distribuyen el caudal y las pérdidas en diferentes configuraciones.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Tubería simple</span><span>Serie</span><span>Paralelo</span><span>Equivalentes</span><span>Hazen–Williams</span><span>Curva del sistema</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-03-1">
+                  <span>Diferencio las condiciones hidráulicas de una conexión en serie y en paralelo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-03-2">
+                  <span>Calculo la pérdida total de una tubería simple.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-03-3">
+                  <span>Determino caudales o pérdidas en sistemas de tuberías.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-03-4">
+                  <span>Construyo e interpreto la curva del sistema.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Redes de tuberías y sistemas de bombeo</strong>
+                <small>Integra continuidad, energía, redes abiertas y cerradas, y operación de bombas.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Red abierta</span><span>Red cerrada</span><span>Hardy Cross</span><span>Bombas</span><span>Curva de bomba</span><span>Punto de operación</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-04-1">
+                  <span>Asigno caudales iniciales cumpliendo continuidad en los nodos.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-04-2">
+                  <span>Aplico correctamente signos y correcciones de Hardy Cross.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-04-3">
+                  <span>Selecciono una bomba con base en carga, caudal y curva comercial.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-04-4">
+                  <span>Verifico el punto de operación entre la bomba y el sistema.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Flujo uniforme en canales</strong>
+                <small>Dimensiona canales a partir de geometría, rugosidad, pendiente y caudal.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Flujo libre</span><span>Manning</span><span>Chézy</span><span>Geometrías</span><span>Sección óptima</span><span>Rugosidad variable</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-05-1">
+                  <span>Diferencio flujo a presión y flujo con superficie libre.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-05-2">
+                  <span>Calculo área, perímetro mojado y radio hidráulico.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-05-3">
+                  <span>Aplico Manning o Chézy de manera consistente.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-05-4">
+                  <span>Comparo alternativas geométricas y secciones hidráulicamente eficientes.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Energía específica y flujo variado</strong>
+                <small>Interpreta el régimen del canal y los cambios graduales o locales del flujo.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Energía específica</span><span>Froude</span><span>Flujo crítico</span><span>FGV</span><span>Resalto hidráulico</span><span>Vertederos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-06-1">
+                  <span>Calculo energía específica y profundidad crítica.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-06-2">
+                  <span>Clasifico el flujo mediante el número de Froude.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-06-3">
+                  <span>Interpreto perfiles de flujo gradualmente variado.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="hidraulica-aplicada-06-4">
+                  <span>Analizo resaltos hidráulicos y vertederos con balances de energía o momentum.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Recursos públicos y fuentes oficiales para repasar fundamentos,
+            tuberías, redes, canales, medición y modelación.
+          </p>
+
+          <div class="study-resource-tools">
+
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="canales">Canales</button>
+<button class="study-filter" type="button" data-resource-filter="fundamentos">Fundamentos</button>
+<button class="study-filter" type="button" data-resource-filter="medición">Medición</button>
+<button class="study-filter" type="button" data-resource-filter="redes">Redes</button>
+<button class="study-filter" type="button" data-resource-filter="simulación">Simulación</button>
+<button class="study-filter" type="button" data-resource-filter="tuberías">Tuberías</button>
+            </div>
+
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://openstax.org/books/f%C3%ADsica-universitaria-volumen-1/pages/14-5-dinamicas-de-fluidos"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="fundamentos"
+            data-resource-text="fundamentos dinámica de fluidos openstax · español explicación abierta de continuidad, caudal y movimiento de fluidos."
+          >
+            <div class="study-resource-meta">
+              <span>Fundamentos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Dinámica de fluidos</h3>
+            <p>Explicación abierta de continuidad, caudal y movimiento de fluidos.</p>
+            <small>OpenStax · Español</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://openstax.org/books/f%C3%ADsica-universitaria-volumen-1/pages/14-6-ecuacion-de-bernoulli"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="fundamentos"
+            data-resource-text="fundamentos ecuación de bernoulli openstax · español desarrollo conceptual del balance de energía aplicado al flujo."
+          >
+            <div class="study-resource-meta">
+              <span>Fundamentos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Ecuación de Bernoulli</h3>
+            <p>Desarrollo conceptual del balance de energía aplicado al flujo.</p>
+            <small>OpenStax · Español</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://phet.colorado.edu/es/simulations/fluid-pressure-and-flow"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="simulación"
+            data-resource-text="simulación presión del fluido y flujo phet · university of colorado simulación interactiva para observar presión, velocidad, caudal y energía."
+          >
+            <div class="study-resource-meta">
+              <span>Simulación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Presión del fluido y flujo</h3>
+            <p>Simulación interactiva para observar presión, velocidad, caudal y energía.</p>
+            <small>PhET · University of Colorado</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/pages/lecture-notes/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="tuberías"
+            data-resource-text="tuberías pipe flow analysis mit opencourseware notas y ejercicios abiertos sobre análisis del flujo en tuberías."
+          >
+            <div class="study-resource-meta">
+              <span>Tuberías</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Pipe Flow Analysis</h3>
+            <p>Notas y ejercicios abiertos sobre análisis del flujo en tuberías.</p>
+            <small>MIT OpenCourseWare</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/epanet"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="redes"
+            data-resource-text="redes epanet us epa software público para redes presurizadas, bombas, válvulas, tanques, caudales y presiones."
+          >
+            <div class="study-resource-meta">
+              <span>Redes</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>EPANET</h3>
+            <p>Software público para redes presurizadas, bombas, válvulas, tanques, caudales y presiones.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.hec.usace.army.mil/software/hec-ras/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="canales"
+            data-resource-text="canales hec-ras u.s. army corps of engineers programa y documentación oficial para cálculos hidráulicos 1d y 2d en canales y ríos."
+          >
+            <div class="study-resource-meta">
+              <span>Canales</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>HEC-RAS</h3>
+            <p>Programa y documentación oficial para cálculos hidráulicos 1D y 2D en canales y ríos.</p>
+            <small>U.S. Army Corps of Engineers</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/resources/lecture23/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="canales"
+            data-resource-text="canales flujo uniforme en canales mit opencourseware material de clase sobre flujo uniforme y cálculos en canales abiertos."
+          >
+            <div class="study-resource-meta">
+              <span>Canales</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Flujo uniforme en canales</h3>
+            <p>Material de clase sobre flujo uniforme y cálculos en canales abiertos.</p>
+            <small>MIT OpenCourseWare</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.usbr.gov/tsc/techreferences/mands/wmm/chap02_02.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="medición"
+            data-resource-text="medición conceptos de flujo libre u.s. bureau of reclamation manual público sobre flujo a superficie libre y medición hidráulica."
+          >
+            <div class="study-resource-meta">
+              <span>Medición</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Conceptos de flujo libre</h3>
+            <p>Manual público sobre flujo a superficie libre y medición hidráulica.</p>
+            <small>U.S. Bureau of Reclamation</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.usbr.gov/tsc/techreferences/mands/wmm/chap02_12.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="medición"
+            data-resource-text="medición número de froude y flujo crítico u.s. bureau of reclamation referencia oficial sobre froude, profundidad hidráulica y condiciones críticas."
+          >
+            <div class="study-resource-meta">
+              <span>Medición</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Número de Froude y flujo crítico</h3>
+            <p>Referencia oficial sobre Froude, profundidad hidráulica y condiciones críticas.</p>
+            <small>U.S. Bureau of Reclamation</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.usgs.gov/water-science-school/science/how-does-usgs-collect-streamflow-data"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="medición"
+            data-resource-text="medición cómo se mide el caudal u.s. geological survey introducción a las mediciones de velocidad, sección y descarga en corrientes."
+          >
+            <div class="study-resource-meta">
+              <span>Medición</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+            <h3>Cómo se mide el caudal</h3>
+            <p>Introducción a las mediciones de velocidad, sección y descarga en corrientes.</p>
+            <small>U.S. Geological Survey</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras hidráulicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Estas herramientas ayudan a comprobar procedimientos. Cada memoria
+            de cálculo debe mostrar datos, unidades, ecuaciones, sustitución y
+            análisis del resultado.
+          </p>
+
+          <div class="study-calculator-grid">
+
+            <form class="study-calculator" data-calculator="reynolds">
+              <div class="study-calculator-heading">
+                <span>Calculadora</span>
+                <h3>Número de Reynolds</h3>
+                <p>Calcula Re = v · D / ν y clasifica el régimen.</p>
+              </div>
+
+              <div class="study-field-grid study-field-grid-three">
+                <label>
+                  Velocidad v (m/s)
+                  <input name="velocity" type="number" min="0" step="any" value="1.2" required>
+                </label>
+
+                <label>
+                  Diámetro D (mm)
+                  <input name="diameter" type="number" min="0" step="any" value="100" required>
+                </label>
+
+                <label>
+                  Viscosidad ν (m²/s)
+                  <input name="viscosity" type="number" min="0" step="any" value="0.000001004" required>
+                </label>
+              </div>
+
+              <button type="submit">Calcular Reynolds</button>
+              <output class="study-calculator-output" aria-live="polite">
+                Resultado: —
+              </output>
+            </form>
+
+            <form class="study-calculator" data-calculator="darcy">
+              <div class="study-calculator-heading">
+                <span>Calculadora</span>
+                <h3>Pérdida Darcy–Weisbach</h3>
+                <p>Calcula h_f = f · (L/D) · v²/(2g).</p>
+              </div>
+
+              <div class="study-field-grid study-field-grid-four">
+                <label>
+                  Factor f
+                  <input name="factor" type="number" min="0" step="any" value="0.022" required>
+                </label>
+
+                <label>
+                  Longitud L (m)
+                  <input name="length" type="number" min="0" step="any" value="500" required>
+                </label>
+
+                <label>
+                  Diámetro D (mm)
+                  <input name="diameter" type="number" min="0" step="any" value="150" required>
+                </label>
+
+                <label>
+                  Velocidad v (m/s)
+                  <input name="velocity" type="number" min="0" step="any" value="1.4" required>
+                </label>
+              </div>
+
+              <button type="submit">Calcular pérdida</button>
+              <output class="study-calculator-output" aria-live="polite">
+                Resultado: —
+              </output>
+            </form>
+
+            <form class="study-calculator" data-calculator="manning">
+              <div class="study-calculator-heading">
+                <span>Calculadora</span>
+                <h3>Caudal por Manning</h3>
+                <p>Calcula Q = (1/n) · A · R^(2/3) · S^(1/2).</p>
+              </div>
+
+              <div class="study-field-grid study-field-grid-four">
+                <label>
+                  Área A (m²)
+                  <input name="area" type="number" min="0" step="any" value="1.2" required>
+                </label>
+
+                <label>
+                  Radio R (m)
+                  <input name="radius" type="number" min="0" step="any" value="0.45" required>
+                </label>
+
+                <label>
+                  Pendiente S
+                  <input name="slope" type="number" min="0" step="any" value="0.002" required>
+                </label>
+
+                <label>
+                  Rugosidad n
+                  <input name="roughness" type="number" min="0" step="any" value="0.015" required>
+                </label>
+              </div>
+
+              <button type="submit">Calcular caudal</button>
+              <output class="study-calculator-output" aria-live="polite">
+                Resultado: —
+              </output>
+            </form>
+
+            <form class="study-calculator" data-calculator="froude">
+              <div class="study-calculator-heading">
+                <span>Calculadora</span>
+                <h3>Número de Froude</h3>
+                <p>Calcula Fr = v / √(g · D_h) y clasifica el flujo.</p>
+              </div>
+
+              <div class="study-field-grid">
+                <label>
+                  Velocidad v (m/s)
+                  <input name="velocity" type="number" min="0" step="any" value="1.5" required>
+                </label>
+
+                <label>
+                  Profundidad hidráulica D_h (m)
+                  <input name="depth" type="number" min="0" step="any" value="0.8" required>
+                </label>
+              </div>
+
+              <button type="submit">Calcular Froude</button>
+              <output class="study-calculator-output" aria-live="polite">
+                Resultado: —
+              </output>
+            </form>
+
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Continuidad</h3>
+            <p class="study-formula">Q = A · v</p>
+            <small>Relaciona caudal, área transversal y velocidad media.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Carga total</h3>
+            <p class="study-formula">H = z + p/γ + v²/(2g)</p>
+            <small>Suma de elevación, presión y velocidad.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Reynolds</h3>
+            <p class="study-formula">Re = v · D / ν</p>
+            <small>Permite clasificar el régimen en una tubería.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Darcy–Weisbach</h3>
+            <p class="study-formula">h_f = f · (L/D) · v²/(2g)</p>
+            <small>Pérdida de energía por fricción.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Hazen–Williams</h3>
+            <p class="study-formula">h_f = 10,67 · L · Q¹·⁸⁵² / (C¹·⁸⁵² · D⁴·⁸⁷)</p>
+            <small>Expresión empírica para tuberías de agua en unidades SI.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Manning</h3>
+            <p class="study-formula">Q = (1/n) · A · R^(2/3) · S^(1/2)</p>
+            <small>Caudal en un conducto con superficie libre.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>07</span>
+            <h3>Froude</h3>
+            <p class="study-formula">Fr = v / √(g · D_h)</p>
+            <small>Clasifica el flujo como subcrítico, crítico o supercrítico.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>08</span>
+            <h3>Energía específica</h3>
+            <p class="study-formula">E = y + v²/(2g)</p>
+            <small>Energía por unidad de peso medida desde el fondo del canal.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>09</span>
+            <h3>Potencia de bombeo</h3>
+            <p class="study-formula">P = ρ · g · Q · H / η</p>
+            <small>Potencia requerida considerando la eficiencia.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="errores-frecuentes">
+          <div class="course-section-heading">
+            <span>Control de calidad</span>
+            <h2>Errores que debes evitar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Revisa estos puntos antes de entregar una memoria, un taller o una
+            actividad de clase.
+          </p>
+
+          <div class="hydraulic-mistake-grid">
+            
+          <article class="hydraulic-mistake-card">
+            <span>01</span>
+            <h3>Unidades incompatibles</h3>
+            <p>Convertir caudal, diámetro, longitud y viscosidad antes de sustituir.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>02</span>
+            <h3>Diámetro y radio</h3>
+            <p>No usar el radio en ecuaciones que requieren el diámetro hidráulico.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>03</span>
+            <h3>Factor de fricción</h3>
+            <p>Distinguir el factor de Darcy de otros factores de fricción.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>04</span>
+            <h3>Líneas hidráulicas</h3>
+            <p>La línea de energía y la línea piezométrica no son la misma representación.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>05</span>
+            <h3>Radio hidráulico</h3>
+            <p>En un canal general, R = A/P y no necesariamente coincide con la profundidad.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>06</span>
+            <h3>Signos en redes</h3>
+            <p>Definir un sentido y conservarlo durante las correcciones de Hardy Cross.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>07</span>
+            <h3>Convergencia</h3>
+            <p>No detener una iteración sin justificar el error o la tolerancia alcanzada.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>08</span>
+            <h3>Resultado físico</h3>
+            <p>Revisar si velocidad, presión, pérdida o régimen tienen sentido hidráulico.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            El resultado es orientativo, se almacena solamente en este
+            navegador y no se envía al docente ni a la universidad.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>01</span>
+              ¿Qué representa la línea de energía en un sistema hidráulico?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q1-o0">
+                  <input
+                    id="hidraulica-aplicada-q1-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q1"
+                    value="0"
+                  >
+                  <span>La suma de las cargas de elevación, presión y velocidad</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q1-o1">
+                  <input
+                    id="hidraulica-aplicada-q1-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q1"
+                    value="1"
+                  >
+                  <span>Únicamente la presión estática</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q1-o2">
+                  <input
+                    id="hidraulica-aplicada-q1-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q1"
+                    value="2"
+                  >
+                  <span>Solamente la elevación de la tubería</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q1-o3">
+                  <input
+                    id="hidraulica-aplicada-q1-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q1"
+                    value="3"
+                  >
+                  <span>El costo energético del sistema</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>02</span>
+              ¿Qué variable permite clasificar el régimen laminar o turbulento en una tubería?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q2-o0">
+                  <input
+                    id="hidraulica-aplicada-q2-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q2"
+                    value="0"
+                  >
+                  <span>Número de Reynolds</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q2-o1">
+                  <input
+                    id="hidraulica-aplicada-q2-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q2"
+                    value="1"
+                  >
+                  <span>Número de Froude</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q2-o2">
+                  <input
+                    id="hidraulica-aplicada-q2-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q2"
+                    value="2"
+                  >
+                  <span>Coeficiente de Manning</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q2-o3">
+                  <input
+                    id="hidraulica-aplicada-q2-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q2"
+                    value="3"
+                  >
+                  <span>Área superficial</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>03</span>
+              En tuberías conectadas en serie, ¿qué magnitud permanece igual en todos los tramos sin derivaciones?
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q3-o0">
+                  <input
+                    id="hidraulica-aplicada-q3-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q3"
+                    value="0"
+                  >
+                  <span>El caudal</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q3-o1">
+                  <input
+                    id="hidraulica-aplicada-q3-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q3"
+                    value="1"
+                  >
+                  <span>El diámetro</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q3-o2">
+                  <input
+                    id="hidraulica-aplicada-q3-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q3"
+                    value="2"
+                  >
+                  <span>La velocidad</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q3-o3">
+                  <input
+                    id="hidraulica-aplicada-q3-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q3"
+                    value="3"
+                  >
+                  <span>La pérdida de carga de cada tramo</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>04</span>
+              El radio hidráulico de un canal se calcula como:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q4-o0">
+                  <input
+                    id="hidraulica-aplicada-q4-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q4"
+                    value="0"
+                  >
+                  <span>Área mojada dividida por perímetro mojado</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q4-o1">
+                  <input
+                    id="hidraulica-aplicada-q4-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q4"
+                    value="1"
+                  >
+                  <span>Ancho superficial dividido por profundidad</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q4-o2">
+                  <input
+                    id="hidraulica-aplicada-q4-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q4"
+                    value="2"
+                  >
+                  <span>Perímetro mojado dividido por área</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q4-o3">
+                  <input
+                    id="hidraulica-aplicada-q4-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q4"
+                    value="3"
+                  >
+                  <span>Caudal dividido por velocidad</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>05</span>
+              Un número de Froude menor que 1 indica normalmente flujo:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q5-o0">
+                  <input
+                    id="hidraulica-aplicada-q5-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q5"
+                    value="0"
+                  >
+                  <span>Subcrítico</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q5-o1">
+                  <input
+                    id="hidraulica-aplicada-q5-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q5"
+                    value="1"
+                  >
+                  <span>Crítico</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q5-o2">
+                  <input
+                    id="hidraulica-aplicada-q5-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q5"
+                    value="2"
+                  >
+                  <span>Supercrítico</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q5-o3">
+                  <input
+                    id="hidraulica-aplicada-q5-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q5"
+                    value="3"
+                  >
+                  <span>Presurizado</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>06</span>
+              Antes de aplicar Hardy Cross a una red cerrada se debe garantizar:
+            </legend>
+            <div class="study-quiz-options">
+              
+                <label for="hidraulica-aplicada-q6-o0">
+                  <input
+                    id="hidraulica-aplicada-q6-o0"
+                    type="radio"
+                    name="hidraulica-aplicada-q6"
+                    value="0"
+                  >
+                  <span>Continuidad de caudales en los nodos</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q6-o1">
+                  <input
+                    id="hidraulica-aplicada-q6-o1"
+                    type="radio"
+                    name="hidraulica-aplicada-q6"
+                    value="1"
+                  >
+                  <span>Que todas las tuberías tengan el mismo diámetro</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q6-o2">
+                  <input
+                    id="hidraulica-aplicada-q6-o2"
+                    type="radio"
+                    name="hidraulica-aplicada-q6"
+                    value="2"
+                  >
+                  <span>Que no existan pérdidas menores</span>
+                </label>
+            
+                <label for="hidraulica-aplicada-q6-o3">
+                  <input
+                    id="hidraulica-aplicada-q6-o3"
+                    type="radio"
+                    name="hidraulica-aplicada-q6"
+                    value="3"
+                  >
+                  <span>Que la red tenga una sola malla</span>
+                </label>
+            
+            </div>
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+
+              <button type="reset" class="study-quiz-reset">
+                Intentar de nuevo
+              </button>
+            </div>
+
+            <div
+              class="study-quiz-result"
+              aria-live="polite"
+              data-quiz-result
+            >
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
+        </section>
+
+        <section class="course-content-section" id="actividades">
+          <div class="course-section-heading">
+            <span>Trabajo académico</span>
+            <h2>Actividades comunes</h2>
+          </div>
+
+          <div class="hydraulic-activity-grid">
+
+            <a
+              class="course-article-activity-card"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span>Traducción técnica · Presentación · Video</span>
+
+              <h3>Artículo científico en inglés</h3>
+
+              <p>
+                Busca un artículo reciente relacionado con hidráulica, prepara
+                una traducción técnica revisada y socializa los resultados.
+              </p>
+
+              <b>Consultar guía, rúbrica y plantilla Word ↗</b>
+            </a>
+
+            <a
+              class="course-task-activity-card"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span>Individual · Manuscrita · Siguiente sesión</span>
+
+              <h3>Tarea de Aplicación y Consolidación</h3>
+
+              <p>
+                Aplica los procedimientos trabajados en la última clase y
+                organiza el desarrollo para su revisión presencial.
+              </p>
+
+              <b>Consultar estructura, rúbrica y formatos ↗</b>
+            </a>
+
+          </div>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -89,11 +1432,17 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+
+              <strong>Consulta periódicamente este espacio</strong>
+
+              <p>
+                Aquí se publicarán materiales, actividades abiertas y
+                novedades que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -103,123 +1452,89 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+
+              <strong>Resultados colectivos y anonimizados</strong>
+
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir gráficos, ejercicios, modelos y
+                conclusiones sin nombres, calificaciones o datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/hidraulica-aplicada/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
-        </section>
-
-        
-        <section class="course-content-section" id="actividad-articulo">
-          <div class="course-section-heading">
-            <span>Actividad transversal</span>
-            <h2>Artículo científico en inglés</h2>
-          </div>
-
-          <a class="course-article-activity-card" href="../../actividades/traduccion-articulo-cientifico/">
-            <span>Traducción técnica · Presentación · Video</span>
-            <h3>Buscar, traducir y comunicar investigación reciente</h3>
-            <p>
-              Selecciona un artículo de revista publicado desde el 1 de julio de 2026,
-              corrige los errores de los traductores automáticos, elabora una presentación
-              y socializa el contenido en un video de máximo diez minutos.
-            </p>
-            <b>Consultar guía, rúbrica, bases de datos y plantilla Word ↗</b>
-          </a>
-        </section>
-
-        
-        <section class="course-content-section" id="tarea-aplicacion">
-          <div class="course-section-heading">
-            <span>Actividad de clase</span>
-            <h2>Tarea de Aplicación y Consolidación</h2>
-          </div>
-
-          <a class="course-task-activity-card" href="../../actividades/tarea-aplicacion-clase/">
-            <span>Individual · Manuscrita · Siguiente sesión</span>
-            <h3>Pon en práctica lo trabajado en la última clase</h3>
-            <p>
-              Consulta la estructura obligatoria, la rúbrica, la lista de control,
-              los códigos de retroalimentación y los formatos descargables.
-            </p>
-            <b>Consultar guía y rúbrica general ↗</b>
-          </a>
         </section>
 
         <section class="course-content-section" id="rubricas">
           <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
+            <span>Evaluación transparente</span>
+            <h2>Guías y rúbricas disponibles</h2>
           </div>
+
           <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Rúbricas de actividades</strong>
+
+            <a
+              class="resource-item"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span class="resource-type">
+                Rúbrica transversal
+              </span>
+              <strong>Artículo científico en inglés</strong>
               <p>
-                Aquí se podrán descargar criterios, niveles de desempeño y
-                orientaciones generales de evaluación.
+                Selección, traducción, presentación y video de socialización.
               </p>
-            </article>
-          </div>
-          <!--
-            Para agregar una rúbrica:
-            <a class="resource-item"
-               href="../../archivos/hidraulica-aplicada/rubricas/NOMBRE-DE-LA-RUBRICA.pdf"
-               target="_blank">
-              <span class="resource-type">Rúbrica · PDF</span>
-              <strong>Nombre de la actividad</strong>
-              <p>Descripción breve y periodo académico.</p>
             </a>
-          -->
+
+            <a
+              class="resource-item"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span class="resource-type">
+                Rúbrica transversal
+              </span>
+              <strong>Tarea de aplicación de clase</strong>
+              <p>
+                Planteamiento, procedimiento, exactitud, resultados,
+                presentación y autoría.
+              </p>
+            </a>
+
+          </div>
         </section>
 
-        <section class="course-content-section" id="recursos">
+        <section class="course-content-section" id="bibliografia">
           <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
           </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
-            </article>
+
+          <ol class="study-bibliography">
+            <li><span>01</span><p>Bedford, K. W. y Gerhart, J. L. Hidráulica y mecánica de fluidos.</p></li><li><span>02</span><p>Cadavid R., J. H. Hidráulica general.</p></li><li><span>03</span><p>Çengel, Y. A. y Cimbala, J. M. Mecánica de fluidos: fundamentos y aplicaciones.</p></li><li><span>04</span><p>Chow, V. T. Hidráulica de canales abiertos.</p></li><li><span>05</span><p>Chanson, H. Hydraulics of Open Channel Flow.</p></li><li><span>06</span><p>Wylie, E. B. y Streeter, V. L. Flujo en tuberías.</p></li><li><span>07</span><p>White, F. M. Mecánica de fluidos.</p></li>
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
+
+            <p>
+              Esta página es un recurso público de orientación. No contiene
+              códigos internos, firmas, actas, listados, calificaciones,
+              entregas, comunicaciones privadas ni documentos administrativos
+              de la institución.
+            </p>
           </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/hidraulica-aplicada/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Hidráulica Aplicada · UNITRÓPICO</p>
+      <p>Hidráulica Aplicada · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>

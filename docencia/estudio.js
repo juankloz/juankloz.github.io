@@ -333,3 +333,139 @@
     }, 0);
   });
 })();
+
+/* =========================================================
+   CALCULADORAS ADICIONALES — HIDRÁULICA APLICADA
+   ========================================================= */
+(() => {
+  "use strict";
+
+  const numberValue = (form, name) => {
+    const node = form.elements.namedItem(name);
+    return Number(node?.value);
+  };
+
+  const format = (value, digits = 3) =>
+    value.toLocaleString("es-CO", {
+      maximumFractionDigits: digits
+    });
+
+  document
+    .querySelectorAll(
+      '[data-calculator="reynolds"], ' +
+      '[data-calculator="darcy"], ' +
+      '[data-calculator="manning"], ' +
+      '[data-calculator="froude"]'
+    )
+    .forEach((form) => {
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const output = form.querySelector(".study-calculator-output");
+        const type = form.dataset.calculator;
+
+        try {
+          if (type === "reynolds") {
+            const velocity = numberValue(form, "velocity");
+            const diameter = numberValue(form, "diameter") / 1000;
+            const viscosity = numberValue(form, "viscosity");
+
+            if (
+              !(velocity >= 0) ||
+              !(diameter > 0) ||
+              !(viscosity > 0)
+            ) {
+              throw new Error("Datos inválidos.");
+            }
+
+            const reynolds = velocity * diameter / viscosity;
+            let regime = "laminar";
+
+            if (reynolds >= 4000) {
+              regime = "turbulento";
+            } else if (reynolds >= 2300) {
+              regime = "de transición";
+            }
+
+            output.textContent =
+              `Resultado: Re = ${format(reynolds, 0)} · Régimen ${regime}.`;
+          }
+
+          if (type === "darcy") {
+            const factor = numberValue(form, "factor");
+            const length = numberValue(form, "length");
+            const diameter = numberValue(form, "diameter") / 1000;
+            const velocity = numberValue(form, "velocity");
+
+            if (
+              !(factor > 0) ||
+              !(length >= 0) ||
+              !(diameter > 0) ||
+              !(velocity >= 0)
+            ) {
+              throw new Error("Datos inválidos.");
+            }
+
+            const loss =
+              factor *
+              (length / diameter) *
+              (velocity ** 2 / (2 * 9.81));
+
+            output.textContent =
+              `Resultado: h_f = ${format(loss)} m.`;
+          }
+
+          if (type === "manning") {
+            const area = numberValue(form, "area");
+            const radius = numberValue(form, "radius");
+            const slope = numberValue(form, "slope");
+            const roughness = numberValue(form, "roughness");
+
+            if (
+              !(area > 0) ||
+              !(radius > 0) ||
+              !(slope >= 0) ||
+              !(roughness > 0)
+            ) {
+              throw new Error("Datos inválidos.");
+            }
+
+            const flow =
+              (1 / roughness) *
+              area *
+              radius ** (2 / 3) *
+              slope ** 0.5;
+
+            output.textContent =
+              `Resultado: Q = ${format(flow)} m³/s ` +
+              `(${format(flow * 1000)} L/s).`;
+          }
+
+          if (type === "froude") {
+            const velocity = numberValue(form, "velocity");
+            const depth = numberValue(form, "depth");
+
+            if (!(velocity >= 0) || !(depth > 0)) {
+              throw new Error("Datos inválidos.");
+            }
+
+            const froude = velocity / Math.sqrt(9.81 * depth);
+            let regime = "subcrítico";
+
+            if (Math.abs(froude - 1) <= 0.02) {
+              regime = "aproximadamente crítico";
+            } else if (froude > 1) {
+              regime = "supercrítico";
+            }
+
+            output.textContent =
+              `Resultado: Fr = ${format(froude)} · Flujo ${regime}.`;
+          }
+        } catch (error) {
+          output.textContent =
+            "No fue posible calcular. Verifica los valores y las unidades.";
+        }
+      });
+    });
+})();
+
