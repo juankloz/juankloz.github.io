@@ -17,8 +17,11 @@
     sentEmail: document.querySelector("[data-sent-email]"),
     resendButton: document.querySelector("[data-resend]"),
     status: document.querySelector("[data-access-status]"),
-    classification: document.querySelector("[data-classification]"),
-    verifiedEmail: document.querySelector("[data-verified-email]"),
+    classifications: document.querySelectorAll("[data-classification]"),
+    verifiedEmails: document.querySelectorAll("[data-verified-email]"),
+    userTypes: document.querySelectorAll("[data-user-type]"),
+    userInstitutions: document.querySelectorAll("[data-user-institution]"),
+    courseSummaries: document.querySelectorAll("[data-course-summary]"),
     institutionField: document.querySelector("[data-external-institution]"),
     courseField: document.querySelector("[data-course-interest]"),
     documentTitle: document.querySelector("[data-document-title]"),
@@ -76,6 +79,27 @@
     unisangil: "Correo verificado de UNISANGIL",
     unitropico: "Correo verificado de UNITRÓPICO",
     external: "Usuario externo verificado"
+  };
+
+  const userTypeNames = {
+    student: "Estudiante",
+    teacher: "Docente",
+    graduate: "Egresado",
+    professional: "Profesional",
+    particular: "Particular",
+    other: "Otro"
+  };
+
+  const defaultInstitutionNames = {
+    unisangil: "Fundación Universitaria de San Gil - UNISANGIL",
+    unitropico: "Universidad Internacional del Trópico Americano - UNITRÓPICO",
+    external: "Institución declarada por el usuario"
+  };
+
+  const setText = (elements, value) => {
+    elements.forEach((element) => {
+      element.textContent = value;
+    });
   };
 
   const track = (name, parameters = {}) => {
@@ -198,22 +222,38 @@
 
   const renderUser = () => {
     const email = currentSession?.user?.email || "";
+    const institutionClass =
+      currentProfile?.institution_class || "external";
 
-    if (ui.verifiedEmail) {
-      ui.verifiedEmail.textContent = email;
-    }
+    const classification =
+      classificationNames[institutionClass] || "Correo verificado";
+
+    const userType =
+      userTypeNames[currentProfile?.user_type] || "Tipo de usuario no registrado";
+
+    const institution =
+      currentProfile?.declared_institution ||
+      defaultInstitutionNames[institutionClass] ||
+      "No registrada";
+
+    const course =
+      courseNames[currentProfile?.course_interest] ||
+      currentProfile?.course_interest ||
+      "Recursos generales";
+
+    setText(ui.verifiedEmails, email);
+    setText(ui.classifications, classification);
+    setText(ui.userTypes, userType);
+    setText(ui.userInstitutions, institution);
+    setText(ui.courseSummaries, course);
 
     if (ui.userBadge) {
-      ui.userBadge.textContent = email ? "Sesión verificada" : "Acceso por correo";
+      ui.userBadge.textContent = email
+        ? `${userType} · sesión verificada`
+        : "Acceso por correo";
     }
 
-    if (currentProfile && ui.classification) {
-      ui.classification.textContent =
-        classificationNames[currentProfile.institution_class] ||
-        "Correo verificado";
-    }
-
-    const external = currentProfile?.institution_class === "external";
+    const external = institutionClass === "external";
 
     if (ui.institutionField) {
       ui.institutionField.hidden = !external;

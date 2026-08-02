@@ -11,11 +11,11 @@
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../styles.css?v=acceso-v1">
   <link rel="stylesheet" href="../docencia.css?v=acceso-v1">
-  <link rel="stylesheet" href="../css/acceso-descargas.css?v=acceso-v4">
+  <link rel="stylesheet" href="../css/acceso-descargas.css?v=acceso-v5">
 
   <script src="https://unpkg.com/@supabase/supabase-js@2" defer></script>
   <script src="../js/supabase-config.js?v=acceso-v1" defer></script>
-  <script src="../js/acceso.js?v=acceso-v4" defer></script>
+  <script src="../js/acceso.js?v=acceso-v5" defer></script>
 </head>
 
 <body class="academic-page access-page" data-access-page>
@@ -221,10 +221,34 @@
               </p>
             </div>
 
-            <div class="access-user-summary">
-              <span class="access-mini-label">Usuario</span>
-              <strong data-classification>Correo verificado</strong>
-              <p data-verified-email></p>
+            <div class="access-user-summary access-profile-summary">
+              <span class="access-mini-label">Perfil verificado</span>
+
+              <strong data-user-type>
+                Tipo de usuario
+              </strong>
+
+              <dl class="access-profile-data">
+                <div>
+                  <dt>Clasificación</dt>
+                  <dd data-classification>Correo verificado</dd>
+                </div>
+
+                <div>
+                  <dt>Institución</dt>
+                  <dd data-user-institution>No registrada</dd>
+                </div>
+
+                <div>
+                  <dt>Curso de interés</dt>
+                  <dd data-course-summary>Recursos generales</dd>
+                </div>
+
+                <div>
+                  <dt>Correo</dt>
+                  <dd data-verified-email></dd>
+                </div>
+              </dl>
             </div>
 
             <div class="access-document-summary">

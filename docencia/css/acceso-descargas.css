@@ -555,3 +555,47 @@
   font-size: 11px;
   line-height: 1.55;
 }
+
+/* Acceso v5: resumen completo del usuario verificado */
+.access-profile-summary > strong {
+  margin-bottom: 15px;
+}
+
+.access-profile-data {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.access-profile-data > div {
+  display: grid;
+  grid-template-columns: minmax(105px, .38fr) minmax(0, .62fr);
+  gap: 12px;
+  padding: 9px 0;
+  border-top: 1px solid var(--access-line);
+}
+
+.access-profile-data dt {
+  color: var(--access-muted);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.access-profile-data dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--access-ink);
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 440px) {
+  .access-profile-data > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+}
