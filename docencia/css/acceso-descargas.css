@@ -538,3 +538,15 @@
   font-size: 10px;
   line-height: 1.45;
 }
+
+/* Corrección TAC v3 */
+.task-link-status {
+  margin: 14px 0 18px;
+  padding: 12px 14px;
+  border: 1px solid rgba(17, 132, 163, .2);
+  border-radius: 14px;
+  background: rgba(17, 132, 163, .07);
+  color: #354b54;
+  font-size: 11px;
+  line-height: 1.55;
+}
