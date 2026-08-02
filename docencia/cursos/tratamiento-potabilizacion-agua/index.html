@@ -3,85 +3,1250 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Calidad del agua, operaciones unitarias y procesos empleados para producir agua apta para consumo humano.">
+
+  <meta name="description" content="Centro público de estudio sobre calidad del agua, coagulación, floculación, sedimentación, filtración, desinfección y procesos avanzados.">
   <meta name="theme-color" content="#071a23">
-  <title>Tratamiento y Potabilización de Agua | JuanKLoz</title>
+
+  <title>Tratamiento y Potabilización de Agua | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=tarea-aplicacion-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=tarea-aplicacion-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=unisangil-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=unisangil-v1">
+  <script src="../../estudio.js?v=unisangil-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body class="academic-page study-page" data-course-id="tratamiento-potabilizacion-agua">
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#actividades">Actividades</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
           <a href="../../">Docencia</a>
           <span>/</span>
-          <span>UNISANGIL</span>
+          <span>UNISANGIL · sede Yopal</span>
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, Sede Yopal</p>
+            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, sede Yopal</p>
+
             <h1>Tratamiento y Potabilización de Agua</h1>
-            <p class="course-page-description">Calidad del agua, operaciones unitarias y procesos empleados para producir agua apta para consumo humano.</p>
+
+            <p class="course-page-description">
+              Relaciona calidad de la fuente, procesos fisicoquímicos, laboratorio, monitoreo y diseño de unidades para producir agua segura.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="#herramientas">
+                Practicar con calculadoras
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación y comunicaciones
+              internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este centro público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los desempeños que dominas. El avance se conserva
+              únicamente en este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#mapa-proceso">Sistema</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#errores-frecuentes">Errores</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#actividades">Actividades</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Calidad del agua</span><span>Operaciones unitarias</span><span>Potabilización</span></div>
+
+          <p class="study-section-lead">
+            Los resultados se presentan como guía de estudio y no sustituyen
+            los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Calidad del agua</h3>
+            <p>Interpretar parámetros físicos, químicos y microbiológicos de la fuente y del agua tratada.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Selección de procesos</h3>
+            <p>Definir una secuencia de tratamiento coherente con riesgos, calidad y objetivos.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Diseño de unidades</h3>
+            <p>Dimensionar unidades convencionales y estimar consumos químicos y condiciones operativas.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Control y monitoreo</h3>
+            <p>Analizar pruebas de tratabilidad, desempeño de la planta y calidad en la red.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="mapa-proceso">
+          <div class="course-section-heading">
+            <span>Visión integral</span>
+            <h2>Mapa del sistema</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Utiliza esta secuencia para relacionar los temas y evitar estudiar
+            cada componente de manera aislada.
+          </p>
+
+          <ol class="unisangil-process-map">
+            
+          <li>
+            <span>01</span>
+            <strong>Fuente y caracterización</strong>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <strong>Pretratamiento</strong>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <strong>Coagulación</strong>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <strong>Floculación</strong>
+          </li>
+        
+
+          <li>
+            <span>05</span>
+            <strong>Sedimentación</strong>
+          </li>
+        
+
+          <li>
+            <span>06</span>
+            <strong>Filtración</strong>
+          </li>
+        
+
+          <li>
+            <span>07</span>
+            <strong>Desinfección</strong>
+          </li>
+        
+
+          <li>
+            <span>08</span>
+            <strong>Distribución y control</strong>
+          </li>
+        
+          </ol>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca la lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Fuente, calidad y riesgo sanitario</strong>
+                <small>Interpreta la calidad del agua y define los objetivos del tratamiento.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Agua superficial</span><span>Agua subterránea</span><span>Físicos</span><span>Químicos</span><span>Microbiológicos</span><span>Normativa</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-01-1">
+                  <span>Diferencio parámetros de fuente y de agua para consumo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-01-2">
+                  <span>Identifico riesgos asociados con cada contaminante.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-01-3">
+                  <span>Comparo resultados con referencias aplicables.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-01-4">
+                  <span>Propongo objetivos medibles de tratamiento.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Captación y pretratamiento</strong>
+                <small>Protege las unidades posteriores mediante separación inicial y acondicionamiento.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Captación</span><span>Rejillas</span><span>Rebose</span><span>Desarenador</span><span>Aireación</span><span>Conducción</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-02-1">
+                  <span>Relaciono la fuente con el tipo de captación.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-02-2">
+                  <span>Defino la función de cada unidad de pretratamiento.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-02-3">
+                  <span>Calculo criterios básicos de separación y retención.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-02-4">
+                  <span>Compruebo la conexión hidráulica entre unidades.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Coagulación y floculación</strong>
+                <small>Desestabiliza partículas y forma flóculos separables.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Coagulantes</span><span>Mezcla rápida</span><span>Gradiente</span><span>Floculación</span><span>Prueba de jarras</span><span>Dosis</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-03-1">
+                  <span>Interpreto los resultados de una prueba de jarras.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-03-2">
+                  <span>Relaciono dosis, pH, turbiedad y calidad del flóculo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-03-3">
+                  <span>Calculo tiempos y condiciones de mezcla.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-03-4">
+                  <span>Estimo consumo diario de productos químicos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Sedimentación y filtración</strong>
+                <small>Separa flóculos y partículas mediante gravedad y medios porosos.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Carga superficial</span><span>Sedimentador</span><span>Alta tasa</span><span>Filtros</span><span>Tasa de filtración</span><span>Lavado</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-04-1">
+                  <span>Calculo carga superficial y tiempo de retención.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-04-2">
+                  <span>Comparo sedimentación convencional y de alta tasa.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-04-3">
+                  <span>Dimensiono área filtrante para el caudal requerido.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-04-4">
+                  <span>Relaciono pérdida de carga con operación y lavado.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Desinfección y almacenamiento</strong>
+                <small>Controla riesgos microbiológicos y conserva la calidad antes de distribuir.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Cloro</span><span>Demanda</span><span>Residual</span><span>Tiempo de contacto</span><span>Tanque</span><span>Subproductos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-05-1">
+                  <span>Diferencio dosis, demanda y residual.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-05-2">
+                  <span>Calculo masa diaria y tiempo de contacto.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-05-3">
+                  <span>Relaciono desinfección con pH, temperatura y turbiedad.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-05-4">
+                  <span>Considero seguridad y almacenamiento del producto.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Procesos avanzados, monitoreo y control</strong>
+                <small>Amplía el tratamiento y verifica su eficacia desde la fuente hasta la red.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Hierro</span><span>Manganeso</span><span>Ablandamiento</span><span>Membranas</span><span>Muestreo</span><span>IRCA</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-06-1">
+                  <span>Selecciono un proceso avanzado según el contaminante.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-06-2">
+                  <span>Defino puntos y parámetros de monitoreo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-06-3">
+                  <span>Interpreto tendencias y desviaciones de calidad.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-potabilizacion-agua-06-4">
+                  <span>Relaciono resultados con acciones correctivas.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Recursos públicos y fuentes oficiales. Los enlaces se abren en una
+            pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="calidad">Calidad</button>
+<button class="study-filter" type="button" data-resource-filter="diseno">Diseño</button>
+<button class="study-filter" type="button" data-resource-filter="metodos">Métodos</button>
+<button class="study-filter" type="button" data-resource-filter="normativa">Normativa</button>
+<button class="study-filter" type="button" data-resource-filter="procesos">Procesos</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://minvivienda.gov.co/viceministerio-de-agua-y-saneamiento-basico-reglamento-tecnico-sector-reglamento-tecnico-del-sector-de-agua-potable-y-saneamiento-basico-ras"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="normativa"
+            data-resource-text="normativa reglamento técnico ras ministerio de vivienda normativa y documentos técnicos del sector de agua potable."
+          >
+            <div class="study-resource-meta">
+              <span>Normativa</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Reglamento técnico RAS</h3>
+            <p>Normativa y documentos técnicos del sector de agua potable.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.ins.gov.co/sivicap/Paginas/sivicap.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="calidad"
+            data-resource-text="calidad sivicap instituto nacional de salud sistema público de vigilancia de la calidad del agua para consumo humano e indicadores de riesgo."
+          >
+            <div class="study-resource-meta">
+              <span>Calidad</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>SIVICAP</h3>
+            <p>Sistema público de vigilancia de la calidad del agua para consumo humano e indicadores de riesgo.</p>
+            <small>Instituto Nacional de Salud</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.who.int/publications/i/item/9789240121225"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="calidad"
+            data-resource-text="calidad guías de calidad de agua potable organización mundial de la salud marco internacional de gestión del riesgo y protección de la salud desde la cuenca hasta el consumidor."
+          >
+            <div class="study-resource-meta">
+              <span>Calidad</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Guías de calidad de agua potable</h3>
+            <p>Marco internacional de gestión del riesgo y protección de la salud desde la cuenca hasta el consumidor.</p>
+            <small>Organización Mundial de la Salud</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.minvivienda.gov.co/proyectos-de-agua-potable-y-saneamiento-basico/tratamiento-de-agua-potable"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="diseno"
+            data-resource-text="diseño tratamiento de agua potable ministerio de vivienda orientaciones para diagnóstico, tratabilidad, alternativas, sostenibilidad, operación y puesta en marcha."
+          >
+            <div class="study-resource-meta">
+              <span>Diseño</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Tratamiento de agua potable</h3>
+            <p>Orientaciones para diagnóstico, tratabilidad, alternativas, sostenibilidad, operación y puesta en marcha.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/dwreginfo/guidance-manuals-surface-water-treatment-rules"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="procesos"
+            data-resource-text="procesos guías de tratamiento superficial us epa manuales públicos sobre coagulación, filtración, desinfección y tratamiento de aguas superficiales."
+          >
+            <div class="study-resource-meta">
+              <span>Procesos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Guías de tratamiento superficial</h3>
+            <p>Manuales públicos sobre coagulación, filtración, desinfección y tratamiento de aguas superficiales.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/dwanalyticalmethods/approved-drinking-water-analytical-methods"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="metodos"
+            data-resource-text="métodos métodos analíticos aprobados us epa referencia pública de métodos para análisis de agua potable."
+          >
+            <div class="study-resource-meta">
+              <span>Métodos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Métodos analíticos aprobados</h3>
+            <p>Referencia pública de métodos para análisis de agua potable.</p>
+            <small>US EPA</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Son herramientas de comprobación. Las memorias deben incluir
+            datos, unidades, fórmula, sustitución, resultado y análisis.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="detention">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Tiempo de retención</h3>
+              <p>Calcula t = V / Q.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Volumen V (m³)<input name="volume" type="number" min="0" step="any" value="250" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+            </div>
+            <button type="submit">Calcular tiempo</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="surface-loading">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Carga superficial</h3>
+              <p>Calcula C_s = Q / A.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal Q (m³/d)<input name="flow" type="number" min="0" step="any" value="1728" required></label>
+              <label>Área A (m²)<input name="area" type="number" min="0" step="any" value="60" required></label>
+            </div>
+            <button type="submit">Calcular carga</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="dose-mass">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Masa diaria de producto</h3>
+              <p>Convierte dosis y caudal en kg/d.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Dosis D (mg/L)<input name="dose" type="number" min="0" step="any" value="25" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+            </div>
+            <button type="submit">Calcular masa</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="filtration-rate">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Tasa de filtración</h3>
+              <p>Calcula T_f = Q / A_f.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal Q (m³/d)<input name="flow" type="number" min="0" step="any" value="1728" required></label>
+              <label>Área filtrante (m²)<input name="area" type="number" min="0" step="any" value="12" required></label>
+            </div>
+            <button type="submit">Calcular tasa</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="removal-efficiency">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Eficiencia de remoción</h3>
+              <p>Calcula η = (C₀ − Cₑ) / C₀ · 100.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Entrada C₀ (mg/L)<input name="influent" type="number" min="0" step="any" value="250" required></label>
+              <label>Salida Cₑ (mg/L)<input name="effluent" type="number" min="0" step="any" value="40" required></label>
+            </div>
+            <button type="submit">Calcular eficiencia</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Masa de producto</h3>
+            <p class="study-formula">M = D · Q · 0,0864</p>
+            <small>D en mg/L y Q en L/s; resultado en kg/d.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Tiempo de retención</h3>
+            <p class="study-formula">t = V / Q</p>
+            <small>Tiempo disponible dentro de una unidad.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Carga superficial</h3>
+            <p class="study-formula">C_s = Q / A</p>
+            <small>Caudal por unidad de superficie.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Tasa de filtración</h3>
+            <p class="study-formula">T_f = Q / A_f</p>
+            <small>Caudal tratado por área filtrante.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Eficiencia</h3>
+            <p class="study-formula">η = (C_0 − C_e) / C_0 · 100</p>
+            <small>Porcentaje de reducción de una concentración.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Demanda de cloro</h3>
+            <p class="study-formula">D_c = D_aplicada − C_residual</p>
+            <small>Consumo de cloro antes del residual.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="errores-frecuentes">
+          <div class="course-section-heading">
+            <span>Control de calidad</span>
+            <h2>Errores que debes evitar</h2>
+          </div>
+
+          <div class="hydraulic-mistake-grid">
+            
+          <article class="hydraulic-mistake-card">
+            <span>01</span>
+            <h3>Diseñar sin caracterizar</h3>
+            <p>La selección del tren depende de la calidad real de la fuente.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>02</span>
+            <h3>Confundir dosis y masa</h3>
+            <p>La dosis se expresa por volumen; la masa depende además del caudal.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>03</span>
+            <h3>Ignorar el pH</h3>
+            <p>Coagulación y desinfección son sensibles a las condiciones químicas.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>04</span>
+            <h3>Área sin unidades</h3>
+            <p>Verifique que el caudal y la tasa sean compatibles.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>05</span>
+            <h3>Residual sin demanda</h3>
+            <p>El cloro aplicado no es igual al residual medido.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>06</span>
+            <h3>Monitoreo sin propósito</h3>
+            <p>Cada punto debe responder una pregunta de control.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            El resultado es orientativo y queda guardado solamente en el
+            navegador del estudiante.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>01</span>
+              La prueba de jarras se utiliza principalmente para:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-potabilizacion-agua-q1-o0">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q1-o0"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q1"
+                    value="0"
+                  >
+                  <span>Evaluar condiciones de coagulación</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q1-o1">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q1-o1"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q1"
+                    value="1"
+                  >
+                  <span>Calcular población</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q1-o2">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q1-o2"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q1"
+                    value="2"
+                  >
+                  <span>Medir presión</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q1-o3">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q1-o3"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q1"
+                    value="3"
+                  >
+                  <span>Diseñar alcantarillado</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>02</span>
+              La carga superficial se expresa como:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-potabilizacion-agua-q2-o0">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q2-o0"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q2"
+                    value="0"
+                  >
+                  <span>Caudal dividido por área</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q2-o1">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q2-o1"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q2"
+                    value="1"
+                  >
+                  <span>Área dividida por caudal</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q2-o2">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q2-o2"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q2"
+                    value="2"
+                  >
+                  <span>Volumen dividido por masa</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q2-o3">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q2-o3"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q2"
+                    value="3"
+                  >
+                  <span>Dosis dividida por tiempo</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>03</span>
+              La demanda de cloro corresponde a:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-potabilizacion-agua-q3-o0">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q3-o0"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q3"
+                    value="0"
+                  >
+                  <span>Dosis aplicada menos residual</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q3-o1">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q3-o1"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q3"
+                    value="1"
+                  >
+                  <span>Residual más turbiedad</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q3-o2">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q3-o2"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q3"
+                    value="2"
+                  >
+                  <span>Caudal dividido por volumen</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q3-o3">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q3-o3"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q3"
+                    value="3"
+                  >
+                  <span>Masa de sólidos sedimentados</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>04</span>
+              ¿Qué proceso suele ubicarse después de la sedimentación en una planta convencional?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-potabilizacion-agua-q4-o0">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q4-o0"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q4"
+                    value="0"
+                  >
+                  <span>Filtración</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q4-o1">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q4-o1"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q4"
+                    value="1"
+                  >
+                  <span>Captación</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q4-o2">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q4-o2"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q4"
+                    value="2"
+                  >
+                  <span>Aducción</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q4-o3">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q4-o3"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q4"
+                    value="3"
+                  >
+                  <span>Proyección de población</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>05</span>
+              El monitoreo en la red de distribución permite:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-potabilizacion-agua-q5-o0">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q5-o0"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q5"
+                    value="0"
+                  >
+                  <span>Verificar conservación de la calidad del agua</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q5-o1">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q5-o1"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q5"
+                    value="1"
+                  >
+                  <span>Sustituir el tratamiento</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q5-o2">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q5-o2"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q5"
+                    value="2"
+                  >
+                  <span>Eliminar la necesidad de desinfección</span>
+                </label>
+            
+                <label for="tratamiento-potabilizacion-agua-q5-o3">
+                  <input
+                    id="tratamiento-potabilizacion-agua-q5-o3"
+                    type="radio"
+                    name="tratamiento-potabilizacion-agua-q5"
+                    value="3"
+                  >
+                  <span>Calcular únicamente la población</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">Intentar de nuevo</button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
+        </section>
+
+        <section class="course-content-section" id="actividades">
+          <div class="course-section-heading">
+            <span>Trabajo académico</span>
+            <h2>Actividades comunes</h2>
+          </div>
+
+          <div class="hydraulic-activity-grid">
+
+            <a
+              class="course-article-activity-card"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span>Traducción técnica · Presentación · Video</span>
+              <h3>Artículo científico en inglés</h3>
+              <p>
+                Selecciona un artículo reciente del área, corrige la traducción
+                automática y socializa sus resultados.
+              </p>
+              <b>Consultar guía, rúbrica y plantilla Word ↗</b>
+            </a>
+
+            <a
+              class="course-task-activity-card"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span>Individual · Manuscrita · Siguiente sesión</span>
+              <h3>Tarea de Aplicación y Consolidación</h3>
+              <p>
+                Aplica los procedimientos vistos en clase y organiza el
+                desarrollo para revisión presencial.
+              </p>
+              <b>Consultar estructura, rúbrica y formatos ↗</b>
+            </a>
+
+          </div>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -89,11 +1254,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, recursos y novedades
+                que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -103,123 +1272,47 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir ejercicios, gráficos, modelos y
+                conclusiones sin nombres, notas o datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-potabilizacion-agua/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
 
-        
-        <section class="course-content-section" id="actividad-articulo">
+        <section class="course-content-section" id="bibliografia">
           <div class="course-section-heading">
-            <span>Actividad transversal</span>
-            <h2>Artículo científico en inglés</h2>
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
           </div>
 
-          <a class="course-article-activity-card" href="../../actividades/traduccion-articulo-cientifico/">
-            <span>Traducción técnica · Presentación · Video</span>
-            <h3>Buscar, traducir y comunicar investigación reciente</h3>
+          <ol class="study-bibliography">
+            <li><span>01</span><p>Arboleda Valencia, J. Teoría y práctica de la purificación del agua.</p></li><li><span>02</span><p>Romero Rojas, J. A. Calidad del agua.</p></li><li><span>03</span><p>Romero Rojas, J. A. Purificación del agua.</p></li><li><span>04</span><p>Forero, R. G. Operaciones y procesos unitarios: agua para potabilización.</p></li><li><span>05</span><p>Organización Mundial de la Salud. Guías para la calidad del agua de consumo.</p></li>
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
             <p>
-              Selecciona un artículo de revista publicado desde el 1 de julio de 2026,
-              corrige los errores de los traductores automáticos, elabora una presentación
-              y socializa el contenido en un video de máximo diez minutos.
+              Esta página es un recurso público de orientación. No contiene
+              códigos internos, firmas, horarios privados, listados,
+              calificaciones, entregas ni comunicaciones institucionales.
             </p>
-            <b>Consultar guía, rúbrica, bases de datos y plantilla Word ↗</b>
-          </a>
-        </section>
-
-        
-        <section class="course-content-section" id="tarea-aplicacion">
-          <div class="course-section-heading">
-            <span>Actividad de clase</span>
-            <h2>Tarea de Aplicación y Consolidación</h2>
           </div>
-
-          <a class="course-task-activity-card" href="../../actividades/tarea-aplicacion-clase/">
-            <span>Individual · Manuscrita · Siguiente sesión</span>
-            <h3>Pon en práctica lo trabajado en la última clase</h3>
-            <p>
-              Consulta la estructura obligatoria, la rúbrica, la lista de control,
-              los códigos de retroalimentación y los formatos descargables.
-            </p>
-            <b>Consultar guía y rúbrica general ↗</b>
-          </a>
-        </section>
-
-        <section class="course-content-section" id="rubricas">
-          <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Rúbricas de actividades</strong>
-              <p>
-                Aquí se podrán descargar criterios, niveles de desempeño y
-                orientaciones generales de evaluación.
-              </p>
-            </article>
-          </div>
-          <!--
-            Para agregar una rúbrica:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-potabilizacion-agua/rubricas/NOMBRE-DE-LA-RUBRICA.pdf"
-               target="_blank">
-              <span class="resource-type">Rúbrica · PDF</span>
-              <strong>Nombre de la actividad</strong>
-              <p>Descripción breve y periodo académico.</p>
-            </a>
-          -->
-        </section>
-
-        <section class="course-content-section" id="recursos">
-          <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
-            </article>
-          </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-potabilizacion-agua/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Tratamiento y Potabilización de Agua · UNISANGIL</p>
+      <p>Tratamiento y Potabilización de Agua · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>

@@ -2833,3 +2833,145 @@
     margin-top: 45px;
   }
 }
+
+/* =========================================================
+   CENTROS PÚBLICOS DE ESTUDIO — UNISANGIL
+   ========================================================= */
+
+.study-center-university {
+  margin-top: 38px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+}
+
+.study-center-university-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.study-center-university-heading > span {
+  display: grid;
+  place-items: center;
+  width: 47px;
+  height: 47px;
+  border: 1px solid rgba(255, 255, 255, .20);
+  border-radius: 50%;
+  color: var(--academic-lime);
+  font-size: 10px;
+  font-weight: 950;
+}
+
+.study-center-university-heading h3 {
+  margin: 0;
+  color: white;
+  font-size: clamp(24px, 3vw, 36px);
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.study-center-university-heading p {
+  margin: 6px 0 0;
+  color: rgba(255, 255, 255, .55);
+  font-size: 11px;
+}
+
+.study-center-course-grid-unitropico {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.study-center-course-grid-unisangil {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.study-center-course-grid-unisangil .study-center-course {
+  min-height: 275px;
+}
+
+.study-center-course-grid-unisangil .study-center-course h3 {
+  font-size: clamp(24px, 2.4vw, 30px);
+}
+
+.unisangil-process-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: process;
+}
+
+.unisangil-process-map li {
+  position: relative;
+  min-height: 170px;
+  padding: 19px;
+  overflow: hidden;
+  border: 1px solid var(--academic-line);
+  border-radius: 21px;
+  background: rgba(255, 255, 255, .55);
+}
+
+.unisangil-process-map li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  color: var(--academic-blue);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.unisangil-process-map span {
+  color: var(--academic-blue);
+  font-size: 9px;
+  font-weight: 950;
+}
+
+.unisangil-process-map strong {
+  display: block;
+  margin-top: 75px;
+  font-size: 17px;
+  line-height: 1.05;
+}
+
+@media (max-width: 1120px) {
+  .study-center-course-grid-unisangil {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .study-center-course-grid-unitropico,
+  .study-center-course-grid-unisangil {
+    grid-template-columns: 1fr;
+  }
+
+  .study-center-university-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .study-center-course-grid-unisangil .study-center-course {
+    min-height: 235px;
+  }
+
+  .unisangil-process-map {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .unisangil-process-map li {
+    min-height: 145px;
+  }
+
+  .unisangil-process-map strong {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 470px) {
+  .unisangil-process-map {
+    grid-template-columns: 1fr;
+  }
+}

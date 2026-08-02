@@ -3,85 +3,1234 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Planeación y análisis de sistemas de abastecimiento, conducción, distribución, recolección y evacuación.">
+
+  <meta name="description" content="Centro público de estudio para captación, aducción, conducción, distribución, EPANET y redes de alcantarillado.">
   <meta name="theme-color" content="#071a23">
-  <title>Acueducto y Alcantarillado | JuanKLoz</title>
+
+  <title>Acueducto y Alcantarillado | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=tarea-aplicacion-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=tarea-aplicacion-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=unisangil-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=unisangil-v1">
+  <script src="../../estudio.js?v=unisangil-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body class="academic-page study-page" data-course-id="acueducto-alcantarillado-unisangil">
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#actividades">Actividades</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
           <a href="../../">Docencia</a>
           <span>/</span>
-          <span>UNISANGIL</span>
+          <span>UNISANGIL · sede Yopal</span>
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, Sede Yopal</p>
+            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, sede Yopal</p>
+
             <h1>Acueducto y Alcantarillado</h1>
-            <p class="course-page-description">Planeación y análisis de sistemas de abastecimiento, conducción, distribución, recolección y evacuación.</p>
+
+            <p class="course-page-description">
+              Planea y diseña componentes de abastecimiento, distribución y recolección aplicando criterios hidráulicos, territoriales y normativos.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="#herramientas">
+                Practicar con calculadoras
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación y comunicaciones
+              internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este centro público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los desempeños que dominas. El avance se conserva
+              únicamente en este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#mapa-proceso">Sistema</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#errores-frecuentes">Errores</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#actividades">Actividades</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Demanda y caudales</span><span>Redes de acueducto</span><span>Redes de alcantarillado</span></div>
+
+          <p class="study-section-lead">
+            Los resultados se presentan como guía de estudio y no sustituyen
+            los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Planeación</h3>
+            <p>Relacionar población, consumo, periodo de diseño y territorio con los caudales del sistema.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Abastecimiento</h3>
+            <p>Diseñar captación, transporte, almacenamiento y distribución con criterios hidráulicos.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Alcantarillado</h3>
+            <p>Trazar y dimensionar redes sanitarias o pluviales con cotas, pendientes y estructuras.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Modelación</h3>
+            <p>Utilizar herramientas como EPANET para verificar caudales, presiones y comportamiento de la red.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="mapa-proceso">
+          <div class="course-section-heading">
+            <span>Visión integral</span>
+            <h2>Mapa del sistema</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Utiliza esta secuencia para relacionar los temas y evitar estudiar
+            cada componente de manera aislada.
+          </p>
+
+          <ol class="unisangil-process-map">
+            
+          <li>
+            <span>01</span>
+            <strong>Población y demanda</strong>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <strong>Fuente y captación</strong>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <strong>Aducción</strong>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <strong>Tratamiento</strong>
+          </li>
+        
+
+          <li>
+            <span>05</span>
+            <strong>Almacenamiento</strong>
+          </li>
+        
+
+          <li>
+            <span>06</span>
+            <strong>Distribución</strong>
+          </li>
+        
+
+          <li>
+            <span>07</span>
+            <strong>Alcantarillado</strong>
+          </li>
+        
+          </ol>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca la lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Población, consumo y caudales</strong>
+                <small>Establece las bases numéricas que gobiernan cada componente.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Periodo de diseño</span><span>Proyección</span><span>Dotación</span><span>Pérdidas</span><span>Caudal medio</span><span>Caudales máximos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-01-1">
+                  <span>Consulto población en fuentes oficiales.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-01-2">
+                  <span>Justifico método, tasa y periodo de proyección.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-01-3">
+                  <span>Diferencio dotación neta, pérdidas y demanda total.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-01-4">
+                  <span>Asigno el caudal correcto a cada componente.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Fuentes y obras de captación</strong>
+                <small>Selecciona una fuente y organiza la extracción considerando topografía y operación.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Fuente superficial</span><span>Fuente subterránea</span><span>Localización</span><span>Bocatoma</span><span>Caudal disponible</span><span>Dibujo</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-02-1">
+                  <span>Caracterizo la fuente y sus restricciones.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-02-2">
+                  <span>Justifico la localización de la captación.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-02-3">
+                  <span>Represento los componentes principales.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-02-4">
+                  <span>Diferencio caudal disponible, concesionado y requerido.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Aducción, conducción y accesorios</strong>
+                <small>Transporta el agua y controla presiones, aire y esfuerzos.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Trazado</span><span>Línea de carga</span><span>Cavitación</span><span>Ventosas</span><span>Válvulas</span><span>Anclajes</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-03-1">
+                  <span>Construyo perfiles con cotas y distancias.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-03-2">
+                  <span>Calculo velocidad, pérdidas y presiones.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-03-3">
+                  <span>Identifico puntos altos, bajos y cambios de dirección.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-03-4">
+                  <span>Ubico accesorios con una justificación funcional.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Red de distribución y EPANET</strong>
+                <small>Distribuye demandas y verifica el funcionamiento de la red.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Nodos</span><span>Demandas</span><span>Tuberías</span><span>Tanques</span><span>Bombas</span><span>EPANET</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-04-1">
+                  <span>Asigno demandas nodales de manera coherente.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-04-2">
+                  <span>Ingreso unidades, cotas, diámetros y rugosidad correctamente.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-04-3">
+                  <span>Verifico presiones y velocidades críticas.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-04-4">
+                  <span>Comparo el modelo con cálculos manuales representativos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Redes de alcantarillado</strong>
+                <small>Recolecta y transporta caudales por gravedad mediante una rasante coherente.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Sanitario</span><span>Pluvial</span><span>Acometidas</span><span>Colectores</span><span>Pendientes</span><span>Pozos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-05-1">
+                  <span>Defino áreas o aportes por tramo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-05-2">
+                  <span>Establezco cotas de terreno y batea.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-05-3">
+                  <span>Verifico diámetro, pendiente, velocidad y llenado.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-05-4">
+                  <span>Elaboro planta, perfiles y cuadro de tramos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Proyecto integrado</strong>
+                <small>Relaciona todos los componentes en una propuesta técnica sostenible.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Planos</span><span>Memorias</span><span>Presupuesto</span><span>Operación</span><span>Sostenibilidad</span><span>Presentación</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-06-1">
+                  <span>Mantengo consistencia entre caudales y componentes.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-06-2">
+                  <span>Relaciono cálculos, planos y especificaciones.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-06-3">
+                  <span>Incluyo consideraciones de operación y mantenimiento.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="acueducto-alcantarillado-unisangil-06-4">
+                  <span>Sustento las decisiones principales del proyecto.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Recursos públicos y fuentes oficiales. Los enlaces se abren en una
+            pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="hidrologia">Hidrología</button>
+<button class="study-filter" type="button" data-resource-filter="modelacion">Modelación</button>
+<button class="study-filter" type="button" data-resource-filter="normativa">Normativa</button>
+<button class="study-filter" type="button" data-resource-filter="poblacion">Población</button>
+<button class="study-filter" type="button" data-resource-filter="topografia">Topografía</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://minvivienda.gov.co/viceministerio-de-agua-y-saneamiento-basico-reglamento-tecnico-sector-reglamento-tecnico-del-sector-de-agua-potable-y-saneamiento-basico-ras"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="normativa"
+            data-resource-text="normativa reglamento técnico ras ministerio de vivienda normativa y documentos compilatorios del sector de agua potable y saneamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Normativa</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Reglamento técnico RAS</h3>
+            <p>Normativa y documentos compilatorios del sector de agua potable y saneamiento.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="poblacion"
+            data-resource-text="población proyecciones municipales dane datos oficiales para estimar y justificar la población de diseño."
+          >
+            <div class="study-resource-meta">
+              <span>Población</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Proyecciones municipales</h3>
+            <p>Datos oficiales para estimar y justificar la población de diseño.</p>
+            <small>DANE</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://support.google.com/earth/answer/148134?hl=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="topografia"
+            data-resource-text="topografía rutas y perfiles google earth · ayuda oficial medición de longitudes y consulta de perfiles de elevación."
+          >
+            <div class="study-resource-meta">
+              <span>Topografía</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Rutas y perfiles</h3>
+            <p>Medición de longitudes y consulta de perfiles de elevación.</p>
+            <small>Google Earth · Ayuda oficial</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/epanet"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="modelacion"
+            data-resource-text="modelación epanet us epa programa público para redes presurizadas, tanques, bombas y calidad del agua."
+          >
+            <div class="study-resource-meta">
+              <span>Modelación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>EPANET</h3>
+            <p>Programa público para redes presurizadas, tanques, bombas y calidad del agua.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/storm-water-management-model-swmm"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="modelacion"
+            data-resource-text="modelación swmm us epa herramienta para análisis y diseño de drenaje pluvial, sanitario y combinado."
+          >
+            <div class="study-resource-meta">
+              <span>Modelación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>SWMM</h3>
+            <p>Herramienta para análisis y diseño de drenaje pluvial, sanitario y combinado.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://ideam.gov.co/dhime"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="hidrologia"
+            data-resource-text="hidrología datos hidrometeorológicos ideam consulta pública de información hidrológica y meteorológica."
+          >
+            <div class="study-resource-meta">
+              <span>Hidrología</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Datos hidrometeorológicos</h3>
+            <p>Consulta pública de información hidrológica y meteorológica.</p>
+            <small>IDEAM</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Son herramientas de comprobación. Las memorias deben incluir
+            datos, unidades, fórmula, sustitución, resultado y análisis.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="population">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Proyección geométrica</h3>
+              <p>Calcula P_f = P_0 · (1 + r)ⁿ.</p>
+            </div>
+            <div class="study-field-grid study-field-grid-three">
+              <label>Población inicial<input name="population" type="number" min="1" step="1" value="10000" required></label>
+              <label>Tasa anual (%)<input name="rate" type="number" step="any" value="1.5" required></label>
+              <label>Años<input name="years" type="number" min="0" step="1" value="25" required></label>
+            </div>
+            <button type="submit">Proyectar población</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="velocity">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Velocidad en tubería</h3>
+              <p>Calcula v = Q / A.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+              <label>Diámetro interno (mm)<input name="diameter" type="number" min="0" step="any" value="150" required></label>
+            </div>
+            <button type="submit">Calcular velocidad</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="hazen">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Pérdida por Hazen–Williams</h3>
+              <p>Estimación con unidades del Sistema Internacional.</p>
+            </div>
+            <div class="study-field-grid study-field-grid-four">
+              <label>Longitud L (m)<input name="length" type="number" min="0" step="any" value="1000" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+              <label>Coeficiente C<input name="coefficient" type="number" min="1" step="any" value="140" required></label>
+              <label>Diámetro D (mm)<input name="diameter" type="number" min="0" step="any" value="150" required></label>
+            </div>
+            <button type="submit">Calcular pérdida</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="manning">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Caudal por Manning</h3>
+              <p>Calcula Q = (1/n) · A · R^(2/3) · S^(1/2).</p>
+            </div>
+            <div class="study-field-grid study-field-grid-four">
+              <label>Área A (m²)<input name="area" type="number" min="0" step="any" value="0.45" required></label>
+              <label>Radio R (m)<input name="radius" type="number" min="0" step="any" value="0.20" required></label>
+              <label>Pendiente S<input name="slope" type="number" min="0" step="any" value="0.005" required></label>
+              <label>Rugosidad n<input name="roughness" type="number" min="0" step="any" value="0.013" required></label>
+            </div>
+            <button type="submit">Calcular caudal</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Proyección geométrica</h3>
+            <p class="study-formula">P_f = P_0 · (1 + r)ⁿ</p>
+            <small>Estimación de población futura.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Caudal</h3>
+            <p class="study-formula">Q = A · v</p>
+            <small>Relación entre área y velocidad.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Hazen–Williams</h3>
+            <p class="study-formula">h_f = 10,67 · L · Q¹·⁸⁵² / (C¹·⁸⁵² · D⁴·⁸⁷)</p>
+            <small>Pérdida en tuberías de agua, con unidades SI.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Manning</h3>
+            <p class="study-formula">Q = (1/n) · A · R^(2/3) · S^(1/2)</p>
+            <small>Caudal en conductos a flujo libre.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Continuidad nodal</h3>
+            <p class="study-formula">ΣQ_entrada − ΣQ_salida = demanda</p>
+            <small>Balance de caudales en la red.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Volumen de regulación</h3>
+            <p class="study-formula">V = ∫(Q_entrada − Q_salida)dt</p>
+            <small>Base conceptual para almacenamiento y regulación.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="errores-frecuentes">
+          <div class="course-section-heading">
+            <span>Control de calidad</span>
+            <h2>Errores que debes evitar</h2>
+          </div>
+
+          <div class="hydraulic-mistake-grid">
+            
+          <article class="hydraulic-mistake-card">
+            <span>01</span>
+            <h3>Población sin trazabilidad</h3>
+            <p>Registre fuente, año, método y supuestos.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>02</span>
+            <h3>Caudal equivocado</h3>
+            <p>Cada componente puede requerir un caudal diferente.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>03</span>
+            <h3>Perfil sin energía</h3>
+            <p>Cotas y presiones deben analizarse simultáneamente.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>04</span>
+            <h3>EPANET sin control</h3>
+            <p>Revise unidades, demandas, cotas y rugosidades antes de interpretar.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>05</span>
+            <h3>Alcantarillado sin rasante</h3>
+            <p>Las pendientes deben derivarse de cotas coherentes.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>06</span>
+            <h3>Planos y tablas diferentes</h3>
+            <p>Compruebe que diámetros, nombres y longitudes coincidan.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            El resultado es orientativo y queda guardado solamente en el
+            navegador del estudiante.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>01</span>
+              ¿Qué dato oficial es fundamental para iniciar la estimación de demanda?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unisangil-q1-o0">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q1-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q1"
+                    value="0"
+                  >
+                  <span>Población</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q1-o1">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q1-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q1"
+                    value="1"
+                  >
+                  <span>Color de tubería</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q1-o2">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q1-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q1"
+                    value="2"
+                  >
+                  <span>Marca de la bomba</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q1-o3">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q1-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q1"
+                    value="3"
+                  >
+                  <span>Número de planos</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>02</span>
+              Una ventosa se ubica normalmente para:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unisangil-q2-o0">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q2-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q2"
+                    value="0"
+                  >
+                  <span>Gestionar aire en la conducción</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q2-o1">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q2-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q2"
+                    value="1"
+                  >
+                  <span>Medir población</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q2-o2">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q2-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q2"
+                    value="2"
+                  >
+                  <span>Desinfectar el agua</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q2-o3">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q2-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q2"
+                    value="3"
+                  >
+                  <span>Aumentar la rugosidad</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>03</span>
+              EPANET permite analizar principalmente:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unisangil-q3-o0">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q3-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q3"
+                    value="0"
+                  >
+                  <span>Redes presurizadas de distribución</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q3-o1">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q3-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q3"
+                    value="1"
+                  >
+                  <span>Solo redes pluviales</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q3-o2">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q3-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q3"
+                    value="2"
+                  >
+                  <span>Calidad del suelo</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q3-o3">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q3-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q3"
+                    value="3"
+                  >
+                  <span>Diseño estructural</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>04</span>
+              En un alcantarillado por gravedad, una variable fundamental es:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unisangil-q4-o0">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q4-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q4"
+                    value="0"
+                  >
+                  <span>La pendiente del tramo</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q4-o1">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q4-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q4"
+                    value="1"
+                  >
+                  <span>La presión de bombeo en todos los pozos</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q4-o2">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q4-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q4"
+                    value="2"
+                  >
+                  <span>El color del agua</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q4-o3">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q4-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q4"
+                    value="3"
+                  >
+                  <span>La temperatura del aire</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>05</span>
+              ¿Qué debe verificarse al comparar planos y memorias?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="acueducto-alcantarillado-unisangil-q5-o0">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q5-o0"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q5"
+                    value="0"
+                  >
+                  <span>Que diámetros, longitudes y cotas coincidan</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q5-o1">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q5-o1"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q5"
+                    value="1"
+                  >
+                  <span>Solo la portada</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q5-o2">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q5-o2"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q5"
+                    value="2"
+                  >
+                  <span>Solo el presupuesto</span>
+                </label>
+            
+                <label for="acueducto-alcantarillado-unisangil-q5-o3">
+                  <input
+                    id="acueducto-alcantarillado-unisangil-q5-o3"
+                    type="radio"
+                    name="acueducto-alcantarillado-unisangil-q5"
+                    value="3"
+                  >
+                  <span>El tamaño del archivo</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">Intentar de nuevo</button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
+        </section>
+
+        <section class="course-content-section" id="actividades">
+          <div class="course-section-heading">
+            <span>Trabajo académico</span>
+            <h2>Actividades comunes</h2>
+          </div>
+
+          <div class="hydraulic-activity-grid">
+
+            <a
+              class="course-article-activity-card"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span>Traducción técnica · Presentación · Video</span>
+              <h3>Artículo científico en inglés</h3>
+              <p>
+                Selecciona un artículo reciente del área, corrige la traducción
+                automática y socializa sus resultados.
+              </p>
+              <b>Consultar guía, rúbrica y plantilla Word ↗</b>
+            </a>
+
+            <a
+              class="course-task-activity-card"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span>Individual · Manuscrita · Siguiente sesión</span>
+              <h3>Tarea de Aplicación y Consolidación</h3>
+              <p>
+                Aplica los procedimientos vistos en clase y organiza el
+                desarrollo para revisión presencial.
+              </p>
+              <b>Consultar estructura, rúbrica y formatos ↗</b>
+            </a>
+
+          </div>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -89,11 +1238,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, recursos y novedades
+                que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -103,123 +1256,47 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir ejercicios, gráficos, modelos y
+                conclusiones sin nombres, notas o datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/acueducto-alcantarillado-unisangil/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
 
-        
-        <section class="course-content-section" id="actividad-articulo">
+        <section class="course-content-section" id="bibliografia">
           <div class="course-section-heading">
-            <span>Actividad transversal</span>
-            <h2>Artículo científico en inglés</h2>
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
           </div>
 
-          <a class="course-article-activity-card" href="../../actividades/traduccion-articulo-cientifico/">
-            <span>Traducción técnica · Presentación · Video</span>
-            <h3>Buscar, traducir y comunicar investigación reciente</h3>
+          <ol class="study-bibliography">
+            <li><span>01</span><p>López Cualla, R. A. Elementos de diseño para acueductos y alcantarillados.</p></li><li><span>02</span><p>Corcho Romero, F. y Duque Serna, J. I. Acueductos: teoría y diseño.</p></li><li><span>03</span><p>Metcalf &amp; Eddy. Ingeniería de aguas residuales: redes de alcantarillado y bombeo.</p></li><li><span>04</span><p>Ministerio de Vivienda. Reglamento Técnico del Sector de Agua Potable y Saneamiento Básico.</p></li>
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
             <p>
-              Selecciona un artículo de revista publicado desde el 1 de julio de 2026,
-              corrige los errores de los traductores automáticos, elabora una presentación
-              y socializa el contenido en un video de máximo diez minutos.
+              Esta página es un recurso público de orientación. No contiene
+              códigos internos, firmas, horarios privados, listados,
+              calificaciones, entregas ni comunicaciones institucionales.
             </p>
-            <b>Consultar guía, rúbrica, bases de datos y plantilla Word ↗</b>
-          </a>
-        </section>
-
-        
-        <section class="course-content-section" id="tarea-aplicacion">
-          <div class="course-section-heading">
-            <span>Actividad de clase</span>
-            <h2>Tarea de Aplicación y Consolidación</h2>
           </div>
-
-          <a class="course-task-activity-card" href="../../actividades/tarea-aplicacion-clase/">
-            <span>Individual · Manuscrita · Siguiente sesión</span>
-            <h3>Pon en práctica lo trabajado en la última clase</h3>
-            <p>
-              Consulta la estructura obligatoria, la rúbrica, la lista de control,
-              los códigos de retroalimentación y los formatos descargables.
-            </p>
-            <b>Consultar guía y rúbrica general ↗</b>
-          </a>
-        </section>
-
-        <section class="course-content-section" id="rubricas">
-          <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Rúbricas de actividades</strong>
-              <p>
-                Aquí se podrán descargar criterios, niveles de desempeño y
-                orientaciones generales de evaluación.
-              </p>
-            </article>
-          </div>
-          <!--
-            Para agregar una rúbrica:
-            <a class="resource-item"
-               href="../../archivos/acueducto-alcantarillado-unisangil/rubricas/NOMBRE-DE-LA-RUBRICA.pdf"
-               target="_blank">
-              <span class="resource-type">Rúbrica · PDF</span>
-              <strong>Nombre de la actividad</strong>
-              <p>Descripción breve y periodo académico.</p>
-            </a>
-          -->
-        </section>
-
-        <section class="course-content-section" id="recursos">
-          <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
-            </article>
-          </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/acueducto-alcantarillado-unisangil/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Acueducto y Alcantarillado · UNISANGIL</p>
+      <p>Acueducto y Alcantarillado · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>

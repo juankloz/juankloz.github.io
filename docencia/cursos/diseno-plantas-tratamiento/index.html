@@ -3,85 +3,1230 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Criterios de selección de procesos, configuración de sistemas y bases para el dimensionamiento de plantas de tratamiento.">
+
+  <meta name="description" content="Centro público de estudio para el diseño conceptual y detallado de sistemas de tratamiento de agua potable y agua residual.">
   <meta name="theme-color" content="#071a23">
-  <title>Diseño de Plantas de Tratamiento | JuanKLoz</title>
+
+  <title>Diseño de Plantas de Tratamiento | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=tarea-aplicacion-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=tarea-aplicacion-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=unisangil-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=unisangil-v1">
+  <script src="../../estudio.js?v=unisangil-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body class="academic-page study-page" data-course-id="diseno-plantas-tratamiento">
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#actividades">Actividades</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
           <a href="../../">Docencia</a>
           <span>/</span>
-          <span>UNISANGIL</span>
+          <span>UNISANGIL · sede Yopal</span>
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, Sede Yopal</p>
+            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, sede Yopal</p>
+
             <h1>Diseño de Plantas de Tratamiento</h1>
-            <p class="course-page-description">Criterios de selección de procesos, configuración de sistemas y bases para el dimensionamiento de plantas de tratamiento.</p>
+
+            <p class="course-page-description">
+              Integra bases de diseño, procesos unitarios, hidráulica, planos, memorias de cálculo y criterios de puesta en marcha.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="#herramientas">
+                Practicar con calculadoras
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación y comunicaciones
+              internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este centro público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los desempeños que dominas. El avance se conserva
+              únicamente en este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#mapa-proceso">Sistema</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#errores-frecuentes">Errores</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#actividades">Actividades</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Selección de procesos</span><span>Criterios de diseño</span><span>Dimensionamiento</span></div>
+
+          <p class="study-section-lead">
+            Los resultados se presentan como guía de estudio y no sustituyen
+            los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Bases de diseño</h3>
+            <p>Definir población, caudal, calidad de entrada, objetivos del tratamiento y criterios técnicos.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Procesos y equipos</h3>
+            <p>Seleccionar, ordenar y dimensionar unidades de tratamiento con coherencia hidráulica.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Documentación</h3>
+            <p>Elaborar diagramas, perfiles, planos, memorias de cálculo y especificaciones verificables.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Operación sostenible</h3>
+            <p>Relacionar el diseño con construcción, puesta en marcha, operación, mantenimiento e impactos.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="mapa-proceso">
+          <div class="course-section-heading">
+            <span>Visión integral</span>
+            <h2>Mapa del sistema</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Utiliza esta secuencia para relacionar los temas y evitar estudiar
+            cada componente de manera aislada.
+          </p>
+
+          <ol class="unisangil-process-map">
+            
+          <li>
+            <span>01</span>
+            <strong>Información de entrada</strong>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <strong>Criterios de diseño</strong>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <strong>Diagrama de procesos</strong>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <strong>Perfil hidráulico</strong>
+          </li>
+        
+
+          <li>
+            <span>05</span>
+            <strong>Dimensionamiento</strong>
+          </li>
+        
+
+          <li>
+            <span>06</span>
+            <strong>Planos y memorias</strong>
+          </li>
+        
+
+          <li>
+            <span>07</span>
+            <strong>Puesta en marcha</strong>
+          </li>
+        
+          </ol>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca la lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Bases y parámetros de diseño</strong>
+                <small>Convierte población, demanda y calidad del agua en condiciones de diseño.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Población</span><span>Dotación</span><span>Caudales</span><span>Calidad de entrada</span><span>Objetivos</span><span>Normativa</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-01-1">
+                  <span>Documento las fuentes de población, caudal y calidad del agua.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-01-2">
+                  <span>Diferencio caudal medio, máximo diario y máximo horario.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-01-3">
+                  <span>Defino claramente el periodo y las condiciones de diseño.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-01-4">
+                  <span>Relaciono cada parámetro de entrada con una decisión de diseño.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Diseño conceptual, detalle y perfiles</strong>
+                <small>Organiza las unidades y demuestra cómo circula el agua a través del sistema.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Diagrama de flujo</span><span>Aducción</span><span>Conducción</span><span>Accesorios</span><span>Perfil hidráulico</span><span>Planos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-02-1">
+                  <span>Construyo un diagrama cuantitativo del proceso.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-02-2">
+                  <span>Identifico puntos altos, puntos bajos y accesorios necesarios.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-02-3">
+                  <span>Trazo la línea hidráulica entre las unidades.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-02-4">
+                  <span>Mantengo consistencia entre planta, perfil y memoria.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Diseño de procesos para agua potable</strong>
+                <small>Dimensiona operaciones convencionales desde el pretratamiento hasta el almacenamiento.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Pretratamiento</span><span>Coagulación</span><span>Floculación</span><span>Sedimentación</span><span>Filtración</span><span>Desinfección</span><span>Almacenamiento</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-03-1">
+                  <span>Selecciono criterios de diseño de una fuente verificable.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-03-2">
+                  <span>Calculo tiempos, cargas, velocidades y dimensiones.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-03-3">
+                  <span>Compruebo la secuencia hidráulica de las estructuras.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-03-4">
+                  <span>Estimo insumos químicos y condiciones de operación.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Diseño de procesos para agua residual</strong>
+                <small>Organiza y dimensiona tratamientos preliminares, primarios, secundarios y avanzados.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Preliminar</span><span>Primario</span><span>Biológico</span><span>Terciario</span><span>Desinfección</span><span>Lodos</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-04-1">
+                  <span>Caracterizo el afluente y establezco metas de tratamiento.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-04-2">
+                  <span>Justifico la selección del tren de procesos.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-04-3">
+                  <span>Dimensiono unidades con balances y criterios técnicos.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-04-4">
+                  <span>Integro la gestión de lodos y residuos del proceso.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Memorias, planos y presupuesto</strong>
+                <small>Transforma cálculos aislados en un proyecto técnico reproducible.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Memorias</span><span>Hojas de cálculo</span><span>Planos</span><span>Cantidades</span><span>Presupuesto</span><span>Especificaciones</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-05-1">
+                  <span>Presento fórmulas y datos de entrada visibles.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-05-2">
+                  <span>Utilizo unidades consistentes y resultados trazables.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-05-3">
+                  <span>Relaciono cantidades de obra con dimensiones calculadas.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-05-4">
+                  <span>Reviso que planos, cuadros y memorias coincidan.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Puesta en marcha y operación</strong>
+                <small>Considera que una planta debe construirse, arrancarse y mantenerse.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Arranque</span><span>Pruebas</span><span>Operación</span><span>Mantenimiento</span><span>Seguridad</span><span>Impactos ambientales</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-06-1">
+                  <span>Defino verificaciones previas a la puesta en servicio.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-06-2">
+                  <span>Identifico variables operativas y puntos de control.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-06-3">
+                  <span>Propongo actividades básicas de mantenimiento.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="diseno-plantas-tratamiento-06-4">
+                  <span>Reconozco impactos y medidas de manejo durante el ciclo de vida.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Recursos públicos y fuentes oficiales. Los enlaces se abren en una
+            pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="aplicacion">Aplicación</button>
+<button class="study-filter" type="button" data-resource-filter="diseno">Diseño</button>
+<button class="study-filter" type="button" data-resource-filter="modelacion">Modelación</button>
+<button class="study-filter" type="button" data-resource-filter="normativa">Normativa</button>
+<button class="study-filter" type="button" data-resource-filter="poblacion">Población</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://minvivienda.gov.co/viceministerio-de-agua-y-saneamiento-basico-reglamento-tecnico-sector-reglamento-tecnico-del-sector-de-agua-potable-y-saneamiento-basico-ras"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="normativa"
+            data-resource-text="normativa reglamento técnico ras ministerio de vivienda de colombia normativa, documentos compilatorios y resoluciones vigentes del sector de agua y saneamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Normativa</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Reglamento técnico RAS</h3>
+            <p>Normativa, documentos compilatorios y resoluciones vigentes del sector de agua y saneamiento.</p>
+            <small>Ministerio de Vivienda de Colombia</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.minvivienda.gov.co/proyectos-de-agua-potable-y-saneamiento-basico/tratamiento-de-agua-potable"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="diseno"
+            data-resource-text="diseño tratamiento de agua potable ministerio de vivienda recomendaciones públicas para diagnóstico, alternativas, tratabilidad, sostenibilidad y puesta en marcha."
+          >
+            <div class="study-resource-meta">
+              <span>Diseño</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Tratamiento de agua potable</h3>
+            <p>Recomendaciones públicas para diagnóstico, alternativas, tratabilidad, sostenibilidad y puesta en marcha.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.minvivienda.gov.co/proyectos-de-agua-potable-y-saneamiento-basico/tratamiento-de-aguas-residuales"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="diseno"
+            data-resource-text="diseño tratamiento de aguas residuales ministerio de vivienda información pública y referencias regulatorias para proyectos de tratamiento de aguas residuales."
+          >
+            <div class="study-resource-meta">
+              <span>Diseño</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Tratamiento de aguas residuales</h3>
+            <p>Información pública y referencias regulatorias para proyectos de tratamiento de aguas residuales.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.dane.gov.co/index.php/estadisticas-por-tema/demografia-y-poblacion/proyecciones-de-poblacion"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="poblacion"
+            data-resource-text="población proyecciones municipales dane series y proyecciones oficiales para justificar la población de diseño."
+          >
+            <div class="study-resource-meta">
+              <span>Población</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Proyecciones municipales</h3>
+            <p>Series y proyecciones oficiales para justificar la población de diseño.</p>
+            <small>DANE</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/water-research/epanet"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="modelacion"
+            data-resource-text="modelación epanet us epa herramienta pública para redes, tanques, bombas, válvulas, presiones y calidad del agua."
+          >
+            <div class="study-resource-meta">
+              <span>Modelación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>EPANET</h3>
+            <p>Herramienta pública para redes, tanques, bombas, válvulas, presiones y calidad del agua.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://prediseno-ptar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="aplicacion"
+            data-resource-text="aplicación prediseño de sistemas ptar aplicación juankloz herramienta educativa para organizar información y aproximaciones iniciales de tratamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Aplicación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Prediseño de sistemas PTAR</h3>
+            <p>Herramienta educativa para organizar información y aproximaciones iniciales de tratamiento.</p>
+            <small>Aplicación JuanKLoz</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Son herramientas de comprobación. Las memorias deben incluir
+            datos, unidades, fórmula, sustitución, resultado y análisis.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="design-flow">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Caudal de diseño</h3>
+              <p>Estimación desde población, dotación y factor.</p>
+            </div>
+            <div class="study-field-grid study-field-grid-three">
+              <label>Población (hab)<input name="population" type="number" min="1" step="1" value="15000" required></label>
+              <label>Dotación (L/hab·d)<input name="allocation" type="number" min="0" step="any" value="130" required></label>
+              <label>Factor<input name="factor" type="number" min="0" step="any" value="1.2" required></label>
+            </div>
+            <button type="submit">Calcular caudal</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="detention">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Tiempo de retención</h3>
+              <p>Calcula t = V / Q.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Volumen V (m³)<input name="volume" type="number" min="0" step="any" value="250" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+            </div>
+            <button type="submit">Calcular tiempo</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="surface-loading">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Carga superficial</h3>
+              <p>Calcula C_s = Q / A.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal Q (m³/d)<input name="flow" type="number" min="0" step="any" value="1728" required></label>
+              <label>Área A (m²)<input name="area" type="number" min="0" step="any" value="60" required></label>
+            </div>
+            <button type="submit">Calcular carga</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="dose-mass">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Masa diaria de producto</h3>
+              <p>Convierte dosis y caudal en kg/d.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Dosis D (mg/L)<input name="dose" type="number" min="0" step="any" value="25" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+            </div>
+            <button type="submit">Calcular masa</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Caudal de diseño</h3>
+            <p class="study-formula">Q_d = P · d · K / 86 400</p>
+            <small>Población, dotación y factor de mayoración; resultado en L/s.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Tiempo de retención</h3>
+            <p class="study-formula">t = V / Q</p>
+            <small>Relaciona el volumen útil con el caudal.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Carga superficial</h3>
+            <p class="study-formula">C_s = Q / A</p>
+            <small>Caudal aplicado por unidad de superficie.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Tasa de filtración</h3>
+            <p class="study-formula">T_f = Q / A_f</p>
+            <small>Caudal tratado por área de filtro.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Masa de producto</h3>
+            <p class="study-formula">M = D · Q · 0,0864</p>
+            <small>D en mg/L y Q en L/s; resultado aproximado en kg/d.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Potencia hidráulica</h3>
+            <p class="study-formula">P_h = ρ · g · Q · H</p>
+            <small>Potencia transferida al agua.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="errores-frecuentes">
+          <div class="course-section-heading">
+            <span>Control de calidad</span>
+            <h2>Errores que debes evitar</h2>
+          </div>
+
+          <div class="hydraulic-mistake-grid">
+            
+          <article class="hydraulic-mistake-card">
+            <span>01</span>
+            <h3>Datos sin fuente</h3>
+            <p>Todo caudal, calidad, población y criterio debe ser verificable.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>02</span>
+            <h3>Unidades mezcladas</h3>
+            <p>Convierta antes de calcular y declare la unidad de cada resultado.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>03</span>
+            <h3>Proceso sin justificación</h3>
+            <p>Una unidad no debe incluirse solo porque aparece en un esquema típico.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>04</span>
+            <h3>Perfil incoherente</h3>
+            <p>La energía disponible debe ser compatible con cotas y pérdidas.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>05</span>
+            <h3>Memoria aislada</h3>
+            <p>Los cálculos deben coincidir con planos, cuadros y dimensiones finales.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>06</span>
+            <h3>Operación ignorada</h3>
+            <p>Verifique acceso, limpieza, mantenimiento y control del proceso.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            El resultado es orientativo y queda guardado solamente en el
+            navegador del estudiante.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>01</span>
+              ¿Cuál es el primer paso antes de dimensionar una unidad de tratamiento?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="diseno-plantas-tratamiento-q1-o0">
+                  <input
+                    id="diseno-plantas-tratamiento-q1-o0"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q1"
+                    value="0"
+                  >
+                  <span>Definir información de entrada y criterios de diseño</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q1-o1">
+                  <input
+                    id="diseno-plantas-tratamiento-q1-o1"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q1"
+                    value="1"
+                  >
+                  <span>Dibujar la unidad sin escala</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q1-o2">
+                  <input
+                    id="diseno-plantas-tratamiento-q1-o2"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q1"
+                    value="2"
+                  >
+                  <span>Seleccionar el material más económico</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q1-o3">
+                  <input
+                    id="diseno-plantas-tratamiento-q1-o3"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q1"
+                    value="3"
+                  >
+                  <span>Calcular el presupuesto final</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>02</span>
+              Un diagrama cuantitativo de flujo debe mostrar principalmente:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="diseno-plantas-tratamiento-q2-o0">
+                  <input
+                    id="diseno-plantas-tratamiento-q2-o0"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q2"
+                    value="0"
+                  >
+                  <span>Caudales y relaciones entre unidades</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q2-o1">
+                  <input
+                    id="diseno-plantas-tratamiento-q2-o1"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q2"
+                    value="1"
+                  >
+                  <span>Solo el nombre de la planta</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q2-o2">
+                  <input
+                    id="diseno-plantas-tratamiento-q2-o2"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q2"
+                    value="2"
+                  >
+                  <span>Únicamente fotografías</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q2-o3">
+                  <input
+                    id="diseno-plantas-tratamiento-q2-o3"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q2"
+                    value="3"
+                  >
+                  <span>El horario de operación</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>03</span>
+              ¿Qué relación básica permite estimar un tiempo de retención?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="diseno-plantas-tratamiento-q3-o0">
+                  <input
+                    id="diseno-plantas-tratamiento-q3-o0"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q3"
+                    value="0"
+                  >
+                  <span>Volumen dividido por caudal</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q3-o1">
+                  <input
+                    id="diseno-plantas-tratamiento-q3-o1"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q3"
+                    value="1"
+                  >
+                  <span>Caudal dividido por área</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q3-o2">
+                  <input
+                    id="diseno-plantas-tratamiento-q3-o2"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q3"
+                    value="2"
+                  >
+                  <span>Área dividida por velocidad</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q3-o3">
+                  <input
+                    id="diseno-plantas-tratamiento-q3-o3"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q3"
+                    value="3"
+                  >
+                  <span>Masa dividida por densidad</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>04</span>
+              ¿Cuál documento debe permitir reproducir los cálculos de diseño?
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="diseno-plantas-tratamiento-q4-o0">
+                  <input
+                    id="diseno-plantas-tratamiento-q4-o0"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q4"
+                    value="0"
+                  >
+                  <span>Memoria de cálculo</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q4-o1">
+                  <input
+                    id="diseno-plantas-tratamiento-q4-o1"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q4"
+                    value="1"
+                  >
+                  <span>Portada</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q4-o2">
+                  <input
+                    id="diseno-plantas-tratamiento-q4-o2"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q4"
+                    value="2"
+                  >
+                  <span>Carta de presentación</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q4-o3">
+                  <input
+                    id="diseno-plantas-tratamiento-q4-o3"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q4"
+                    value="3"
+                  >
+                  <span>Índice únicamente</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>05</span>
+              La puesta en marcha debe considerarse:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="diseno-plantas-tratamiento-q5-o0">
+                  <input
+                    id="diseno-plantas-tratamiento-q5-o0"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q5"
+                    value="0"
+                  >
+                  <span>Desde la etapa de diseño</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q5-o1">
+                  <input
+                    id="diseno-plantas-tratamiento-q5-o1"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q5"
+                    value="1"
+                  >
+                  <span>Solo después de construir</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q5-o2">
+                  <input
+                    id="diseno-plantas-tratamiento-q5-o2"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q5"
+                    value="2"
+                  >
+                  <span>Únicamente si existe un problema</span>
+                </label>
+            
+                <label for="diseno-plantas-tratamiento-q5-o3">
+                  <input
+                    id="diseno-plantas-tratamiento-q5-o3"
+                    type="radio"
+                    name="diseno-plantas-tratamiento-q5"
+                    value="3"
+                  >
+                  <span>Como un asunto independiente del proyecto</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">Intentar de nuevo</button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
+        </section>
+
+        <section class="course-content-section" id="actividades">
+          <div class="course-section-heading">
+            <span>Trabajo académico</span>
+            <h2>Actividades comunes</h2>
+          </div>
+
+          <div class="hydraulic-activity-grid">
+
+            <a
+              class="course-article-activity-card"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span>Traducción técnica · Presentación · Video</span>
+              <h3>Artículo científico en inglés</h3>
+              <p>
+                Selecciona un artículo reciente del área, corrige la traducción
+                automática y socializa sus resultados.
+              </p>
+              <b>Consultar guía, rúbrica y plantilla Word ↗</b>
+            </a>
+
+            <a
+              class="course-task-activity-card"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span>Individual · Manuscrita · Siguiente sesión</span>
+              <h3>Tarea de Aplicación y Consolidación</h3>
+              <p>
+                Aplica los procedimientos vistos en clase y organiza el
+                desarrollo para revisión presencial.
+              </p>
+              <b>Consultar estructura, rúbrica y formatos ↗</b>
+            </a>
+
+          </div>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -89,11 +1234,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, recursos y novedades
+                que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -103,123 +1252,47 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir ejercicios, gráficos, modelos y
+                conclusiones sin nombres, notas o datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/diseno-plantas-tratamiento/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
 
-        
-        <section class="course-content-section" id="actividad-articulo">
+        <section class="course-content-section" id="bibliografia">
           <div class="course-section-heading">
-            <span>Actividad transversal</span>
-            <h2>Artículo científico en inglés</h2>
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
           </div>
 
-          <a class="course-article-activity-card" href="../../actividades/traduccion-articulo-cientifico/">
-            <span>Traducción técnica · Presentación · Video</span>
-            <h3>Buscar, traducir y comunicar investigación reciente</h3>
+          <ol class="study-bibliography">
+            <li><span>01</span><p>López Cualla, R. A. Elementos de diseño para acueductos y alcantarillados.</p></li><li><span>02</span><p>Arboleda Valencia, J. Teoría y práctica de la purificación del agua.</p></li><li><span>03</span><p>Romero Rojas, J. A. Tratamiento de aguas residuales: teoría y principios de diseño.</p></li><li><span>04</span><p>Ministerio de Vivienda. Reglamento Técnico del Sector de Agua Potable y Saneamiento Básico.</p></li>
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
             <p>
-              Selecciona un artículo de revista publicado desde el 1 de julio de 2026,
-              corrige los errores de los traductores automáticos, elabora una presentación
-              y socializa el contenido en un video de máximo diez minutos.
+              Esta página es un recurso público de orientación. No contiene
+              códigos internos, firmas, horarios privados, listados,
+              calificaciones, entregas ni comunicaciones institucionales.
             </p>
-            <b>Consultar guía, rúbrica, bases de datos y plantilla Word ↗</b>
-          </a>
-        </section>
-
-        
-        <section class="course-content-section" id="tarea-aplicacion">
-          <div class="course-section-heading">
-            <span>Actividad de clase</span>
-            <h2>Tarea de Aplicación y Consolidación</h2>
           </div>
-
-          <a class="course-task-activity-card" href="../../actividades/tarea-aplicacion-clase/">
-            <span>Individual · Manuscrita · Siguiente sesión</span>
-            <h3>Pon en práctica lo trabajado en la última clase</h3>
-            <p>
-              Consulta la estructura obligatoria, la rúbrica, la lista de control,
-              los códigos de retroalimentación y los formatos descargables.
-            </p>
-            <b>Consultar guía y rúbrica general ↗</b>
-          </a>
-        </section>
-
-        <section class="course-content-section" id="rubricas">
-          <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Rúbricas de actividades</strong>
-              <p>
-                Aquí se podrán descargar criterios, niveles de desempeño y
-                orientaciones generales de evaluación.
-              </p>
-            </article>
-          </div>
-          <!--
-            Para agregar una rúbrica:
-            <a class="resource-item"
-               href="../../archivos/diseno-plantas-tratamiento/rubricas/NOMBRE-DE-LA-RUBRICA.pdf"
-               target="_blank">
-              <span class="resource-type">Rúbrica · PDF</span>
-              <strong>Nombre de la actividad</strong>
-              <p>Descripción breve y periodo académico.</p>
-            </a>
-          -->
-        </section>
-
-        <section class="course-content-section" id="recursos">
-          <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
-            </article>
-          </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/diseno-plantas-tratamiento/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Diseño de Plantas de Tratamiento · UNISANGIL</p>
+      <p>Diseño de Plantas de Tratamiento · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>

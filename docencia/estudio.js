@@ -469,3 +469,139 @@
     });
 })();
 
+/* =========================================================
+   CALCULADORAS ADICIONALES — CURSOS UNISANGIL
+   ========================================================= */
+(() => {
+  "use strict";
+
+  const selector = [
+    '[data-calculator="design-flow"]',
+    '[data-calculator="detention"]',
+    '[data-calculator="surface-loading"]',
+    '[data-calculator="dose-mass"]',
+    '[data-calculator="filtration-rate"]',
+    '[data-calculator="removal-efficiency"]',
+    '[data-calculator="organic-loading"]'
+  ].join(",");
+
+  const readNumber = (form, name) => {
+    const element = form.elements.namedItem(name);
+    return Number(element?.value);
+  };
+
+  const format = (value, digits = 3) =>
+    value.toLocaleString("es-CO", {
+      maximumFractionDigits: digits
+    });
+
+  document.querySelectorAll(selector).forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const output = form.querySelector(".study-calculator-output");
+      const type = form.dataset.calculator;
+
+      try {
+        if (type === "design-flow") {
+          const population = readNumber(form, "population");
+          const allocation = readNumber(form, "allocation");
+          const factor = readNumber(form, "factor");
+
+          if (!(population > 0) || !(allocation >= 0) || !(factor > 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const flow = population * allocation * factor / 86400;
+          output.textContent =
+            `Resultado: Q_d = ${format(flow)} L/s ` +
+            `(${format(flow * 86.4)} m³/d).`;
+        }
+
+        if (type === "detention") {
+          const volume = readNumber(form, "volume");
+          const flowLs = readNumber(form, "flow");
+
+          if (!(volume >= 0) || !(flowLs > 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const hours = volume / (flowLs / 1000) / 3600;
+          output.textContent =
+            `Resultado: t = ${format(hours)} h ` +
+            `(${format(hours * 60, 1)} min).`;
+        }
+
+        if (type === "surface-loading") {
+          const flow = readNumber(form, "flow");
+          const area = readNumber(form, "area");
+
+          if (!(flow >= 0) || !(area > 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const loading = flow / area;
+          output.textContent =
+            `Resultado: C_s = ${format(loading)} m³/(m²·d).`;
+        }
+
+        if (type === "dose-mass") {
+          const dose = readNumber(form, "dose");
+          const flow = readNumber(form, "flow");
+
+          if (!(dose >= 0) || !(flow >= 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const mass = dose * flow * 0.0864;
+          output.textContent =
+            `Resultado: M = ${format(mass)} kg/d.`;
+        }
+
+        if (type === "filtration-rate") {
+          const flow = readNumber(form, "flow");
+          const area = readNumber(form, "area");
+
+          if (!(flow >= 0) || !(area > 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const rate = flow / area;
+          output.textContent =
+            `Resultado: T_f = ${format(rate)} m³/(m²·d) ` +
+            `(${format(rate / 24)} m/h).`;
+        }
+
+        if (type === "removal-efficiency") {
+          const influent = readNumber(form, "influent");
+          const effluent = readNumber(form, "effluent");
+
+          if (!(influent > 0) || !(effluent >= 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const efficiency = (influent - effluent) / influent * 100;
+          output.textContent =
+            `Resultado: η = ${format(efficiency)} %.`;
+        }
+
+        if (type === "organic-loading") {
+          const flow = readNumber(form, "flow");
+          const concentration = readNumber(form, "concentration");
+
+          if (!(flow >= 0) || !(concentration >= 0)) {
+            throw new Error("Datos inválidos.");
+          }
+
+          const load = flow * concentration / 1000;
+          output.textContent =
+            `Resultado: L = ${format(load)} kg/d.`;
+        }
+      } catch (error) {
+        output.textContent =
+          "No fue posible calcular. Verifica valores, unidades y campos obligatorios.";
+      }
+    });
+  });
+})();
+

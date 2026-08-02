@@ -3,85 +3,1256 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Caracterización, selección de alternativas y fundamentos para el diseño preliminar de sistemas de tratamiento.">
+
+  <meta name="description" content="Centro público de estudio sobre caracterización, tratamiento en sitio, procesos preliminares, primarios, biológicos, complementarios y lodos.">
   <meta name="theme-color" content="#071a23">
-  <title>Tratamiento de Aguas Residuales | JuanKLoz</title>
+
+  <title>Tratamiento de Aguas Residuales | Centro de estudio JuanKLoz</title>
+
   <link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../../../styles.css?v=tarea-aplicacion-v1">
-  <link rel="stylesheet" href="../../docencia.css?v=tarea-aplicacion-v1">
+  <link rel="stylesheet" href="../../../styles.css?v=unisangil-v1">
+  <link rel="stylesheet" href="../../docencia.css?v=unisangil-v1">
+  <script src="../../estudio.js?v=unisangil-v1" defer></script>
 </head>
-<body class="academic-page">
+
+<body class="academic-page study-page" data-course-id="tratamiento-aguas-residuales">
 
   <header class="academic-header">
     <div class="academic-nav">
+
       <a class="academic-brand" href="../../" aria-label="Volver a Docencia">
         <img src="../../../assets/logo-juankloz.png" alt="JuanKLoz">
       </a>
+
       <nav class="academic-links" aria-label="Navegación del curso">
-        <a href="#avisos">Avisos</a>
-        <a href="#resultados">Resultados</a>
-        <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#ruta-estudio">Ruta</a>
+        <a href="#refuerzos">Refuerzos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#autoevaluacion">Autoevaluación</a>
+        <a href="#actividades">Actividades</a>
         <a class="academic-home" href="../../">← Docencia</a>
       </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="course-page-hero">
+
+    <section class="course-page-hero study-course-hero">
       <div class="academic-shell">
+
         <div class="course-breadcrumbs">
           <a href="../../../">Portal principal</a>
           <span>/</span>
           <a href="../../">Docencia</a>
           <span>/</span>
-          <span>UNISANGIL</span>
+          <span>UNISANGIL · sede Yopal</span>
         </div>
 
         <div class="course-page-grid">
+
           <div>
-            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, Sede Yopal</p>
+            <p class="course-institution">Fundación Universitaria de San Gil – UNISANGIL, sede Yopal</p>
+
             <h1>Tratamiento de Aguas Residuales</h1>
-            <p class="course-page-description">Caracterización, selección de alternativas y fundamentos para el diseño preliminar de sistemas de tratamiento.</p>
+
+            <p class="course-page-description">
+              Caracteriza el agua residual y selecciona procesos físicos, químicos y biológicos para controlar contaminantes y proteger la fuente receptora.
+            </p>
+
+            <div class="study-hero-actions">
+              <a class="study-primary-action" href="#ruta-estudio">
+                Comenzar ruta de estudio
+              </a>
+
+              <a class="study-secondary-action" href="#herramientas">
+                Practicar con calculadoras
+              </a>
+            </div>
           </div>
 
           <aside class="course-private-card">
             <span>Acceso institucional</span>
+
             <h2>Aula privada en Moodle</h2>
+
             <p>
-              Entregas, evaluaciones, calificaciones, retroalimentación individual
-              y comunicaciones internas.
+              Entregas, calificaciones, retroalimentación y comunicaciones
+              internas permanecen en el aula institucional.
             </p>
+
             <div class="moodle-pending">
               <span>Enlace Moodle pendiente</span>
               <b aria-hidden="true">🔒</b>
             </div>
+
+            <p class="study-private-note">
+              Este centro público no solicita datos personales ni almacena
+              calificaciones.
+            </p>
           </aside>
+
         </div>
       </div>
     </section>
 
-    <section class="course-content">
+    <section class="study-dashboard">
+      <div class="academic-shell study-dashboard-grid">
+
+        <div class="study-progress-panel">
+
+          <div class="study-progress-copy">
+            <p class="academic-eyebrow">Tu avance local</p>
+            <h2>Ruta de estudio</h2>
+            <p>
+              Marca los desempeños que dominas. El avance se conserva
+              únicamente en este navegador.
+            </p>
+          </div>
+
+          <div class="study-progress-visual">
+            <div class="study-progress-number">
+              <strong data-progress-percentage>0</strong>
+              <span>%</span>
+            </div>
+
+            <div
+              class="study-progress-track"
+              role="progressbar"
+              aria-label="Progreso de la ruta de estudio"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+              data-progress-track
+            >
+              <span data-progress-bar></span>
+            </div>
+
+            <p>
+              <b data-progress-completed>0</b>
+              de
+              <b data-progress-total>0</b>
+              actividades dominadas
+            </p>
+          </div>
+
+        </div>
+
+        <div class="study-today-card">
+          <span>¿Qué estudiar hoy?</span>
+
+          <h3 data-study-suggestion>
+            Abre la ruta y selecciona tu primer objetivo.
+          </h3>
+
+          <div>
+            <button type="button" data-suggest-study>
+              Sugerir actividad
+            </button>
+
+            <button type="button" class="study-reset-button" data-reset-progress>
+              Reiniciar avance
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="course-content study-course-content">
       <div class="academic-shell">
 
-        <nav class="course-quick-nav" aria-label="Contenido del curso">
-          <a href="#temas">Temas</a>
-          <a href="#avisos">Avisos públicos</a>
-          <a href="#resultados">Resultados de clase</a>
-          <a href="#actividad-articulo">Actividad</a>
-        <a href="#tarea-aplicacion">Tarea</a>
-        <a href="#rubricas">Rúbricas</a>
-          <a href="#recursos">Recursos</a>
+        <nav class="course-quick-nav study-sticky-nav" aria-label="Contenido del curso">
+          <a href="#aprendizajes">Aprendizajes</a>
+          <a href="#mapa-proceso">Sistema</a>
+          <a href="#ruta-estudio">Ruta</a>
+          <a href="#refuerzos">Enlaces</a>
+          <a href="#herramientas">Calculadoras</a>
+          <a href="#errores-frecuentes">Errores</a>
+          <a href="#autoevaluacion">Autoevaluación</a>
+          <a href="#actividades">Actividades</a>
         </nav>
 
-        <section class="course-content-section" id="temas">
+        <section class="course-content-section" id="aprendizajes">
           <div class="course-section-heading">
-            <span>Contenidos principales</span>
-            <h2>Temas del curso</h2>
+            <span>Orientación pública</span>
+            <h2>Lo que debes aprender</h2>
           </div>
-          <div class="course-topic-list"><span>Caracterización</span><span>Procesos de tratamiento</span><span>Prediseño</span></div>
+
+          <p class="study-section-lead">
+            Los resultados se presentan como guía de estudio y no sustituyen
+            los documentos institucionales.
+          </p>
+
+          <div class="study-outcome-grid">
+            
+          <article class="study-outcome-card">
+            <span>01</span>
+            <h3>Caracterización</h3>
+            <p>Interpretar parámetros físicos, químicos y microbiológicos del afluente y la fuente receptora.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>02</span>
+            <h3>Selección de procesos</h3>
+            <p>Organizar tratamientos físicos, químicos y biológicos según objetivos y contexto.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>03</span>
+            <h3>Diseño y operación</h3>
+            <p>Dimensionar unidades, verificar cargas y relacionar el diseño con operación y mantenimiento.</p>
+          </article>
+        
+
+          <article class="study-outcome-card">
+            <span>04</span>
+            <h3>Desempeño ambiental</h3>
+            <p>Calcular eficiencia, analizar el efluente y valorar impactos sobre la fuente receptora.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="mapa-proceso">
+          <div class="course-section-heading">
+            <span>Visión integral</span>
+            <h2>Mapa del sistema</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Utiliza esta secuencia para relacionar los temas y evitar estudiar
+            cada componente de manera aislada.
+          </p>
+
+          <ol class="unisangil-process-map">
+            
+          <li>
+            <span>01</span>
+            <strong>Caracterización</strong>
+          </li>
+        
+
+          <li>
+            <span>02</span>
+            <strong>Preliminar</strong>
+          </li>
+        
+
+          <li>
+            <span>03</span>
+            <strong>Primario</strong>
+          </li>
+        
+
+          <li>
+            <span>04</span>
+            <strong>Biológico</strong>
+          </li>
+        
+
+          <li>
+            <span>05</span>
+            <strong>Complementario</strong>
+          </li>
+        
+
+          <li>
+            <span>06</span>
+            <strong>Desinfección</strong>
+          </li>
+        
+
+          <li>
+            <span>07</span>
+            <strong>Lodos</strong>
+          </li>
+        
+
+          <li>
+            <span>08</span>
+            <strong>Vertimiento o reúso</strong>
+          </li>
+        
+          </ol>
+        </section>
+
+        <section class="course-content-section" id="ruta-estudio">
+          <div class="course-section-heading">
+            <span>Aprendizaje progresivo</span>
+            <h2>Ruta temática del curso</h2>
+          </div>
+
+          <div class="study-section-toolbar">
+            <p>
+              Abre cada módulo, revisa los conceptos y marca la lista de
+              dominio.
+            </p>
+
+            <button type="button" data-toggle-modules>
+              Abrir todos
+            </button>
+          </div>
+
+          <div class="study-module-list">
+            
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">01</span>
+              <span class="study-module-title">
+                <strong>Caracterización y marco de decisión</strong>
+                <small>Convierte resultados de laboratorio y contexto en objetivos de tratamiento.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>DBO</span><span>DQO</span><span>SST</span><span>Grasas</span><span>Nutrientes</span><span>Microbiología</span><span>Normativa</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-01-1">
+                  <span>Diferencio concentración, carga y caudal.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-01-2">
+                  <span>Relaciono cada parámetro con su efecto ambiental.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-01-3">
+                  <span>Defino metas de efluente y variables de control.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-01-4">
+                  <span>Reviso calidad y representatividad de los datos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">02</span>
+              <span class="study-module-title">
+                <strong>Tratamiento en sitio</strong>
+                <small>Resuelve necesidades descentralizadas mediante unidades de pequeña escala.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Trampa de grasa</span><span>Tanque séptico</span><span>Imhoff</span><span>Infiltración</span><span>Filtros</span><span>Humedales</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-02-1">
+                  <span>Verifico condiciones del terreno y del usuario.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-02-2">
+                  <span>Dimensiono unidades con criterios apropiados.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-02-3">
+                  <span>Integro tratamiento y disposición final.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-02-4">
+                  <span>Incluyo operación, mantenimiento y manejo de lodos.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">03</span>
+              <span class="study-module-title">
+                <strong>Tratamiento preliminar y primario</strong>
+                <small>Protege los procesos posteriores y retira sólidos por operaciones físicas o químicas.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Homogenización</span><span>Rejillas</span><span>Tamices</span><span>Desarenador</span><span>Sedimentación</span><span>Flotación</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-03-1">
+                  <span>Identifico qué material remueve cada unidad.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-03-2">
+                  <span>Calculo velocidad, tiempo, carga o área según corresponda.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-03-3">
+                  <span>Estimo producción y manejo de residuos.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-03-4">
+                  <span>Compruebo la continuidad hidráulica del pretratamiento.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">04</span>
+              <span class="study-module-title">
+                <strong>Procesos biológicos</strong>
+                <small>Controla materia orgánica mediante biomasa suspendida, adherida o anaerobia.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Lodos activados</span><span>UASB</span><span>Zanjas</span><span>Percoladores</span><span>Biodiscos</span><span>Lagunas</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-04-1">
+                  <span>Relaciono sustrato, biomasa, oxígeno y tiempo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-04-2">
+                  <span>Comparo alternativas aerobias y anaerobias.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-04-3">
+                  <span>Calculo carga orgánica y eficiencia esperada.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-04-4">
+                  <span>Identifico variables críticas de operación.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">05</span>
+              <span class="study-module-title">
+                <strong>Tratamientos complementarios y monitoreo</strong>
+                <small>Mejora el efluente y verifica su efecto sobre el cuerpo receptor.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Desinfección</span><span>Nitrógeno</span><span>Fósforo</span><span>Sólidos</span><span>Índices</span><span>Fuente receptora</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-05-1">
+                  <span>Defino la necesidad de tratamiento adicional.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-05-2">
+                  <span>Calculo eficiencia por parámetro.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-05-3">
+                  <span>Diseño un plan básico de monitoreo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-05-4">
+                  <span>Interpreto calidad antes y después del vertimiento.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+
+          <details class="study-module">
+            <summary>
+              <span class="study-module-number">06</span>
+              <span class="study-module-title">
+                <strong>Lodos, modelación y proyecto</strong>
+                <small>Integra la línea líquida, la línea de sólidos y la evaluación ambiental.</small>
+              </span>
+              <span class="study-module-toggle" aria-hidden="true">+</span>
+            </summary>
+
+            <div class="study-module-body">
+              <div class="study-topic-chips"><span>Lodos</span><span>Espesamiento</span><span>Estabilización</span><span>Deshidratación</span><span>QUAL2K</span><span>Informe</span></div>
+
+              <div class="study-task-list">
+                <p class="study-task-heading">Lista de dominio</p>
+                
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-06-1">
+                  <span>Estimo la generación de lodos y su ruta de manejo.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-06-2">
+                  <span>Organizo datos para una modelación de calidad.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-06-3">
+                  <span>Mantengo trazabilidad entre afluente, procesos y efluente.</span>
+                </label>
+            
+                <label class="study-task">
+                  <input type="checkbox" data-study-task="tratamiento-aguas-residuales-06-4">
+                  <span>Presento un informe técnico con resultados reproducibles.</span>
+                </label>
+            
+              </div>
+            </div>
+          </details>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="refuerzos">
+          <div class="course-section-heading">
+            <span>Biblioteca abierta</span>
+            <h2>Enlaces para reforzar</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Recursos públicos y fuentes oficiales. Los enlaces se abren en una
+            pestaña nueva.
+          </p>
+
+          <div class="study-resource-tools">
+            <label class="study-search">
+              <span class="sr-only">Buscar recursos</span>
+              <input
+                type="search"
+                placeholder="Buscar por tema o herramienta…"
+                data-resource-search
+              >
+            </label>
+
+            <div class="study-resource-filters">
+              <button class="study-filter is-active" type="button" data-resource-filter="all">Todos</button>
+<button class="study-filter" type="button" data-resource-filter="aplicacion">Aplicación</button>
+<button class="study-filter" type="button" data-resource-filter="diseno">Diseño</button>
+<button class="study-filter" type="button" data-resource-filter="muestreo">Muestreo</button>
+<button class="study-filter" type="button" data-resource-filter="normativa">Normativa</button>
+<button class="study-filter" type="button" data-resource-filter="procesos">Procesos</button>
+<button class="study-filter" type="button" data-resource-filter="vertimientos">Vertimientos</button>
+            </div>
+          </div>
+
+          <div class="study-resource-grid" data-resource-grid>
+            
+          <a
+            class="study-resource-card"
+            href="https://minvivienda.gov.co/viceministerio-de-agua-y-saneamiento-basico-reglamento-tecnico-sector-reglamento-tecnico-del-sector-de-agua-potable-y-saneamiento-basico-ras"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="normativa"
+            data-resource-text="normativa reglamento técnico ras ministerio de vivienda normativa y documentos técnicos para saneamiento y tratamiento de aguas residuales."
+          >
+            <div class="study-resource-meta">
+              <span>Normativa</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Reglamento técnico RAS</h3>
+            <p>Normativa y documentos técnicos para saneamiento y tratamiento de aguas residuales.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.minambiente.gov.co/documento-entidad/resolucion-631-de-2015/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="vertimientos"
+            data-resource-text="vertimientos resolución 631 de 2015 ministerio de ambiente parámetros y límites máximos permisibles para vertimientos puntuales."
+          >
+            <div class="study-resource-meta">
+              <span>Vertimientos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Resolución 631 de 2015</h3>
+            <p>Parámetros y límites máximos permisibles para vertimientos puntuales.</p>
+            <small>Ministerio de Ambiente</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.minvivienda.gov.co/proyectos-de-agua-potable-y-saneamiento-basico/tratamiento-de-aguas-residuales"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="diseno"
+            data-resource-text="diseño tratamiento de aguas residuales ministerio de vivienda referencias públicas para la formulación y evaluación de proyectos de tratamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Diseño</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Tratamiento de aguas residuales</h3>
+            <p>Referencias públicas para la formulación y evaluación de proyectos de tratamiento.</p>
+            <small>Ministerio de Vivienda</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/septic/wastewater-technology-fact-sheets"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="procesos"
+            data-resource-text="procesos fichas tecnológicas de aguas residuales us epa documentos públicos sobre tecnologías y operaciones de tratamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Procesos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Fichas tecnológicas de aguas residuales</h3>
+            <p>Documentos públicos sobre tecnologías y operaciones de tratamiento.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.epa.gov/wetlands/constructed-wetlands"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="procesos"
+            data-resource-text="procesos humedales construidos us epa referencias y casos sobre humedales para tratamiento y beneficios ambientales."
+          >
+            <div class="study-resource-meta">
+              <span>Procesos</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Humedales construidos</h3>
+            <p>Referencias y casos sobre humedales para tratamiento y beneficios ambientales.</p>
+            <small>US EPA</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://www.ideam.gov.co/nuestra-entidad/mapa-de-procesos/procesos-misionales/servicios/Laboratorio-de-Calidad/?tipo=377"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="muestreo"
+            data-resource-text="muestreo laboratorio de calidad ambiental ideam manuales e instructivos públicos para muestreo, preservación y análisis de agua."
+          >
+            <div class="study-resource-meta">
+              <span>Muestreo</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Laboratorio de calidad ambiental</h3>
+            <p>Manuales e instructivos públicos para muestreo, preservación y análisis de agua.</p>
+            <small>IDEAM</small>
+          </a>
+        
+
+          <a
+            class="study-resource-card"
+            href="https://prediseno-ptar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-resource-card
+            data-resource-category="aplicacion"
+            data-resource-text="aplicación prediseño de sistemas ptar aplicación juankloz apoyo educativo para organizar datos y alternativas iniciales de tratamiento."
+          >
+            <div class="study-resource-meta">
+              <span>Aplicación</span>
+              <b aria-hidden="true">↗</b>
+            </div>
+
+            <h3>Prediseño de sistemas PTAR</h3>
+            <p>Apoyo educativo para organizar datos y alternativas iniciales de tratamiento.</p>
+            <small>Aplicación JuanKLoz</small>
+          </a>
+        
+          </div>
+
+          <p class="study-empty-state" data-resource-empty hidden>
+            No se encontraron recursos con ese criterio.
+          </p>
+        </section>
+
+        <section class="course-content-section" id="herramientas">
+          <div class="course-section-heading">
+            <span>Práctica inmediata</span>
+            <h2>Calculadoras académicas</h2>
+          </div>
+
+          <p class="study-section-lead">
+            Son herramientas de comprobación. Las memorias deben incluir
+            datos, unidades, fórmula, sustitución, resultado y análisis.
+          </p>
+
+          <div class="study-calculator-grid">
+            
+          <form class="study-calculator" data-calculator="detention">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Tiempo de retención</h3>
+              <p>Calcula t = V / Q.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Volumen V (m³)<input name="volume" type="number" min="0" step="any" value="250" required></label>
+              <label>Caudal Q (L/s)<input name="flow" type="number" min="0" step="any" value="20" required></label>
+            </div>
+            <button type="submit">Calcular tiempo</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="surface-loading">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Carga superficial</h3>
+              <p>Calcula C_s = Q / A.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal Q (m³/d)<input name="flow" type="number" min="0" step="any" value="1728" required></label>
+              <label>Área A (m²)<input name="area" type="number" min="0" step="any" value="60" required></label>
+            </div>
+            <button type="submit">Calcular carga</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="removal-efficiency">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Eficiencia de remoción</h3>
+              <p>Calcula η = (C₀ − Cₑ) / C₀ · 100.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Entrada C₀ (mg/L)<input name="influent" type="number" min="0" step="any" value="250" required></label>
+              <label>Salida Cₑ (mg/L)<input name="effluent" type="number" min="0" step="any" value="40" required></label>
+            </div>
+            <button type="submit">Calcular eficiencia</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+
+          <form class="study-calculator" data-calculator="organic-loading">
+            <div class="study-calculator-heading">
+              <span>Calculadora</span>
+              <h3>Carga contaminante</h3>
+              <p>Convierte caudal y concentración en kg/d.</p>
+            </div>
+            <div class="study-field-grid">
+              <label>Caudal Q (m³/d)<input name="flow" type="number" min="0" step="any" value="1000" required></label>
+              <label>Concentración C (mg/L)<input name="concentration" type="number" min="0" step="any" value="250" required></label>
+            </div>
+            <button type="submit">Calcular carga</button>
+            <output class="study-calculator-output" aria-live="polite">Resultado: —</output>
+          </form>
+        
+          </div>
+
+          <div class="study-formula-heading">
+            <p class="academic-eyebrow">Banco rápido</p>
+            <h3>Fórmulas esenciales</h3>
+          </div>
+
+          <div class="study-formula-grid">
+            
+          <article class="study-formula-card">
+            <span>01</span>
+            <h3>Eficiencia</h3>
+            <p class="study-formula">η = (C_0 − C_e) / C_0 · 100</p>
+            <small>Reducción porcentual de una concentración.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>02</span>
+            <h3>Carga contaminante</h3>
+            <p class="study-formula">L = Q · C / 1 000</p>
+            <small>Q en m³/d y C en mg/L; resultado en kg/d.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>03</span>
+            <h3>Tiempo de retención</h3>
+            <p class="study-formula">t = V / Q</p>
+            <small>Tiempo hidráulico dentro de una unidad.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>04</span>
+            <h3>Carga superficial</h3>
+            <p class="study-formula">C_s = Q / A</p>
+            <small>Caudal aplicado por unidad de superficie.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>05</span>
+            <h3>Relación alimento/microorganismo</h3>
+            <p class="study-formula">F/M = Q · S_0 / (V · X)</p>
+            <small>Relación de carga orgánica y biomasa.</small>
+          </article>
+        
+
+          <article class="study-formula-card">
+            <span>06</span>
+            <h3>Carga volumétrica</h3>
+            <p class="study-formula">C_v = Q · S_0 / V</p>
+            <small>Carga aplicada por volumen del reactor.</small>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="errores-frecuentes">
+          <div class="course-section-heading">
+            <span>Control de calidad</span>
+            <h2>Errores que debes evitar</h2>
+          </div>
+
+          <div class="hydraulic-mistake-grid">
+            
+          <article class="hydraulic-mistake-card">
+            <span>01</span>
+            <h3>Concentración no es carga</h3>
+            <p>La carga depende también del caudal.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>02</span>
+            <h3>Afluente no representativo</h3>
+            <p>Revise hora, punto, preservación y tipo de muestra.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>03</span>
+            <h3>Eficiencia aislada</h3>
+            <p>Compruebe también la concentración final y el objetivo ambiental.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>04</span>
+            <h3>Biología sin operación</h3>
+            <p>Oxígeno, biomasa, recirculación y edad del lodo condicionan el proceso.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>05</span>
+            <h3>Lodos olvidados</h3>
+            <p>Toda separación genera residuos que deben manejarse.</p>
+          </article>
+        
+
+          <article class="hydraulic-mistake-card">
+            <span>06</span>
+            <h3>Proceso sin contexto</h3>
+            <p>Considere clima, área, energía, personal y capacidad operativa.</p>
+          </article>
+        
+          </div>
+        </section>
+
+        <section class="course-content-section" id="autoevaluacion">
+          <div class="course-section-heading">
+            <span>Comprobación rápida</span>
+            <h2>Autoevaluación</h2>
+          </div>
+
+          <p class="study-section-lead">
+            El resultado es orientativo y queda guardado solamente en el
+            navegador del estudiante.
+          </p>
+
+          <form class="study-quiz" data-study-quiz>
+            
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>01</span>
+              La carga contaminante depende principalmente de:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-aguas-residuales-q1-o0">
+                  <input
+                    id="tratamiento-aguas-residuales-q1-o0"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q1"
+                    value="0"
+                  >
+                  <span>Caudal y concentración</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q1-o1">
+                  <input
+                    id="tratamiento-aguas-residuales-q1-o1"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q1"
+                    value="1"
+                  >
+                  <span>Solo concentración</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q1-o2">
+                  <input
+                    id="tratamiento-aguas-residuales-q1-o2"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q1"
+                    value="2"
+                  >
+                  <span>Solo temperatura</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q1-o3">
+                  <input
+                    id="tratamiento-aguas-residuales-q1-o3"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q1"
+                    value="3"
+                  >
+                  <span>Área del laboratorio</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>02</span>
+              Una rejilla pertenece normalmente al tratamiento:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-aguas-residuales-q2-o0">
+                  <input
+                    id="tratamiento-aguas-residuales-q2-o0"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q2"
+                    value="0"
+                  >
+                  <span>Preliminar</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q2-o1">
+                  <input
+                    id="tratamiento-aguas-residuales-q2-o1"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q2"
+                    value="1"
+                  >
+                  <span>Secundario biológico</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q2-o2">
+                  <input
+                    id="tratamiento-aguas-residuales-q2-o2"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q2"
+                    value="2"
+                  >
+                  <span>Terciario avanzado</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q2-o3">
+                  <input
+                    id="tratamiento-aguas-residuales-q2-o3"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q2"
+                    value="3"
+                  >
+                  <span>De lodos</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>03</span>
+              El proceso UASB es principalmente:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-aguas-residuales-q3-o0">
+                  <input
+                    id="tratamiento-aguas-residuales-q3-o0"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q3"
+                    value="0"
+                  >
+                  <span>Biológico anaerobio</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q3-o1">
+                  <input
+                    id="tratamiento-aguas-residuales-q3-o1"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q3"
+                    value="1"
+                  >
+                  <span>Filtración rápida</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q3-o2">
+                  <input
+                    id="tratamiento-aguas-residuales-q3-o2"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q3"
+                    value="2"
+                  >
+                  <span>Desinfección</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q3-o3">
+                  <input
+                    id="tratamiento-aguas-residuales-q3-o3"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q3"
+                    value="3"
+                  >
+                  <span>Aireación física</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>04</span>
+              La eficiencia de remoción se calcula comparando:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-aguas-residuales-q4-o0">
+                  <input
+                    id="tratamiento-aguas-residuales-q4-o0"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q4"
+                    value="0"
+                  >
+                  <span>Concentración de entrada y salida</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q4-o1">
+                  <input
+                    id="tratamiento-aguas-residuales-q4-o1"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q4"
+                    value="1"
+                  >
+                  <span>Dos valores de caudal únicamente</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q4-o2">
+                  <input
+                    id="tratamiento-aguas-residuales-q4-o2"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q4"
+                    value="2"
+                  >
+                  <span>Área y volumen</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q4-o3">
+                  <input
+                    id="tratamiento-aguas-residuales-q4-o3"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q4"
+                    value="3"
+                  >
+                  <span>pH y temperatura solamente</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+          <fieldset
+            class="study-quiz-question"
+            data-correct-answer="0"
+          >
+            <legend>
+              <span>05</span>
+              La línea de lodos debe incluirse porque:
+            </legend>
+
+            <div class="study-quiz-options">
+              
+                <label for="tratamiento-aguas-residuales-q5-o0">
+                  <input
+                    id="tratamiento-aguas-residuales-q5-o0"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q5"
+                    value="0"
+                  >
+                  <span>Los procesos generan sólidos que requieren tratamiento y disposición</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q5-o1">
+                  <input
+                    id="tratamiento-aguas-residuales-q5-o1"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q5"
+                    value="1"
+                  >
+                  <span>Reduce automáticamente el caudal</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q5-o2">
+                  <input
+                    id="tratamiento-aguas-residuales-q5-o2"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q5"
+                    value="2"
+                  >
+                  <span>Sustituye la línea de agua</span>
+                </label>
+            
+                <label for="tratamiento-aguas-residuales-q5-o3">
+                  <input
+                    id="tratamiento-aguas-residuales-q5-o3"
+                    type="radio"
+                    name="tratamiento-aguas-residuales-q5"
+                    value="3"
+                  >
+                  <span>Solo mejora la presentación del plano</span>
+                </label>
+            
+            </div>
+
+            <p class="study-question-feedback" aria-live="polite"></p>
+          </fieldset>
+        
+
+            <div class="study-quiz-actions">
+              <button type="submit">Revisar respuestas</button>
+              <button type="reset" class="study-quiz-reset">Intentar de nuevo</button>
+            </div>
+
+            <div class="study-quiz-result" aria-live="polite" data-quiz-result>
+              Aún no has enviado tus respuestas.
+            </div>
+          </form>
+        </section>
+
+        <section class="course-content-section" id="actividades">
+          <div class="course-section-heading">
+            <span>Trabajo académico</span>
+            <h2>Actividades comunes</h2>
+          </div>
+
+          <div class="hydraulic-activity-grid">
+
+            <a
+              class="course-article-activity-card"
+              href="../../actividades/traduccion-articulo-cientifico/"
+            >
+              <span>Traducción técnica · Presentación · Video</span>
+              <h3>Artículo científico en inglés</h3>
+              <p>
+                Selecciona un artículo reciente del área, corrige la traducción
+                automática y socializa sus resultados.
+              </p>
+              <b>Consultar guía, rúbrica y plantilla Word ↗</b>
+            </a>
+
+            <a
+              class="course-task-activity-card"
+              href="../../actividades/tarea-aplicacion-clase/"
+            >
+              <span>Individual · Manuscrita · Siguiente sesión</span>
+              <h3>Tarea de Aplicación y Consolidación</h3>
+              <p>
+                Aplica los procedimientos vistos en clase y organiza el
+                desarrollo para revisión presencial.
+              </p>
+              <b>Consultar estructura, rúbrica y formatos ↗</b>
+            </a>
+
+          </div>
         </section>
 
         <section class="course-content-section" id="avisos">
@@ -89,11 +1260,15 @@
             <span>Información pública</span>
             <h2>Avisos del curso</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Sin publicaciones</span>
-              <strong>Primer aviso pendiente</strong>
-              <p>Aquí se publicarán novedades generales y actividades abiertas.</p>
+              <span class="resource-type">Sin publicaciones nuevas</span>
+              <strong>Consulta periódicamente este espacio</strong>
+              <p>
+                Aquí se publicarán actividades abiertas, recursos y novedades
+                que no contengan información privada.
+              </p>
             </article>
           </div>
         </section>
@@ -103,123 +1278,47 @@
             <span>Producción académica</span>
             <h2>Resultados de clase</h2>
           </div>
+
           <div class="resource-list">
             <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Resultados anonimizados</strong>
+              <span class="resource-type">Publicación responsable</span>
+              <strong>Resultados colectivos y anonimizados</strong>
               <p>
-                Se podrán publicar informes colectivos, ejercicios, gráficos,
-                conclusiones y experiencias sin datos personales.
+                Se podrán compartir ejercicios, gráficos, modelos y
+                conclusiones sin nombres, notas o datos personales.
               </p>
             </article>
           </div>
-          <!--
-            Para agregar un resultado:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-aguas-residuales/resultados/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Resultado de clase · PDF</span>
-              <strong>Título del resultado</strong>
-              <p>Descripción breve y fecha.</p>
-            </a>
-          -->
         </section>
 
-        
-        <section class="course-content-section" id="actividad-articulo">
+        <section class="course-content-section" id="bibliografia">
           <div class="course-section-heading">
-            <span>Actividad transversal</span>
-            <h2>Artículo científico en inglés</h2>
+            <span>Consulta complementaria</span>
+            <h2>Bibliografía base</h2>
           </div>
 
-          <a class="course-article-activity-card" href="../../actividades/traduccion-articulo-cientifico/">
-            <span>Traducción técnica · Presentación · Video</span>
-            <h3>Buscar, traducir y comunicar investigación reciente</h3>
+          <ol class="study-bibliography">
+            <li><span>01</span><p>Romero Rojas, J. A. Tratamiento de aguas residuales: teoría y principios de diseño.</p></li><li><span>02</span><p>Díaz Gómez, J. Procesos biológicos para el tratamiento de aguas residuales.</p></li><li><span>03</span><p>Von Sperling, M. Introducción a la calidad del agua y al tratamiento de aguas residuales.</p></li><li><span>04</span><p>Ministerio de Vivienda. Reglamento Técnico del Sector de Agua Potable y Saneamiento Básico.</p></li><li><span>05</span><p>Ministerio de Ambiente. Resolución 631 de 2015.</p></li>
+          </ol>
+
+          <div class="study-public-disclaimer">
+            <b aria-hidden="true">i</b>
             <p>
-              Selecciona un artículo de revista publicado desde el 1 de julio de 2026,
-              corrige los errores de los traductores automáticos, elabora una presentación
-              y socializa el contenido en un video de máximo diez minutos.
+              Esta página es un recurso público de orientación. No contiene
+              códigos internos, firmas, horarios privados, listados,
+              calificaciones, entregas ni comunicaciones institucionales.
             </p>
-            <b>Consultar guía, rúbrica, bases de datos y plantilla Word ↗</b>
-          </a>
-        </section>
-
-        
-        <section class="course-content-section" id="tarea-aplicacion">
-          <div class="course-section-heading">
-            <span>Actividad de clase</span>
-            <h2>Tarea de Aplicación y Consolidación</h2>
           </div>
-
-          <a class="course-task-activity-card" href="../../actividades/tarea-aplicacion-clase/">
-            <span>Individual · Manuscrita · Siguiente sesión</span>
-            <h3>Pon en práctica lo trabajado en la última clase</h3>
-            <p>
-              Consulta la estructura obligatoria, la rúbrica, la lista de control,
-              los códigos de retroalimentación y los formatos descargables.
-            </p>
-            <b>Consultar guía y rúbrica general ↗</b>
-          </a>
-        </section>
-
-        <section class="course-content-section" id="rubricas">
-          <div class="course-section-heading">
-            <span>Evaluación</span>
-            <h2>Rúbricas públicas</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Rúbricas de actividades</strong>
-              <p>
-                Aquí se podrán descargar criterios, niveles de desempeño y
-                orientaciones generales de evaluación.
-              </p>
-            </article>
-          </div>
-          <!--
-            Para agregar una rúbrica:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-aguas-residuales/rubricas/NOMBRE-DE-LA-RUBRICA.pdf"
-               target="_blank">
-              <span class="resource-type">Rúbrica · PDF</span>
-              <strong>Nombre de la actividad</strong>
-              <p>Descripción breve y periodo académico.</p>
-            </a>
-          -->
-        </section>
-
-        <section class="course-content-section" id="recursos">
-          <div class="course-section-heading">
-            <span>Aprendizaje abierto</span>
-            <h2>Recursos complementarios</h2>
-          </div>
-          <div class="resource-list">
-            <article class="resource-placeholder">
-              <span class="resource-type">Espacio disponible</span>
-              <strong>Guías, videos y enlaces</strong>
-              <p>Materiales públicos para ampliar y reforzar los temas del curso.</p>
-            </article>
-          </div>
-          <!--
-            Para agregar un recurso:
-            <a class="resource-item"
-               href="../../archivos/tratamiento-aguas-residuales/recursos/NOMBRE-DEL-ARCHIVO.pdf"
-               target="_blank">
-              <span class="resource-type">Recurso · PDF</span>
-              <strong>Título del recurso</strong>
-              <p>Descripción breve.</p>
-            </a>
-          -->
         </section>
 
       </div>
     </section>
+
   </main>
 
   <footer class="academic-footer">
     <div class="academic-shell academic-footer-grid">
-      <p>Tratamiento de Aguas Residuales · UNISANGIL</p>
+      <p>Tratamiento de Aguas Residuales · Centro público de estudio JuanKLoz</p>
       <a href="../../">Volver a Docencia universitaria</a>
     </div>
   </footer>
