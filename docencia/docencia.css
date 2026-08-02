@@ -3074,3 +3074,17 @@
     color: white !important;
   }
 }
+
+/* Enlaces de acceso y privacidad en la portada */
+.academic-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+@media (max-width: 700px) {
+  .academic-footer-links {
+    justify-content: flex-start;
+  }
+}

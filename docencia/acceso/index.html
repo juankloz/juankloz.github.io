@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Acceso verificado a los recursos descargables de JuanKLoz Docencia.">
+  <meta name="theme-color" content="#09232c">
+
+  <title>Acceso a recursos | JuanKLoz Docencia</title>
+
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../styles.css?v=acceso-v1">
+  <link rel="stylesheet" href="../docencia.css?v=acceso-v1">
+  <link rel="stylesheet" href="../css/acceso-descargas.css?v=acceso-v1">
+
+  <script src="https://unpkg.com/@supabase/supabase-js@2" defer></script>
+  <script src="../js/supabase-config.js?v=acceso-v1" defer></script>
+  <script src="../js/acceso.js?v=acceso-v1" defer></script>
+</head>
+
+<body class="academic-page access-page" data-access-page>
+
+  <header class="academic-header">
+    <div class="academic-nav">
+      <a class="academic-brand" href="../" aria-label="Volver a Docencia">
+        <img src="../../assets/logo-juankloz.png" alt="JuanKLoz">
+      </a>
+
+      <nav class="academic-links" aria-label="Navegación de acceso">
+        <a href="../">Cursos</a>
+        <a href="../privacidad/">Privacidad</a>
+        <a class="academic-home" href="../../">← Portal principal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="access-main">
+    <div class="access-shell">
+
+      <div class="access-breadcrumbs">
+        <a href="../../">Portal principal</a>
+        <span>/</span>
+        <a href="../">Docencia</a>
+        <span>/</span>
+        <span>Acceso a recursos</span>
+      </div>
+
+      <div class="access-layout">
+
+        <section class="access-intro">
+          <span data-user-badge>Acceso por correo</span>
+
+          <h1>
+            Descarga recursos con
+            <span>acceso verificado.</span>
+          </h1>
+
+          <p>
+            Todos pueden descargar. La verificación permite conocer qué
+            instituciones consultan los materiales y medir cuáles recursos
+            resultan más útiles.
+          </p>
+
+          <ol class="access-steps">
+            <li><b>01</b><span>Ingresa tu correo</span></li>
+            <li><b>02</b><span>Confirma el enlace recibido</span></li>
+            <li><b>03</b><span>Descarga automáticamente</span></li>
+          </ol>
+        </section>
+
+        <section class="access-card">
+
+          <div data-loading-panel class="access-loading">
+            <div>
+              <div class="access-spinner" aria-hidden="true"></div>
+              <strong>Comprobando la sesión…</strong>
+              <p>Este proceso tarda solo unos segundos.</p>
+            </div>
+          </div>
+
+          <div data-auth-panel hidden>
+            <div class="access-card-heading">
+              <span>Primera descarga</span>
+              <h2>Verifica tu correo</h2>
+              <p>
+                Recibirás un enlace temporal. No necesitas crear una
+                contraseña.
+              </p>
+            </div>
+
+            <form class="access-form" data-auth-form>
+              <label>
+                Correo electrónico
+                <input
+                  type="email"
+                  autocomplete="email"
+                  placeholder="nombre@universidad.edu.co"
+                  data-email-input
+                  required
+                >
+              </label>
+
+              <button type="submit">Enviar enlace de acceso</button>
+            </form>
+
+            <div class="access-help">
+              Los correos <b>@unisangil.edu.co</b> y
+              <b>@unitropico.edu.co</b> se clasifican automáticamente.
+              Los demás usuarios también pueden acceder.
+            </div>
+          </div>
+
+          <div data-sent-panel hidden>
+            <div class="access-card-heading">
+              <span>Correo enviado</span>
+              <h2>Revisa tu bandeja</h2>
+              <p>
+                Enviamos el acceso a
+                <strong data-sent-email></strong>.
+              </p>
+            </div>
+
+            <div class="access-actions">
+              <button type="button" class="access-ghost-button" data-resend>
+                Usar otro correo
+              </button>
+            </div>
+          </div>
+
+          <div data-profile-panel hidden>
+            <div class="access-card-heading">
+              <span>Una sola vez</span>
+              <h2>Completa tu perfil</h2>
+              <p>
+                Estos datos permiten clasificar las consultas sin verificar
+                matrícula, semestre o asignatura.
+              </p>
+            </div>
+
+            <div class="access-user-summary">
+              <span class="access-mini-label">Correo confirmado</span>
+              <strong data-classification>Correo verificado</strong>
+              <p data-verified-email></p>
+            </div>
+
+            <form class="access-form" data-profile-form>
+              <label>
+                Tipo de usuario
+                <select name="user_type" required>
+                  <option value="">Seleccione</option>
+                  <option value="student">Estudiante</option>
+                  <option value="teacher">Docente</option>
+                  <option value="graduate">Egresado</option>
+                  <option value="professional">Profesional</option>
+                  <option value="particular">Particular</option>
+                  <option value="other">Otro</option>
+                </select>
+              </label>
+
+              <label data-external-institution hidden>
+                Universidad, institución o actividad
+                <input
+                  name="declared_institution"
+                  type="text"
+                  maxlength="160"
+                  placeholder="Ej.: Universidad Nacional, empresa o particular"
+                >
+              </label>
+
+              <label>
+                Curso de mayor interés
+                <select name="course_interest" data-course-interest required>
+                  <option value="general">Recursos generales</option>
+                  <optgroup label="UNITRÓPICO">
+                    <option value="mecanica-fluidos">Mecánica de Fluidos</option>
+                    <option value="hidraulica-aplicada">Hidráulica Aplicada</option>
+                    <option value="acueducto-alcantarillado-unitropico">Acueducto y Alcantarillado</option>
+                    <option value="tratamiento-agua">Tratamiento de Agua</option>
+                  </optgroup>
+                  <optgroup label="UNISANGIL">
+                    <option value="diseno-plantas-tratamiento">Diseño de Plantas de Tratamiento</option>
+                    <option value="tratamiento-potabilizacion-agua">Tratamiento y Potabilización</option>
+                    <option value="tratamiento-aguas-residuales">Tratamiento de Aguas Residuales</option>
+                    <option value="acueducto-alcantarillado-unisangil">Acueducto y Alcantarillado</option>
+                  </optgroup>
+                </select>
+              </label>
+
+              <label class="access-check">
+                <input name="consent" type="checkbox" required>
+                <span>
+                  Autorizo el tratamiento de mi correo, tipo de usuario,
+                  institución y curso de interés para verificar el acceso,
+                  registrar descargas y generar estadísticas educativas.
+                  Consulté la
+                  <a href="../privacidad/" target="_blank" rel="noopener">
+                    política de privacidad
+                  </a>.
+                </span>
+              </label>
+
+              <label class="access-check">
+                <input name="newsletter_opt_in" type="checkbox">
+                <span>
+                  Deseo recibir ocasionalmente avisos sobre nuevos recursos
+                  académicos. Esta autorización es opcional.
+                </span>
+              </label>
+
+              <button type="submit">Guardar y continuar</button>
+            </form>
+          </div>
+
+          <div data-ready-panel hidden>
+            <div class="access-card-heading">
+              <span>Acceso confirmado</span>
+              <h2>Tu recurso está listo</h2>
+              <p>
+                La sesión quedará guardada en este navegador para futuras
+                descargas.
+              </p>
+            </div>
+
+            <div class="access-user-summary">
+              <span class="access-mini-label">Usuario</span>
+              <strong data-classification>Correo verificado</strong>
+              <p data-verified-email></p>
+            </div>
+
+            <div class="access-document-summary">
+              <span class="access-mini-label">Recurso solicitado</span>
+              <strong data-document-title>Biblioteca de recursos</strong>
+              <p>
+                La descarga se iniciará automáticamente cuando exista un
+                documento seleccionado.
+              </p>
+            </div>
+
+            <div class="access-actions">
+              <button type="button" class="access-action" data-download-now>
+                Descargar ahora
+              </button>
+
+              <a class="access-ghost-button" href="../" data-continue-link>
+                Volver al contenido
+              </a>
+
+              <button type="button" class="access-ghost-button" data-sign-out>
+                Cerrar sesión
+              </button>
+            </div>
+          </div>
+
+          <p
+            class="access-status"
+            data-access-status
+            aria-live="polite"
+            hidden
+          ></p>
+
+          <div class="access-help">
+            Contacto para consultar, corregir o eliminar datos:
+            <a href="mailto:Juankloz75@hotmail.com">
+              Juankloz75@hotmail.com
+            </a>.
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="academic-footer">
+    <div class="academic-shell academic-footer-grid">
+      <p>Acceso a recursos · JuanKLoz Docencia</p>
+      <a href="../privacidad/">Política de privacidad</a>
+    </div>
+  </footer>
+
+</body>
+</html>
