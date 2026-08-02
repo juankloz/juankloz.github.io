@@ -92,7 +92,12 @@
       ui.readyPanel,
       ui.loadingPanel
     ].forEach((item) => {
-      if (item) item.hidden = item !== panel;
+      if (!item) return;
+
+      const shouldHide = item !== panel;
+      item.hidden = shouldHide;
+      item.style.display = shouldHide ? "none" : "";
+      item.setAttribute("aria-hidden", shouldHide ? "true" : "false");
     });
   };
 
@@ -331,10 +336,14 @@
         ui.downloadButton.textContent = "Descargar nuevamente";
       }
     } catch (error) {
-      setStatus(
-        error?.message || "No fue posible descargar el archivo.",
-        "error"
-      );
+      const originalMessage =
+        error?.message || "No fue posible descargar el archivo.";
+
+      const friendlyMessage = /object not found/i.test(originalMessage)
+        ? "El documento está registrado, pero el archivo no existe en la ruta esperada de Supabase Storage. Revisa el nombre, la extensión y la carpeta dentro del bucket recursos-docencia."
+        : originalMessage;
+
+      setStatus(friendlyMessage, "error");
 
       if (ui.downloadButton) {
         ui.downloadButton.textContent = "Intentar nuevamente";
